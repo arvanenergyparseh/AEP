@@ -370,8 +370,26 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         <!-- Grade 60/70 -->
-        <div class="bg-white rounded-xl border border-persianGold/30 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+        <div class="bg-white rounded-xl border border-persianGold/30 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
           <div>
+            <!-- Vector Illustration: Industrial Export Drum with Geometric Lines -->
+            <div class="w-full h-36 mb-5 rounded-lg bg-gradient-to-b from-parchment to-alabaster border border-persianGold/20 flex items-center justify-center p-3 overflow-hidden relative">
+              <div class="absolute inset-0 opacity-[0.04] bg-persian-pattern pointer-events-none"></div>
+              <svg class="w-24 h-24 text-persianNavy group-hover:scale-105 transition-transform duration-300" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Drum Silhouette -->
+                <rect x="26" y="24" width="48" height="58" rx="7" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
+                <!-- Drum Ridges -->
+                <line x1="26" y1="42" x2="74" y2="42" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+                <line x1="26" y1="58" x2="74" y2="58" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+                <!-- Drum Top Cap & Bung -->
+                <ellipse cx="50" cy="24" rx="24" ry="6" fill="#112544" stroke="#C5A059" stroke-width="2"/>
+                <circle cx="38" cy="24" r="3" fill="#C5A059"/>
+                <circle cx="60" cy="23" r="1.8" fill="#C5A059"/>
+                <!-- Viscosity Droplet Emblem on Drum -->
+                <path d="M50 46 C50 46 43 53 43 56 C43 60 46.1 63 50 63 C53.9 63 57 60 57 56 C57 53 50 46 50 46 Z" fill="#C5A059" stroke="#E5C989" stroke-width="1"/>
+              </svg>
+            </div>
+
             <div class="flex items-center justify-between border-b border-persianGold/20 pb-3 mb-4">
               <span class="text-xs font-bold uppercase text-persianGold-dark tracking-wider">Penetration Grade</span>
               <span class="px-2.5 py-1 bg-persianNavy text-white rounded text-[11px] font-mono">ASTM D5</span>
@@ -407,8 +425,27 @@
         </div>
 
         <!-- Grade 80/100 -->
-        <div class="bg-white rounded-xl border border-persianGold/30 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+        <div class="bg-white rounded-xl border border-persianGold/30 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
           <div>
+            <!-- Vector Illustration: Road Paving Cross-Section & Pavement Vectors -->
+            <div class="w-full h-36 mb-5 rounded-lg bg-gradient-to-b from-parchment to-alabaster border border-persianGold/20 flex items-center justify-center p-3 overflow-hidden relative">
+              <div class="absolute inset-0 opacity-[0.04] bg-persian-pattern pointer-events-none"></div>
+              <svg class="w-24 h-24 text-persianNavy group-hover:scale-105 transition-transform duration-300" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Road Surface Perspective -->
+                <polygon points="15,78 35,30 65,30 85,78" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
+                <!-- Dashed Highway Centerline -->
+                <line x1="50" y1="34" x2="50" y2="44" stroke="#E5C989" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="50" y1="52" x2="50" y2="64" stroke="#E5C989" stroke-width="3" stroke-linecap="round"/>
+                <line x1="50" y1="72" x2="50" y2="76" stroke="#E5C989" stroke-width="3.5" stroke-linecap="round"/>
+                <!-- Foundation Layer Cross-Section Schematics -->
+                <path d="M10 82 L90 82" stroke="#C5A059" stroke-width="2"/>
+                <path d="M12 87 L88 87" stroke="#68778D" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <!-- Geometric Compass/Horizon Ring -->
+                <circle cx="50" cy="30" r="14" stroke="#C5A059" stroke-width="1" stroke-dasharray="2 2"/>
+                <circle cx="50" cy="30" r="3" fill="#C5A059"/>
+              </svg>
+            </div>
+
             <div class="flex items-center justify-between border-b border-persianGold/20 pb-3 mb-4">
               <span class="text-xs font-bold uppercase text-persianGold-dark tracking-wider">Penetration Grade</span>
               <span class="px-2.5 py-1 bg-persianNavy text-white rounded text-[11px] font-mono">ASTM D5</span>
@@ -444,8 +481,30 @@
         </div>
 
         <!-- Viscosity / Performance Grades (VG30 / PG) -->
-        <div class="bg-white rounded-xl border border-persianGold/30 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+        <div class="bg-white rounded-xl border border-persianGold/30 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
           <div>
+            <!-- Vector Illustration: ISO Bitutainer Tank Frame & Valve System -->
+            <div class="w-full h-36 mb-5 rounded-lg bg-gradient-to-b from-parchment to-alabaster border border-persianGold/20 flex items-center justify-center p-3 overflow-hidden relative">
+              <div class="absolute inset-0 opacity-[0.04] bg-persian-pattern pointer-events-none"></div>
+              <svg class="w-24 h-24 text-persianNavy group-hover:scale-105 transition-transform duration-300" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- External ISO Container Steel Cage -->
+                <rect x="14" y="24" width="72" height="52" rx="3" stroke="#C5A059" stroke-width="2" fill="none"/>
+                <!-- Corner Corner Castings -->
+                <rect x="12" y="22" width="6" height="6" fill="#C5A059"/>
+                <rect x="82" y="22" width="6" height="6" fill="#C5A059"/>
+                <rect x="12" y="72" width="6" height="6" fill="#C5A059"/>
+                <rect x="82" y="72" width="6" height="6" fill="#C5A059"/>
+                <!-- Cylindrical Tank Core -->
+                <rect x="22" y="28" width="56" height="44" rx="14" fill="#0B1B32" stroke="#C5A059" stroke-width="1.5"/>
+                <!-- Heating Coil & Level Flange -->
+                <line x1="28" y1="50" x2="72" y2="50" stroke="#E5C989" stroke-width="1.5" stroke-dasharray="4 2"/>
+                <circle cx="50" cy="50" r="5" fill="#112544" stroke="#C5A059" stroke-width="1.5"/>
+                <circle cx="50" cy="50" r="2" fill="#E5C989"/>
+                <!-- Top Inspection Manhole Dome -->
+                <rect x="42" y="20" width="16" height="6" rx="2" fill="#C5A059"/>
+              </svg>
+            </div>
+
             <div class="flex items-center justify-between border-b border-persianGold/20 pb-3 mb-4">
               <span class="text-xs font-bold uppercase text-persianGold-dark tracking-wider">Viscosity & PG Spec</span>
               <span class="px-2.5 py-1 bg-persianNavy text-white rounded text-[11px] font-mono">IS 73 / AASHTO</span>
@@ -534,7 +593,25 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         
         <!-- Commodity 1: Urea -->
-        <div class="bg-white rounded-lg p-5 border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all">
+        <div class="bg-white rounded-lg p-5 border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all group">
+          <!-- Vector Illustration: Nitrogen Molecule & Prilled Granules Matrix -->
+          <div class="w-full h-28 mb-4 rounded bg-gradient-to-b from-parchment to-alabaster border border-persianGold/20 flex items-center justify-center p-2">
+            <svg class="w-16 h-16 text-persianNavy group-hover:scale-110 transition-transform duration-300" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Central Carbonyl & Nitrogen Triangle Lattice -->
+              <circle cx="40" cy="28" r="8" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
+              <text x="40" y="32" font-size="10" font-weight="bold" fill="#C5A059" text-anchor="middle" font-family="monospace">N</text>
+              <line x1="34" y1="34" x2="24" y2="50" stroke="#C5A059" stroke-width="2"/>
+              <line x1="46" y1="34" x2="56" y2="50" stroke="#C5A059" stroke-width="2"/>
+              <circle cx="20" cy="54" r="7" fill="#112544" stroke="#C5A059" stroke-width="1.5"/>
+              <circle cx="60" cy="54" r="7" fill="#112544" stroke="#C5A059" stroke-width="1.5"/>
+              <!-- Spherical Fertilizer Prills Ambient -->
+              <circle cx="34" cy="62" r="3" fill="#C5A059"/>
+              <circle cx="46" cy="62" r="3" fill="#C5A059"/>
+              <circle cx="40" cy="70" r="2.5" fill="#E5C989"/>
+              <circle cx="16" cy="34" r="2" fill="#68778D"/>
+              <circle cx="64" cy="34" r="2" fill="#68778D"/>
+            </svg>
+          </div>
           <div class="flex items-center justify-between mb-3">
             <span class="text-[11px] font-bold text-persianGold-dark uppercase tracking-widest">Fertilizers</span>
             <span class="text-xs px-2 py-0.5 bg-parchment rounded text-persianNavy font-mono font-bold">N 46%</span>
@@ -551,7 +628,22 @@
         </div>
 
         <!-- Commodity 2: Methanol -->
-        <div class="bg-white rounded-lg p-5 border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all">
+        <div class="bg-white rounded-lg p-5 border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all group">
+          <!-- Vector Illustration: Laboratory Distillation Flask & Alcohol Structure -->
+          <div class="w-full h-28 mb-4 rounded bg-gradient-to-b from-parchment to-alabaster border border-persianGold/20 flex items-center justify-center p-2">
+            <svg class="w-16 h-16 text-persianNavy group-hover:scale-110 transition-transform duration-300" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Distillation Flask Outline -->
+              <path d="M36 16 L44 16 L44 32 L58 56 C61 61 58 66 52 66 L28 66 C22 66 19 61 22 56 L36 32 Z" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
+              <!-- Liquid Meniscus inside Flask -->
+              <path d="M25 58 C29 55 35 60 40 57 C45 54 51 59 55 58 L52 64 L28 64 Z" fill="#C5A059" opacity="0.85"/>
+              <!-- Flask Rim -->
+              <line x1="33" y1="16" x2="47" y2="16" stroke="#C5A059" stroke-width="2.5" stroke-linecap="round"/>
+              <!-- Ascending Vapor Bubbles -->
+              <circle cx="38" cy="48" r="1.8" fill="#E5C989"/>
+              <circle cx="43" cy="40" r="1.4" fill="#E5C989"/>
+              <circle cx="39" cy="24" r="1.2" fill="#E5C989"/>
+            </svg>
+          </div>
           <div class="flex items-center justify-between mb-3">
             <span class="text-[11px] font-bold text-persianGold-dark uppercase tracking-widest">Liquid Petrochem</span>
             <span class="text-xs px-2 py-0.5 bg-parchment rounded text-persianNavy font-mono font-bold">99.85%</span>
@@ -568,7 +660,21 @@
         </div>
 
         <!-- Commodity 3: Polymers (PE / PP / PVC) -->
-        <div class="bg-white rounded-lg p-5 border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all">
+        <div class="bg-white rounded-lg p-5 border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all group">
+          <!-- Vector Illustration: Hexagonal Polymer Chain & Interlocking Granules -->
+          <div class="w-full h-28 mb-4 rounded bg-gradient-to-b from-parchment to-alabaster border border-persianGold/20 flex items-center justify-center p-2">
+            <svg class="w-16 h-16 text-persianNavy group-hover:scale-110 transition-transform duration-300" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Central Hexagon Monomer -->
+              <polygon points="40,20 54,28 54,44 40,52 26,44 26,28" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
+              <!-- Connected Interlocking Polymer Bonds -->
+              <polygon points="54,44 68,52 68,68 54,76 40,68 40,52" stroke="#C5A059" stroke-width="1.5" stroke-dasharray="2 2" fill="none"/>
+              <polygon points="26,44 40,52 40,68 26,76 12,68 12,52" stroke="#C5A059" stroke-width="1.5" stroke-dasharray="2 2" fill="none"/>
+              <!-- Polymer Resin Granule Centers -->
+              <circle cx="40" cy="36" r="4.5" fill="#C5A059"/>
+              <circle cx="54" cy="60" r="3" fill="#E5C989"/>
+              <circle cx="26" cy="60" r="3" fill="#E5C989"/>
+            </svg>
+          </div>
           <div class="flex items-center justify-between mb-3">
             <span class="text-[11px] font-bold text-persianGold-dark uppercase tracking-widest">Plastics</span>
             <span class="text-xs px-2 py-0.5 bg-parchment rounded text-persianNavy font-mono font-bold">Prime Virgin</span>
@@ -585,7 +691,22 @@
         </div>
 
         <!-- Commodity 4: Caustic Soda & MEG -->
-        <div class="bg-white rounded-lg p-5 border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all">
+        <div class="bg-white rounded-lg p-5 border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all group">
+          <!-- Vector Illustration: Geometric Mineral Crystal Lattice & Flake Icon -->
+          <div class="w-full h-28 mb-4 rounded bg-gradient-to-b from-parchment to-alabaster border border-persianGold/20 flex items-center justify-center p-2">
+            <svg class="w-16 h-16 text-persianNavy group-hover:scale-110 transition-transform duration-300" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Crystal Diamond Structure -->
+              <polygon points="40,14 62,32 52,66 28,66 18,32" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
+              <!-- Crystal Facet Faceting Lines -->
+              <line x1="40" y1="14" x2="40" y2="66" stroke="#C5A059" stroke-width="1.5"/>
+              <line x1="40" y1="40" x2="62" y2="32" stroke="#C5A059" stroke-width="1.5"/>
+              <line x1="40" y1="40" x2="18" y2="32" stroke="#C5A059" stroke-width="1.5"/>
+              <line x1="40" y1="40" x2="52" y2="66" stroke="#E5C989" stroke-width="1.5"/>
+              <line x1="40" y1="40" x2="28" y2="66" stroke="#E5C989" stroke-width="1.5"/>
+              <!-- Shimmer Purity Accent -->
+              <circle cx="40" cy="40" r="3" fill="#E5C989"/>
+            </svg>
+          </div>
           <div class="flex items-center justify-between mb-3">
             <span class="text-[11px] font-bold text-persianGold-dark uppercase tracking-widest">Chemical Agents</span>
             <span class="text-xs px-2 py-0.5 bg-parchment rounded text-persianNavy font-mono font-bold">98.5% Flakes</span>
@@ -639,11 +760,27 @@
           </div>
         </div>
 
-        <!-- Products Matrix -->
+        <!-- Products Matrix with Bespoke Vectors -->
         <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
           
-          <!-- Product Card 1 -->
-          <div class="bg-white p-5 rounded-lg border border-persianGold/30 shadow-sm">
+          <!-- Product Card 1: Fuel Oil CST -->
+          <div class="bg-white p-5 rounded-lg border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all group">
+            <div class="w-full h-24 mb-3 rounded bg-gradient-to-b from-parchment to-alabaster border border-persianGold/20 flex items-center justify-center p-2">
+              <svg class="w-16 h-16 text-persianNavy group-hover:scale-110 transition-transform duration-300" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Marine Tanker Hull Silhouette -->
+                <path d="M12 50 L68 50 L62 62 L20 62 Z" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
+                <!-- Superstructure / Bridge -->
+                <rect x="52" y="36" width="12" height="14" fill="#112544" stroke="#C5A059" stroke-width="1.5"/>
+                <line x1="56" y1="36" x2="56" y2="30" stroke="#C5A059" stroke-width="2"/>
+                <!-- Cargo Deck Manifolds & Pipelines -->
+                <line x1="18" y1="46" x2="48" y2="46" stroke="#C5A059" stroke-width="1.5"/>
+                <circle cx="24" cy="46" r="2.5" fill="#E5C989"/>
+                <circle cx="34" cy="46" r="2.5" fill="#E5C989"/>
+                <circle cx="44" cy="46" r="2.5" fill="#E5C989"/>
+                <!-- Maritime Water Waves -->
+                <path d="M8 66 C14 64 18 68 24 66 C30 64 34 68 40 66 C46 64 50 68 56 66 C62 64 66 68 72 66" stroke="#C5A059" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
             <div class="text-persianGold-dark text-xs font-bold uppercase tracking-wider mb-1">Fuel Oil</div>
             <h4 class="font-serif font-bold text-lg text-persianNavy mb-2">Fuel Oil CST 180 / CST 380</h4>
             <p class="text-xs text-slateMuted mb-3 font-sans">
@@ -652,8 +789,19 @@
             <span class="inline-block text-[10px] font-mono bg-parchment text-persianNavy px-2 py-0.5 rounded">Sulfur standard tailored</span>
           </div>
 
-          <!-- Product Card 2 -->
-          <div class="bg-white p-5 rounded-lg border border-persianGold/30 shadow-sm">
+          <!-- Product Card 2: Base Oils SN500 -->
+          <div class="bg-white p-5 rounded-lg border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all group">
+            <div class="w-full h-24 mb-3 rounded bg-gradient-to-b from-parchment to-alabaster border border-persianGold/20 flex items-center justify-center p-2">
+              <svg class="w-16 h-16 text-persianNavy group-hover:scale-110 transition-transform duration-300" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Precision Lubrication Droplet with Concentric Rings -->
+                <path d="M40 18 C40 18 24 38 24 50 C24 59 31 66 40 66 C49 66 56 59 56 50 C56 38 40 18 40 18 Z" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
+                <!-- Viscous Sheen Core -->
+                <path d="M40 32 C40 32 32 44 32 52 C32 56 35 60 40 60" stroke="#E5C989" stroke-width="2" stroke-linecap="round"/>
+                <!-- Surrounding Golden Lubricant Horizon Waves -->
+                <circle cx="40" cy="50" r="26" stroke="#C5A059" stroke-width="1" stroke-dasharray="3 3"/>
+                <circle cx="58" cy="28" r="2" fill="#C5A059"/>
+              </svg>
+            </div>
             <div class="text-persianGold-dark text-xs font-bold uppercase tracking-wider mb-1">Lubricants Feedstock</div>
             <h4 class="font-serif font-bold text-lg text-persianNavy mb-2">Base Oils (SN 500 / SN 150)</h4>
             <p class="text-xs text-slateMuted mb-3 font-sans">
@@ -662,8 +810,25 @@
             <span class="inline-block text-[10px] font-mono bg-parchment text-persianNavy px-2 py-0.5 rounded">High Viscosity Index (VI 95+)</span>
           </div>
 
-          <!-- Product Card 3 -->
-          <div class="bg-white p-5 rounded-lg border border-persianGold/30 shadow-sm">
+          <!-- Product Card 3: Gasoil / Diesel -->
+          <div class="bg-white p-5 rounded-lg border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all group">
+            <div class="w-full h-24 mb-3 rounded bg-gradient-to-b from-parchment to-alabaster border border-persianGold/20 flex items-center justify-center p-2">
+              <svg class="w-16 h-16 text-persianNavy group-hover:scale-110 transition-transform duration-300" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- High-Volume Refinery Pipeline & Control Valve -->
+                <rect x="12" y="34" width="56" height="12" rx="2" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
+                <!-- Flow Direction Arrows -->
+                <line x1="20" y1="40" x2="32" y2="40" stroke="#E5C989" stroke-width="2" stroke-linecap="round"/>
+                <polyline points="28,37 32,40 28,43" stroke="#E5C989" stroke-width="1.8" stroke-linecap="round"/>
+                <!-- Industrial Flange & Actuator Valve Wheel -->
+                <rect x="36" y="24" width="8" height="32" fill="#112544" stroke="#C5A059" stroke-width="1.5"/>
+                <line x1="40" y1="24" x2="40" y2="16" stroke="#C5A059" stroke-width="2"/>
+                <line x1="32" y1="16" x2="48" y2="16" stroke="#E5C989" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="40" cy="16" r="2" fill="#0B1B32"/>
+                <!-- Fuel Quality Gauge -->
+                <circle cx="56" cy="26" r="6" fill="#FAF8F5" stroke="#C5A059" stroke-width="1.5"/>
+                <line x1="56" y1="26" x2="59" y2="23" stroke="#0B1B32" stroke-width="1.5"/>
+              </svg>
+            </div>
             <div class="text-persianGold-dark text-xs font-bold uppercase tracking-wider mb-1">Middle Distillates</div>
             <h4 class="font-serif font-bold text-lg text-persianNavy mb-2">Gasoil / Diesel (10 ppm & 500 ppm)</h4>
             <p class="text-xs text-slateMuted mb-3 font-sans">
@@ -672,8 +837,23 @@
             <span class="inline-block text-[10px] font-mono bg-parchment text-persianNavy px-2 py-0.5 rounded">EN 590 / GOST Standard</span>
           </div>
 
-          <!-- Product Card 4 -->
-          <div class="bg-white p-5 rounded-lg border border-persianGold/30 shadow-sm">
+          <!-- Product Card 4: LPG -->
+          <div class="bg-white p-5 rounded-lg border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all group">
+            <div class="w-full h-24 mb-3 rounded bg-gradient-to-b from-parchment to-alabaster border border-persianGold/20 flex items-center justify-center p-2">
+              <svg class="w-16 h-16 text-persianNavy group-hover:scale-110 transition-transform duration-300" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Pressurized Spherical Horton Tank -->
+                <circle cx="40" cy="38" r="22" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
+                <!-- Tank Supporting Stilt Columns -->
+                <line x1="22" y1="46" x2="16" y2="68" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+                <line x1="30" y1="56" x2="28" y2="68" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+                <line x1="50" y1="56" x2="52" y2="68" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+                <line x1="58" y1="46" x2="64" y2="68" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+                <!-- Equator Walkway & Relief Valve -->
+                <ellipse cx="40" cy="38" rx="22" ry="6" stroke="#E5C989" stroke-width="1.5" stroke-dasharray="3 2"/>
+                <rect x="37" y="12" width="6" height="4" fill="#C5A059"/>
+                <line x1="40" y1="12" x2="40" y2="8" stroke="#E5C989" stroke-width="1.5"/>
+              </svg>
+            </div>
             <div class="text-persianGold-dark text-xs font-bold uppercase tracking-wider mb-1">Gaseous Fuel</div>
             <h4 class="font-serif font-bold text-lg text-persianNavy mb-2">Liquefied Petroleum Gas (LPG)</h4>
             <p class="text-xs text-slateMuted mb-3 font-sans">
@@ -770,7 +950,7 @@
                 </div>
                 <div>
                   <p class="font-bold uppercase tracking-wider" data-i18n="contact_email_title">Official Trade Desk</p>
-                  <p class="text-slateMuted font-mono">desk@arvanenergy.com / trade@arvanenergyparseh.com</p>
+                  <a href="mailto:arvanenergy@proton.me" class="text-persianNavy hover:text-persianGold-dark font-mono font-medium transition-colors">arvanenergy@proton.me</a>
                 </div>
               </div>
 
@@ -796,33 +976,33 @@
               Complete the details below to receive a Soft Corporate Offer (SCO) and current FOB/CIF price indications.
             </p>
 
-            <form id="tradeInquiryForm" onsubmit="handleInquirySubmit(event)" class="space-y-4">
+            <form id="tradeInquiryForm" action="mailto:arvanenergy@proton.me" method="POST" enctype="text/plain" onsubmit="handleInquirySubmit(event)" class="space-y-4">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_name">Authorized Representative</label>
-                  <input type="text" required placeholder="Full Name & Title" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
+                  <input type="text" name="Representative" required placeholder="Full Name & Title" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
                 </div>
                 <div>
                   <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_company">Purchaser / Corporate Name</label>
-                  <input type="text" required placeholder="Company Name" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
+                  <input type="text" name="Company" required placeholder="Company Name" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
                 </div>
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_email">Corporate Email</label>
-                  <input type="email" required placeholder="trade@yourcompany.com" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
+                  <input type="email" name="Email" required placeholder="trade@yourcompany.com" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
                 </div>
                 <div>
                   <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_phone">Contact / WhatsApp / Phone</label>
-                  <input type="tel" required placeholder="+971... / +91... / +98..." class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
+                  <input type="tel" name="Phone" required placeholder="+971... / +91... / +98..." class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
                 </div>
               </div>
 
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_commodity">Target Commodity</label>
-                  <select class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
+                  <select name="Commodity" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
                     <option value="Bitumen 60/70">Bitumen 60/70 (Penetration Grade)</option>
                     <option value="Bitumen 80/100">Bitumen 80/100</option>
                     <option value="Bitumen VG-30/VG-10">Bitumen VG-30 / VG-10</option>
@@ -836,23 +1016,23 @@
                 </div>
                 <div>
                   <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_qty">Estimated Quantity (MT / Month)</label>
-                  <input type="text" placeholder="e.g. 5,000 MT Spot / 20,000 MT Annual" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
+                  <input type="text" name="Quantity" placeholder="e.g. 5,000 MT Spot / 20,000 MT Annual" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
                 </div>
               </div>
 
               <div>
                 <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_terms">Destination Port & Incoterm</label>
-                <input type="text" placeholder="e.g., CIF Mundra Port, India / CFR Qingdao, China / FOB Bandar Abbas" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
+                <input type="text" name="Destination" placeholder="e.g., CIF Mundra Port, India / CFR Qingdao, China / FOB Bandar Abbas" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
               </div>
 
               <div>
                 <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_notes">Specifications & Scope of Order</label>
-                <textarea rows="3" placeholder="Specify packaging (e.g. 180kg new steel drums or bulk vessel), target target delivery dates, or target price..." class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors"></textarea>
+                <textarea rows="3" name="Notes" placeholder="Specify packaging (e.g. 180kg new steel drums or bulk vessel), target delivery dates, or target price..." class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors"></textarea>
               </div>
 
               <div id="formSuccessMessage" class="hidden p-3 bg-emerald-50 border border-emerald-400 text-emerald-800 rounded text-xs">
                 <i class="fa-solid fa-circle-check text-emerald-600 mr-1.5"></i>
-                <span data-i18n="msg_success">Your commercial inquiry has been logged with the Arvan Energy Parseh Trade Desk. An executive will contact you shortly.</span>
+                <span data-i18n="msg_success">Your commercial inquiry has been logged with arvanenergy@proton.me. An executive will contact you shortly.</span>
               </div>
 
               <button type="submit" class="w-full py-3 bg-persianNavy text-white hover:bg-persianNavy-royal border border-persianGold rounded font-semibold text-xs uppercase tracking-wider transition-all duration-300 shadow hover:shadow-lg flex items-center justify-center gap-2">
@@ -897,6 +1077,7 @@
         <div class="text-center md:text-right text-xs text-gray-400 space-y-1">
           <p><span class="text-persianGold font-semibold">Managing Director:</span> Mohadese | رئیس هیئت مدیره و مدیرعامل: مهندس محدثه</p>
           <p>Iranian Commercial Registration • Trade License for Bulk Petrochemical & Bitumen Export</p>
+          <p><a href="mailto:arvanenergy@proton.me" class="text-persianGold hover:underline font-mono">arvanenergy@proton.me</a></p>
         </div>
 
       </div>
@@ -1012,7 +1193,7 @@
         form_terms: "Destination Port & Incoterm",
         form_notes: "Specifications & Scope of Order",
         form_submit: "Transmit Trade Inquiry to Managing Director",
-        msg_success: "Your commercial inquiry has been logged with the Arvan Energy Parseh Trade Desk. An executive will contact you shortly.",
+        msg_success: "Your commercial inquiry has been logged with arvanenergy@proton.me. An executive will contact you shortly.",
         ft_top: "Back to Top",
         ft_heritage: "Corporate Heritage",
         ft_desk: "Trade Desk"
@@ -1110,7 +1291,7 @@
         form_terms: "بندر مقصد و ترم تجاری (Incoterms)",
         form_notes: "مشخصات فنی و شرایط ویژه قرارداد",
         form_submit: "ارسال استعلام رسمی به دفتر مدیریت عامل",
-        msg_success: "استعلام شما در سیستم میز بازرگانی آروان انرژی پارسه ثبت گردید. کارشناسان ما به زودی با شما تماس خواهند گرفت.",
+        msg_success: "استعلام شما در سیستم با arvanenergy@proton.me ثبت گردید. کارشناسان ما به زودی با شما تماس خواهند گرفت.",
         ft_top: "بازگشت به بالا",
         ft_heritage: "هویت سازمانی",
         ft_desk: "میز بازرگانی"
