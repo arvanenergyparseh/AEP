@@ -3,29 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARVAN ENERGY PARSEH | آروان انرژی پارسه</title>
+    <title>ARVAN ENERGY PARSEH | آروان انرژی پارسه — Global Petrochemical & Energy Trading</title>
     
-    <!-- Fonts -->
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --bg-primary: #F8F9FA;
+            --bg-body: #FBFBFD;
             --bg-surface: #FFFFFF;
-            --navy-deep: #0B1B32;
-            --navy-rich: #132742;
-            --navy-light: #1D3557;
-            --gold-primary: #C5A059;
-            --gold-light: #DFC07A;
-            --gold-subtle: rgba(197, 160, 89, 0.12);
-            --slate-border: #E2E8F0;
-            --text-main: #1A202C;
-            --text-muted: #5A6A80;
-            --font-en-display: 'Cinzel', serif;
-            --font-en-body: 'Plus Jakarta Sans', sans-serif;
+            --navy-midnight: #06111E;
+            --navy-slate: #0C1E34;
+            --navy-card: #122844;
+            --navy-border: #1E3A5F;
+            --gold-leaf: #C5A059;
+            --gold-burnished: #E2C785;
+            --gold-dark: #9A7736;
+            --gold-glow: rgba(197, 160, 89, 0.15);
+            --border-light: #E5E9F0;
+            --text-primary: #0F172A;
+            --text-secondary: #475569;
+            --text-light: #CBD5E1;
+            --font-display: 'Cinzel', serif;
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
             --font-fa: 'Vazirmatn', sans-serif;
+            --shadow-subtle: 0 10px 30px -10px rgba(6, 17, 30, 0.08);
+            --shadow-heavy: 0 20px 40px -15px rgba(6, 17, 30, 0.25);
             --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
@@ -36,92 +41,145 @@
         }
 
         body {
-            background-color: var(--bg-primary);
-            color: var(--text-main);
-            font-family: var(--font-en-body);
-            line-height: 1.6;
+            background-color: var(--bg-body);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.65;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
         }
 
         html[dir="rtl"] body {
             font-family: var(--font-fa);
         }
 
-        /* Nav */
+        /* Top Announcement Ticker */
+        .market-ticker-wrap {
+            background: var(--navy-midnight);
+            border-bottom: 1px solid var(--navy-border);
+            color: var(--text-light);
+            font-size: 0.75rem;
+            padding: 0.45rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .ticker-items {
+            display: flex;
+            gap: 2.5rem;
+            white-space: nowrap;
+        }
+
+        .ticker-item strong {
+            color: var(--gold-leaf);
+            font-weight: 600;
+        }
+
+        .ticker-tag {
+            color: #10B981;
+            font-size: 0.7rem;
+            margin-left: 0.25rem;
+        }
+
+        /* Sovereign Header */
         header {
             position: sticky;
             top: 0;
-            z-index: 100;
-            background: rgba(255, 255, 255, 0.96);
-            backdrop-filter: blur(10px);
-            border-bottom: 2px solid var(--gold-primary);
-            box-shadow: 0 4px 20px rgba(11, 27, 50, 0.06);
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(12px);
+            border-bottom: 2px solid var(--gold-leaf);
+            box-shadow: 0 4px 25px rgba(6, 17, 30, 0.06);
         }
 
         .nav-container {
-            max-width: 1300px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 0.85rem 1.5rem;
+            padding: 1rem 2rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
 
-        .brand-link {
+        .brand-block {
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 1.25rem;
             text-decoration: none;
-            color: var(--navy-deep);
         }
 
-        .logo-box {
-            width: 48px;
-            height: 48px;
+        .logo-crest-wrap {
+            width: 58px;
+            height: 58px;
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
         }
 
-        .logo-box img {
+        .logo-crest-wrap img {
             max-width: 100%;
             max-height: 100%;
             object-fit: contain;
         }
 
-        .logo-box svg {
-            width: 42px;
-            height: 42px;
+        .logo-crest-wrap svg {
+            width: 52px;
+            height: 52px;
         }
 
-        .brand-text h1 {
-            font-family: var(--font-en-display);
-            font-size: 1.15rem;
-            font-weight: 700;
+        .brand-meta h1 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 800;
             letter-spacing: 0.08em;
-            color: var(--navy-deep);
-            line-height: 1.2;
+            color: var(--navy-midnight);
+            line-height: 1.15;
         }
 
-        .brand-text span {
+        .brand-meta span {
             font-family: var(--font-fa);
-            font-size: 0.85rem;
-            color: var(--gold-primary);
+            font-size: 0.95rem;
+            color: var(--gold-dark);
+            font-weight: 700;
             display: block;
+            margin-top: 2px;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--navy-midnight);
+            font-size: 0.88rem;
             font-weight: 600;
+            letter-spacing: 0.03em;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            color: var(--gold-dark);
         }
 
         .nav-actions {
             display: flex;
             align-items: center;
-            gap: 1.25rem;
+            gap: 1rem;
         }
 
-        .lang-btn {
-            background: var(--navy-deep);
+        .lang-switch {
+            background: var(--navy-midnight);
             color: #FFFFFF;
-            border: 1px solid var(--gold-primary);
-            padding: 0.45rem 1rem;
+            border: 1px solid var(--gold-leaf);
+            padding: 0.5rem 1.15rem;
             font-size: 0.85rem;
             font-weight: 600;
             border-radius: 4px;
@@ -129,666 +187,1517 @@
             transition: var(--transition);
         }
 
-        .lang-btn:hover {
-            background: var(--gold-primary);
-            color: var(--navy-deep);
+        .lang-switch:hover {
+            background: var(--gold-leaf);
+            color: var(--navy-midnight);
         }
 
-        /* Hero */
-        .hero {
-            background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy-rich) 100%);
+        /* Persian Geometric Banner Motif */
+        .persian-filigree {
+            height: 6px;
+            background: repeating-linear-gradient(
+                90deg,
+                var(--gold-leaf) 0px,
+                var(--gold-leaf) 12px,
+                var(--navy-midnight) 12px,
+                var(--navy-midnight) 24px,
+                var(--gold-burnished) 24px,
+                var(--gold-burnished) 36px,
+                var(--navy-slate) 36px,
+                var(--navy-slate) 48px
+            );
+        }
+
+        /* Hero Directorate */
+        .hero-directorate {
+            background: linear-gradient(135deg, var(--navy-midnight) 0%, var(--navy-slate) 60%, #091726 100%);
             color: #FFFFFF;
-            padding: 5rem 1.5rem 4.5rem;
+            padding: 6.5rem 2rem 5.5rem;
             position: relative;
-            text-align: center;
+            overflow: hidden;
         }
 
-        .hero::after {
+        .hero-directorate::before {
             content: '';
             position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+            inset: 0;
+            opacity: 0.04;
+            background-image: radial-gradient(var(--gold-leaf) 1px, transparent 1px);
+            background-size: 28px 28px;
         }
 
-        .hero-inner {
-            max-width: 900px;
+        .hero-layout {
+            max-width: 1300px;
             margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
         }
 
-        .hero-badge {
-            display: inline-block;
-            border: 1px solid var(--gold-primary);
-            color: var(--gold-light);
-            padding: 0.35rem 1.25rem;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            border-radius: 30px;
-            margin-bottom: 1.5rem;
-            background: rgba(197, 160, 89, 0.08);
-        }
-
-        .hero h2 {
-            font-family: var(--font-en-display);
-            font-size: 2.5rem;
-            font-weight: 700;
-            line-height: 1.25;
-            margin-bottom: 1.25rem;
-        }
-
-        html[dir="rtl"] .hero h2 {
-            font-family: var(--font-fa);
-            font-size: 2.2rem;
-        }
-
-        .hero p {
-            font-size: 1.05rem;
-            color: #C8D5E5;
-            max-width: 760px;
-            margin: 0 auto 2rem;
-            font-weight: 300;
-        }
-
-        .hero-cta {
+        .badge-reg {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            background: var(--gold-primary);
-            color: var(--navy-deep);
-            padding: 0.8rem 2rem;
-            text-decoration: none;
+            gap: 0.6rem;
+            border: 1px solid var(--gold-leaf);
+            background: rgba(197, 160, 89, 0.1);
+            color: var(--gold-burnished);
+            padding: 0.4rem 1.25rem;
+            border-radius: 30px;
+            font-size: 0.78rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 1.75rem;
+        }
+
+        .hero-layout h2 {
+            font-family: var(--font-display);
+            font-size: 3.1rem;
+            font-weight: 800;
+            line-height: 1.18;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.02em;
+        }
+
+        html[dir="rtl"] .hero-layout h2 {
+            font-family: var(--font-fa);
+            font-size: 2.7rem;
+            line-height: 1.35;
+        }
+
+        .hero-layout p {
+            font-size: 1.1rem;
+            color: #CBD5E1;
+            font-weight: 300;
+            line-height: 1.8;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold-leaf) 0%, var(--gold-dark) 100%);
+            color: var(--navy-midnight);
+            padding: 0.95rem 2.25rem;
             font-weight: 700;
+            text-decoration: none;
             border-radius: 4px;
+            font-size: 0.92rem;
+            letter-spacing: 0.05em;
+            box-shadow: 0 4px 20px rgba(197, 160, 89, 0.3);
             transition: var(--transition);
         }
 
-        .hero-cta:hover {
-            background: var(--gold-light);
+        .btn-gold:hover {
             transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(197, 160, 89, 0.4);
+            color: var(--navy-midnight);
         }
 
-        /* Section Layout */
-        .section-wrap {
-            max-width: 1300px;
+        .btn-outline {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: #FFFFFF;
+            padding: 0.95rem 2rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.92rem;
+            transition: var(--transition);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--gold-leaf);
+            color: var(--gold-burnished);
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        /* Hero Right Operational Card */
+        .hero-ops-card {
+            background: rgba(18, 40, 68, 0.7);
+            border: 1px solid var(--navy-border);
+            border-radius: 8px;
+            padding: 2.5rem;
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow-heavy);
+            position: relative;
+        }
+
+        .hero-ops-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gold-leaf);
+        }
+
+        .ops-stat {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding-bottom: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .ops-stat:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .ops-number {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            color: var(--gold-burnished);
+            font-weight: 700;
+            display: block;
+        }
+
+        .ops-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Pillars Section */
+        .section-padding {
+            padding: 6rem 2rem;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 4.5rem 1.5rem;
         }
 
         .section-header {
             text-align: center;
-            margin-bottom: 3.5rem;
+            max-width: 800px;
+            margin: 0 auto 4rem;
         }
 
-        .section-title {
-            font-family: var(--font-en-display);
-            font-size: 2rem;
-            color: var(--navy-deep);
-            margin-bottom: 0.5rem;
-        }
-
-        html[dir="rtl"] .section-title {
-            font-family: var(--font-fa);
-        }
-
-        .section-sub {
-            color: var(--text-muted);
-            font-size: 1rem;
-        }
-
-        /* Tabs */
-        .tab-bar {
-            display: flex;
-            justify-content: center;
-            gap: 0.75rem;
-            margin-bottom: 2.5rem;
-            flex-wrap: wrap;
-        }
-
-        .tab-btn {
-            background: #FFFFFF;
-            border: 1px solid var(--slate-border);
-            padding: 0.7rem 1.6rem;
-            font-size: 0.95rem;
-            font-weight: 600;
-            color: var(--navy-deep);
-            border-radius: 4px;
-            cursor: pointer;
-            transition: var(--transition);
-        }
-
-        .tab-btn.active {
-            background: var(--navy-deep);
-            color: #FFFFFF;
-            border-color: var(--gold-primary);
-            box-shadow: 0 4px 12px rgba(11, 27, 50, 0.15);
-        }
-
-        /* Commodity Grid */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-            gap: 2rem;
-        }
-
-        .card {
-            background: var(--bg-surface);
-            border: 1px solid var(--slate-border);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.04);
-            display: flex;
-            flex-direction: column;
-            transition: var(--transition);
-            position: relative;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(11, 27, 50, 0.08);
-            border-color: var(--gold-primary);
-        }
-
-        /* Vector Illustration Box */
-        .vector-box {
-            height: 180px;
-            background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-bottom: 1px solid var(--slate-border);
-            position: relative;
-        }
-
-        .vector-box svg {
-            width: 100%;
-            height: 140px;
-        }
-
-        .card-content {
-            padding: 1.5rem;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .card-title {
-            font-family: var(--font-en-display);
-            font-size: 1.25rem;
-            color: var(--navy-deep);
-            margin-bottom: 0.5rem;
-        }
-
-        html[dir="rtl"] .card-title {
-            font-family: var(--font-fa);
-        }
-
-        .card-desc {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            margin-bottom: 1.25rem;
-        }
-
-        .spec-list {
-            list-style: none;
-            border-top: 1px dashed var(--slate-border);
-            padding-top: 0.85rem;
-            margin-top: auto;
-        }
-
-        .spec-list li {
+        .section-tag {
             font-size: 0.8rem;
-            color: var(--navy-light);
-            margin-bottom: 0.35rem;
-            display: flex;
-            justify-content: space-between;
+            color: var(--gold-dark);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            display: block;
         }
 
-        .spec-list li strong {
-            color: var(--gold-primary);
-            font-weight: 600;
-        }
-
-        /* Contact & Trade Desk */
-        .desk-section {
-            background: #FFFFFF;
-            border-top: 1px solid var(--slate-border);
-            border-bottom: 1px solid var(--slate-border);
-            padding: 4.5rem 1.5rem;
-        }
-
-        .desk-container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy-rich) 100%);
-            border: 2px solid var(--gold-primary);
-            border-radius: 8px;
-            padding: 3rem 2.5rem;
-            color: #FFFFFF;
-            box-shadow: 0 12px 30px rgba(11, 27, 50, 0.15);
-            text-align: center;
-        }
-
-        .desk-container h3 {
-            font-family: var(--font-en-display);
-            font-size: 1.8rem;
-            color: var(--gold-light);
+        .section-heading {
+            font-family: var(--font-display);
+            font-size: 2.4rem;
+            color: var(--navy-midnight);
+            font-weight: 800;
+            line-height: 1.2;
             margin-bottom: 1rem;
         }
 
-        html[dir="rtl"] .desk-container h3 {
+        html[dir="rtl"] .section-heading {
+            font-family: var(--font-fa);
+            font-size: 2.1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        /* Division Tabs System */
+        .commodity-tabs-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .tab-trigger {
+            background: #FFFFFF;
+            border: 1px solid var(--border-light);
+            color: var(--navy-midnight);
+            padding: 0.85rem 2rem;
+            font-size: 0.95rem;
+            font-weight: 700;
+            border-radius: 4px;
+            cursor: pointer;
+            box-shadow: var(--shadow-subtle);
+            transition: var(--transition);
+        }
+
+        .tab-trigger.active {
+            background: var(--navy-midnight);
+            color: #FFFFFF;
+            border-color: var(--gold-leaf);
+            box-shadow: 0 8px 25px rgba(6, 17, 30, 0.15);
+        }
+
+        /* Commodity Detailed Cards Grid */
+        .commodity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .card-enterprise {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: var(--shadow-subtle);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .card-enterprise:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-heavy);
+            border-color: var(--gold-leaf);
+        }
+
+        /* Card Vector Showcase */
+        .vector-showcase {
+            height: 200px;
+            background: linear-gradient(180deg, #FFFFFF 0%, #F5F7FA 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid var(--border-light);
+            position: relative;
+            padding: 1.5rem;
+        }
+
+        .vector-showcase svg {
+            width: 100%;
+            height: 100%;
+            max-height: 150px;
+        }
+
+        .card-category-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--navy-midnight);
+            color: var(--gold-burnished);
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 0.25rem 0.75rem;
+            border-radius: 3px;
+            letter-spacing: 0.05em;
+        }
+
+        html[dir="rtl"] .card-category-badge {
+            right: auto;
+            left: 1rem;
+        }
+
+        .card-body {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-body h3 {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+            color: var(--navy-midnight);
+            margin-bottom: 0.65rem;
+            font-weight: 700;
+        }
+
+        html[dir="rtl"] .card-body h3 {
             font-family: var(--font-fa);
         }
 
-        .desk-container p {
-            color: #D1DCE8;
-            margin-bottom: 2rem;
-            font-size: 0.95rem;
+        .card-body p {
+            font-size: 0.92rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
         }
 
-        .email-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid var(--gold-primary);
-            padding: 0.85rem 1.75rem;
-            border-radius: 4px;
+        /* Laboratory Parameter Table */
+        .param-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.82rem;
+            margin-top: auto;
+            margin-bottom: 1.5rem;
+        }
+
+        .param-table tr {
+            border-bottom: 1px solid #EDF2F7;
+        }
+
+        .param-table td {
+            padding: 0.45rem 0;
+            color: var(--navy-slate);
+        }
+
+        .param-table td:last-child {
+            text-align: right;
+            font-weight: 700;
+            color: var(--gold-dark);
+        }
+
+        html[dir="rtl"] .param-table td:last-child {
+            text-align: left;
+        }
+
+        .btn-card-inquire {
+            background: var(--bg-body);
+            border: 1px solid var(--border-light);
+            color: var(--navy-midnight);
+            text-align: center;
             text-decoration: none;
+            padding: 0.65rem 1rem;
+            font-size: 0.82rem;
+            font-weight: 700;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .btn-card-inquire:hover {
+            background: var(--navy-midnight);
             color: #FFFFFF;
-            font-size: 1.15rem;
+            border-color: var(--navy-midnight);
+        }
+
+        /* Maritime & Logistics Infrastructure Section */
+        .infrastructure-wrap {
+            background: var(--navy-midnight);
+            color: #FFFFFF;
+            padding: 6.5rem 2rem;
+            position: relative;
+        }
+
+        .infra-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .infra-card {
+            background: var(--navy-card);
+            border: 1px solid var(--navy-border);
+            border-radius: 6px;
+            padding: 2.25rem;
+            position: relative;
+        }
+
+        .infra-card h4 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            color: var(--gold-burnished);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        html[dir="rtl"] .infra-card h4 {
+            font-family: var(--font-fa);
+        }
+
+        .infra-card p {
+            font-size: 0.92rem;
+            color: #A0AEC0;
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+        }
+
+        .infra-list {
+            list-style: none;
+            font-size: 0.85rem;
+            color: #E2E8F0;
+        }
+
+        .infra-list li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .infra-list li::before {
+            content: '❖';
+            color: var(--gold-leaf);
+            font-size: 0.75rem;
+        }
+
+        /* Executive Governance & MD Tribute */
+        .governance-section {
+            background: #FFFFFF;
+            border-top: 1px solid var(--border-light);
+            border-bottom: 1px solid var(--border-light);
+            padding: 6rem 2rem;
+        }
+
+        .gov-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .gov-tribute-box {
+            background: linear-gradient(135deg, var(--navy-midnight) 0%, var(--navy-slate) 100%);
+            border: 2px solid var(--gold-leaf);
+            border-radius: 8px;
+            padding: 3rem 2.5rem;
+            color: #FFFFFF;
+            position: relative;
+            box-shadow: var(--shadow-heavy);
+        }
+
+        .gov-tribute-box h3 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--gold-burnished);
+            margin-bottom: 0.5rem;
+        }
+
+        html[dir="rtl"] .gov-tribute-box h3 {
+            font-family: var(--font-fa);
+        }
+
+        .gov-role {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #A0AEC0;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .gov-quote {
+            font-size: 1.05rem;
+            font-style: italic;
+            color: #E2E8F0;
+            line-height: 1.8;
+            margin-bottom: 1.75rem;
+            border-left: 3px solid var(--gold-leaf);
+            padding-left: 1.25rem;
+        }
+
+        html[dir="rtl"] .gov-quote {
+            border-left: none;
+            border-right: 3px solid var(--gold-leaf);
+            padding-left: 0;
+            padding-right: 1.25rem;
+            font-style: normal;
+        }
+
+        .gov-meta-list {
+            list-style: none;
+            font-size: 0.88rem;
+            color: #CBD5E1;
+        }
+
+        .gov-meta-list li {
+            margin-bottom: 0.45rem;
+        }
+
+        .gov-meta-list strong {
+            color: var(--gold-leaf);
+        }
+
+        .gov-content h4 {
+            font-family: var(--font-display);
+            font-size: 1.85rem;
+            color: var(--navy-midnight);
+            margin-bottom: 1.25rem;
+            line-height: 1.3;
+        }
+
+        html[dir="rtl"] .gov-content h4 {
+            font-family: var(--font-fa);
+        }
+
+        .gov-content p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Trade Desk Official Form */
+        .trade-desk-section {
+            padding: 6rem 2rem;
+            background: var(--bg-body);
+        }
+
+        .trade-desk-card {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #FFFFFF;
+            border: 1px solid var(--border-light);
+            border-radius: 8px;
+            box-shadow: var(--shadow-heavy);
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+        }
+
+        .desk-info-panel {
+            background: var(--navy-midnight);
+            color: #FFFFFF;
+            padding: 3.5rem 3rem;
+            position: relative;
+        }
+
+        .desk-info-panel h3 {
+            font-family: var(--font-display);
+            font-size: 1.8rem;
+            color: var(--gold-burnished);
+            margin-bottom: 1rem;
+        }
+
+        html[dir="rtl"] .desk-info-panel h3 {
+            font-family: var(--font-fa);
+        }
+
+        .desk-info-panel p {
+            font-size: 0.95rem;
+            color: #CBD5E1;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .contact-channel {
+            margin-bottom: 1.5rem;
+        }
+
+        .channel-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--gold-leaf);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .channel-val {
+            font-size: 1.05rem;
+            color: #FFFFFF;
             font-weight: 600;
+            text-decoration: none;
+        }
+
+        .channel-val:hover {
+            color: var(--gold-burnished);
+        }
+
+        .desk-form-panel {
+            padding: 3.5rem 3rem;
+        }
+
+        .desk-form-panel h4 {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+            color: var(--navy-midnight);
+            margin-bottom: 1.5rem;
+        }
+
+        html[dir="rtl"] .desk-form-panel h4 {
+            font-family: var(--font-fa);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--navy-slate);
+            margin-bottom: 0.35rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-size: 0.9rem;
+            border: 1px solid var(--border-light);
+            border-radius: 4px;
+            font-family: inherit;
+            background: #FAFAFC;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--gold-leaf);
+            background: #FFFFFF;
+            box-shadow: 0 0 0 3px var(--gold-glow);
+        }
+
+        .btn-submit-rfq {
+            width: 100%;
+            background: var(--navy-midnight);
+            color: #FFFFFF;
+            border: 1px solid var(--gold-leaf);
+            padding: 0.95rem;
+            font-size: 0.95rem;
+            font-weight: 700;
+            border-radius: 4px;
+            cursor: pointer;
             letter-spacing: 0.05em;
             transition: var(--transition);
         }
 
-        .email-badge:hover {
-            background: var(--gold-primary);
-            color: var(--navy-deep);
+        .btn-submit-rfq:hover {
+            background: var(--gold-leaf);
+            color: var(--navy-midnight);
         }
 
         /* Footer */
         footer {
-            background: var(--navy-deep);
+            background: var(--navy-midnight);
             color: #A0AEC0;
-            padding: 3.5rem 1.5rem 2rem;
-            border-top: 3px solid var(--gold-primary);
-            text-align: center;
+            padding: 5rem 2rem 2.5rem;
+            border-top: 3px solid var(--gold-leaf);
         }
 
-        .footer-brand {
-            font-family: var(--font-en-display);
+        .footer-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 3.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-logo-title {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
             color: #FFFFFF;
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
         }
 
-        .footer-note {
+        .footer-desc {
+            font-size: 0.88rem;
+            color: #94A3B8;
+            line-height: 1.7;
+        }
+
+        .footer-col h5 {
+            font-family: var(--font-display);
+            font-size: 0.95rem;
+            color: var(--gold-burnished);
+            margin-bottom: 1.25rem;
+            letter-spacing: 0.05em;
+        }
+
+        html[dir="rtl"] .footer-col h5 {
+            font-family: var(--font-fa);
+        }
+
+        .footer-links {
+            list-style: none;
             font-size: 0.85rem;
-            color: #718096;
-            margin-top: 2rem;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.65rem;
+        }
+
+        .footer-links a {
+            color: #CBD5E1;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-leaf);
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.82rem;
+            color: #64748B;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1024px) {
+            .hero-layout {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .gov-container {
+                grid-template-columns: 1fr;
+            }
+            .trade-desk-card {
+                grid-template-columns: 1fr;
+            }
+            .footer-inner {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+            .market-ticker-wrap {
+                display: none;
+            }
+            .hero-layout h2 {
+                font-size: 2.2rem;
+            }
+            .commodity-grid {
+                grid-template-columns: 1fr;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            .footer-inner {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Navigation -->
+    <!-- Market Live Ticker -->
+    <div class="market-ticker-wrap">
+        <div class="ticker-items">
+            <span class="ticker-item">BITUMEN 60/70 FOB BND: <strong>ACTIVE ALLOCATIONS</strong> <span class="ticker-tag">● READY</span></span>
+            <span class="ticker-item">UREA 46% GRANULAR: <strong>EXPORT GRADE BULK</strong> <span class="ticker-tag">● CERTIFIED</span></span>
+            <span class="ticker-item">METHANOL AA: <strong>HIGH PURITY 99.85%</strong> <span class="ticker-tag">● REGULAR</span></span>
+            <span class="ticker-item">BASE OIL SN500: <strong>VIRGIN SOLVENT</strong> <span class="ticker-tag">● AVAILABLE</span></span>
+            <span class="ticker-item">INSPECTION PROTOCOLS: <strong>SGS / SAYBOLT / GEOCHEM</strong></span>
+        </div>
+        <div style="font-size:0.75rem; color:#94A3B8;">ARVAN ENERGY PARSEH • TRADING DESK</div>
+    </div>
+
+    <!-- Navigation Bar -->
     <header>
         <div class="nav-container">
-            <a href="#" class="brand-link">
-                <div class="logo-box">
+            <a href="#" class="brand-block">
+                <div class="logo-crest-wrap">
                     <img src="aeplogo.png" alt="AEP Logo" onerror="this.style.display='none'; document.getElementById('crest-fallback').style.display='block';">
                     <svg id="crest-fallback" style="display:none;" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <polygon points="50,5 90,25 90,75 50,95 10,75 10,25" stroke="#C5A059" stroke-width="4" fill="#0B1B32"/>
-                        <polygon points="50,20 76,35 76,65 50,80 24,65 24,35" stroke="#C5A059" stroke-width="2" fill="none"/>
-                        <circle cx="50" cy="50" r="12" fill="#C5A059"/>
+                        <polygon points="50,5 92,26 92,74 50,95 8,74 8,26" stroke="#C5A059" stroke-width="4" fill="#06111E"/>
+                        <polygon points="50,18 78,32 78,68 50,82 22,68 22,32" stroke="#C5A059" stroke-width="1.5" fill="none"/>
+                        <circle cx="50" cy="50" r="14" fill="#C5A059"/>
                     </svg>
                 </div>
-                <div class="brand-text">
+                <div class="brand-meta">
                     <h1>ARVAN ENERGY PARSEH</h1>
                     <span>آروان انرژی پارسه</span>
                 </div>
             </a>
+
+            <ul class="nav-menu">
+                <li><a href="#commodities" id="navCommodities">Commodities</a></li>
+                <li><a href="#logistics" id="navLogistics">Marine Logistics</a></li>
+                <li><a href="#governance" id="navGovernance">Governance</a></li>
+                <li><a href="#desk" id="navDesk">Trade Desk</a></li>
+            </ul>
+
             <div class="nav-actions">
-                <button class="lang-btn" id="langToggleBtn" onclick="toggleLanguage()">فارسی / Persian</button>
+                <button class="lang-switch" id="langSwitchBtn" onclick="toggleLanguage()">فارسی / Persian</button>
             </div>
         </div>
+        <div class="persian-filigree"></div>
     </header>
 
-    <!-- Hero Banner -->
-    <section class="hero">
-        <div class="hero-inner">
-            <div class="hero-badge" id="heroBadge">Commercial Energy Directorate • Tehran, Iran</div>
-            <h2 id="heroHeading">Direct Refinery Supply & Bulk Commodity Allocations</h2>
-            <p id="heroSubheading">Specialized physical export trade desks covering Bitumen, Industrial Petrochemicals, and Energy Fractions across major Middle East hubs.</p>
-            <a href="mailto:arvanenergy@proton.me" class="hero-cta" id="heroCtaBtn">Inquire via Trade Desk</a>
+    <!-- Hero Directorate -->
+    <section class="hero-directorate">
+        <div class="hero-layout">
+            <div>
+                <div class="badge-reg" id="heroBadge">Commercial Energy Directorate • Tehran, Iran</div>
+                <h2 id="heroHeading">Direct Sovereign Allocations & Strategic Bulk Energy Desks</h2>
+                <p id="heroSubhead">Specialized international trading desks handling virgin Bitumen grades, industrial Petrochemicals, and refined Hydrocarbon distillates via dedicated maritime corridors in Bandar Abbas and Persian Gulf export terminals.</p>
+                <div class="hero-actions">
+                    <a href="#desk" class="btn-gold" id="heroBtnInquire">Submit Official LOI / RFQ</a>
+                    <a href="#commodities" class="btn-outline" id="heroBtnSpecs">View Technical Matrix</a>
+                </div>
+            </div>
+
+            <!-- Operations Data Box -->
+            <div class="hero-ops-card">
+                <div class="ops-stat">
+                    <span class="ops-number">300,000+ MT</span>
+                    <span class="ops-label" id="stat1Label">Annual Bulk Export Throughput Capacity</span>
+                </div>
+                <div class="ops-stat">
+                    <span class="ops-number">100% VERIFIED</span>
+                    <span class="ops-label" id="stat2Label">SGS & Saybolt Certified Laboratory Assays</span>
+                </div>
+                <div class="ops-stat">
+                    <span class="ops-number">FOB • CFR • CIF</span>
+                    <span class="ops-label" id="stat3Label">Flexible Global Commercial Delivery Terms</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Main Commodities Section -->
-    <section class="section-wrap">
+    <!-- Main Commodities Catalog Section -->
+    <section class="section-padding" id="commodities">
         <div class="section-header">
-            <h2 class="section-title" id="catalogTitle">Export Commodity Portfolio</h2>
-            <p class="section-sub" id="catalogSubtitle">Laboratory verified, export-grade specifications for international bulk supply</p>
+            <span class="section-tag" id="commSectionTag">Refinery Origin Allocations</span>
+            <h2 class="section-heading" id="commHeading">Export Commodity Portfolio</h2>
+            <p class="section-subtitle" id="commSubhead">Precision-analyzed specifications for infrastructure contractors, national highway authorities, and industrial chemical processors.</p>
         </div>
 
-        <!-- Division Tabs -->
-        <div class="tab-bar">
-            <button class="tab-btn active" onclick="switchCategory('bitumen', this)" id="tabBitumen">Bitumen Division</button>
-            <button class="tab-btn" onclick="switchCategory('petro', this)" id="tabPetro">Petrochemicals & Polymers</button>
-            <button class="tab-btn" onclick="switchCategory('oil', this)" id="tabOil">Oil & Distillates</button>
+        <!-- Division Selectors -->
+        <div class="commodity-tabs-container">
+            <button class="tab-trigger active" onclick="filterCatalog('bitumen', this)" id="tabBitumen">Bitumen & Asphalt Division</button>
+            <button class="tab-trigger" onclick="filterCatalog('petro', this)" id="tabPetro">Petrochemicals & Polymers</button>
+            <button class="tab-trigger" onclick="filterCatalog('oil', this)" id="tabOil">Heavy Distillates & Base Oils</button>
         </div>
 
-        <!-- Bitumen Grid -->
-        <div class="grid" id="grid-bitumen">
-            <!-- 60/70 -->
-            <div class="card">
-                <div class="vector-box">
-                    <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="70" y="30" width="60" height="80" rx="6" fill="#0B1B32" stroke="#C5A059" stroke-width="3"/>
-                        <line x1="70" y1="55" x2="130" y2="55" stroke="#C5A059" stroke-width="2"/>
-                        <line x1="70" y1="85" x2="130" y2="85" stroke="#C5A059" stroke-width="2"/>
-                        <circle cx="85" cy="40" r="3" fill="#C5A059"/>
-                        <path d="M100 95 C96 95, 93 100, 93 105 C93 110, 107 110, 107 105 C107 100, 104 95, 100 95 Z" fill="#C5A059"/>
+        <!-- Catalog Grid -->
+        <div class="commodity-grid">
+            
+            <!-- BITUMEN 60/70 -->
+            <div class="card-enterprise" data-cat="bitumen">
+                <div class="vector-showcase">
+                    <span class="card-category-badge">Asphalt Grade</span>
+                    <!-- Steel Drum Vector -->
+                    <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="100" cy="35" rx="45" ry="14" fill="#0C1E34" stroke="#C5A059" stroke-width="2.5"/>
+                        <rect x="55" y="35" width="90" height="90" fill="#06111E" stroke="#C5A059" stroke-width="2.5"/>
+                        <ellipse cx="100" cy="125" rx="45" ry="14" fill="#06111E" stroke="#C5A059" stroke-width="2.5"/>
+                        <line x1="55" y1="65" x2="145" y2="65" stroke="#C5A059" stroke-width="1.5"/>
+                        <line x1="55" y1="95" x2="145" y2="95" stroke="#C5A059" stroke-width="1.5"/>
+                        <circle cx="85" cy="35" r="4" fill="#C5A059"/>
+                        <path d="M100 70 C94 70, 90 77, 90 84 C90 92, 110 92, 110 84 C110 77, 106 70, 100 70 Z" fill="#C5A059"/>
                     </svg>
                 </div>
-                <div class="card-content">
-                    <h3 class="card-title">Bitumen 60/70</h3>
-                    <p class="card-desc">Prime penetration asphalt grade suited for road construction and asphalt pavement overlays in temperate conditions.</p>
-                    <ul class="spec-list">
-                        <li><span>Penetration @ 25°C:</span> <strong>60 – 70 dmm</strong></li>
-                        <li><span>Softening Point:</span> <strong>49 – 56 °C</strong></li>
-                        <li><span>Ductility @ 25°C:</span> <strong>> 100 cm</strong></li>
-                        <li><span>Packaging:</span> <strong>Steel Drums / Jumbo Bags</strong></li>
-                    </ul>
+                <div class="card-body">
+                    <h3>Bitumen 60/70 (Penetration)</h3>
+                    <p>Prime refinery penetration asphalt engineered for superior tensile cohesion in wearing courses and binder course layers under temperate climates.</p>
+                    <table class="param-table">
+                        <tr><td>Penetration @ 25°C</td><td>60 – 70 dmm</td></tr>
+                        <tr><td>Softening Point</td><td>49 – 56 °C</td></tr>
+                        <tr><td>Ductility @ 25°C</td><td>> 100 cm</td></tr>
+                        <tr><td>Loss on Heating</td><td>Max 0.2% wt</td></tr>
+                        <tr><td>Standard Packing</td><td>180kg New Steel Drums / Polybags</td></tr>
+                    </table>
+                    <a href="#desk" class="btn-card-inquire">Request Quotation & SGS Assay</a>
                 </div>
             </div>
 
-            <!-- 80/100 -->
-            <div class="card">
-                <div class="vector-box">
-                    <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <polygon points="30,110 80,40 120,40 170,110" fill="#132742" stroke="#C5A059" stroke-width="2"/>
-                        <line x1="100" y1="45" x2="100" y2="60" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
-                        <line x1="100" y1="75" x2="100" y2="90" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
-                        <circle cx="100" cy="115" r="5" fill="#C5A059"/>
+            <!-- BITUMEN 80/100 -->
+            <div class="card-enterprise" data-cat="bitumen">
+                <div class="vector-showcase">
+                    <span class="card-category-badge">Asphalt Grade</span>
+                    <!-- Highway Overlay Vector -->
+                    <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="20,135 75,40 125,40 180,135" fill="#0C1E34" stroke="#C5A059" stroke-width="2.5"/>
+                        <line x1="100" y1="48" x2="100" y2="65" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+                        <line x1="100" y1="80" x2="100" y2="100" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"/>
+                        <line x1="100" y1="115" x2="100" y2="132" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
+                        <circle cx="100" cy="145" r="4" fill="#C5A059"/>
                     </svg>
                 </div>
-                <div class="card-content">
-                    <h3 class="card-title">Bitumen 80/100</h3>
-                    <p class="card-desc">Flexible penetration asphalt grade recommended for cooler climates and airport asphalt runaways.</p>
-                    <ul class="spec-list">
-                        <li><span>Penetration @ 25°C:</span> <strong>80 – 100 dmm</strong></li>
-                        <li><span>Softening Point:</span> <strong>45 – 52 °C</strong></li>
-                        <li><span>Solubility:</span> <strong>Min 99.0%</strong></li>
-                        <li><span>Packaging:</span> <strong>Bulk / Bitutainers</strong></li>
-                    </ul>
+                <div class="card-body">
+                    <h3>Bitumen 80/100 (Penetration)</h3>
+                    <p>High-elasticity penetration asphalt formulated for cooler geographic regions, flexible runway pavements, and specialized mastic crack sealant applications.</p>
+                    <table class="param-table">
+                        <tr><td>Penetration @ 25°C</td><td>80 – 100 dmm</td></tr>
+                        <tr><td>Softening Point</td><td>45 – 52 °C</td></tr>
+                        <tr><td>Specific Gravity @ 25°C</td><td>1.01 – 1.06 g/cm³</td></tr>
+                        <tr><td>Solubility in TCE</td><td>Min 99.0%</td></tr>
+                        <tr><td>Standard Packing</td><td>Jumbo Bags (1000kg) / Bulk Vessel</td></tr>
+                    </table>
+                    <a href="#desk" class="btn-card-inquire">Request Quotation & SGS Assay</a>
                 </div>
             </div>
 
-            <!-- VG-30 / VG-10 -->
-            <div class="card">
-                <div class="vector-box">
-                    <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="40" y="35" width="120" height="70" rx="3" fill="#0B1B32" stroke="#C5A059" stroke-width="3"/>
-                        <line x1="65" y1="35" x2="65" y2="105" stroke="#C5A059" stroke-width="1.5"/>
-                        <line x1="135" y1="35" x2="135" y2="105" stroke="#C5A059" stroke-width="1.5"/>
-                        <circle cx="100" cy="70" r="16" fill="none" stroke="#C5A059" stroke-width="2"/>
-                        <path d="M100 62 L100 78 M92 70 L108 70" stroke="#C5A059" stroke-width="2"/>
+            <!-- VISCOSITY GRADE VG-30 / VG-10 -->
+            <div class="card-enterprise" data-cat="bitumen">
+                <div class="vector-showcase">
+                    <span class="card-category-badge">Viscosity Grade</span>
+                    <!-- Bitutainer ISO Tank Vector -->
+                    <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="35" y="45" width="130" height="70" rx="3" fill="#0C1E34" stroke="#C5A059" stroke-width="2.5"/>
+                        <line x1="60" y1="45" x2="60" y2="115" stroke="#C5A059" stroke-width="1.5"/>
+                        <line x1="140" y1="45" x2="140" y2="115" stroke="#C5A059" stroke-width="1.5"/>
+                        <circle cx="100" cy="80" r="18" fill="none" stroke="#C5A059" stroke-width="2"/>
+                        <path d="M100 70 L100 90 M90 80 L110 80" stroke="#C5A059" stroke-width="2"/>
                     </svg>
                 </div>
-                <div class="card-content">
-                    <h3 class="card-title">Viscosity Grades (VG-10 / VG-30)</h3>
-                    <p class="card-desc">Refinery-graded paving grade bitumen standardized to IS 73 specifications for national highway corridors.</p>
-                    <ul class="spec-list">
-                        <li><span>Viscosity @ 60°C:</span> <strong>2400 – 3600 Poises (VG-30)</strong></li>
-                        <li><span>Kinematic Viscosity @ 135°C:</span> <strong>Min 350 cSt</strong></li>
-                        <li><span>Flash Point (Cleveland):</span> <strong>Min 220 °C</strong></li>
-                        <li><span>Dispatch:</span> <strong>ISO Bitutainers / Vessels</strong></li>
-                    </ul>
+                <div class="card-body">
+                    <h3>Viscosity Grades (VG-30 & VG-10)</h3>
+                    <p>Standardized to IS 73 and international viscosity benchmarks, built for national highway networks, high-load intersections, and heavy truck transit corridors.</p>
+                    <table class="param-table">
+                        <tr><td>Absolute Viscosity @ 60°C</td><td>2400 – 3600 Poises (VG-30)</td></tr>
+                        <tr><td>Kinematic Viscosity @ 135°C</td><td>Min 350 cSt</td></tr>
+                        <tr><td>Flash Point (Cleveland)</td><td>Min 220 °C</td></tr>
+                        <tr><td>Softening Point</td><td>Min 47 °C</td></tr>
+                        <tr><td>Standard Packing</td><td>ISO Bitutainers / Direct Heated Tankers</td></tr>
+                    </table>
+                    <a href="#desk" class="btn-card-inquire">Request Quotation & SGS Assay</a>
                 </div>
             </div>
+
+            <!-- GRANULAR UREA 46% -->
+            <div class="card-enterprise" data-cat="petro">
+                <div class="vector-showcase">
+                    <span class="card-category-badge">Petrochemical</span>
+                    <!-- Nitrogen Lattice Vector -->
+                    <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="65" cy="80" r="22" fill="#0C1E34" stroke="#C5A059" stroke-width="2.5"/>
+                        <circle cx="135" cy="80" r="22" fill="#0C1E34" stroke="#C5A059" stroke-width="2.5"/>
+                        <circle cx="100" cy="45" r="16" fill="#C5A059"/>
+                        <line x1="80" y1="68" x2="92" y2="55" stroke="#C5A059" stroke-width="2"/>
+                        <line x1="120" y1="68" x2="108" y2="55" stroke="#C5A059" stroke-width="2"/>
+                        <circle cx="65" cy="80" r="6" fill="#FFFFFF"/>
+                        <circle cx="135" cy="80" r="6" fill="#FFFFFF"/>
+                    </svg>
+                </div>
+                <div class="card-body">
+                    <h3>Granular Urea 46% (Agricultural & Technical)</h3>
+                    <p>Prime white spherical nitrogenous fertilizer processed at world-scale synthesis units, featuring anti-caking coatings and high mechanical crushing strength.</p>
+                    <table class="param-table">
+                        <tr><td>Total Nitrogen Content</td><td>46.0% Minimum</td></tr>
+                        <tr><td>Biuret Content</td><td>1.0% Maximum</td></tr>
+                        <tr><td>Moisture Content</td><td>0.5% Maximum</td></tr>
+                        <tr><td>Granulometry (2.0 – 4.75mm)</td><td>90% Minimum</td></tr>
+                        <tr><td>Standard Packing</td><td>50kg Bags / 1000kg Big Bags / Bulk Vessel</td></tr>
+                    </table>
+                    <a href="#desk" class="btn-card-inquire">Request Quotation & SGS Assay</a>
+                </div>
+            </div>
+
+            <!-- CHEMICAL METHANOL -->
+            <div class="card-enterprise" data-cat="petro">
+                <div class="vector-showcase">
+                    <span class="card-category-badge">Petrochemical</span>
+                    <!-- Distillation Flask Vector -->
+                    <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M92 40 L108 40 L108 65 L140 115 A6 6 0 0 1 135 125 L65 125 A6 6 0 0 1 60 115 L92 65 Z" fill="#0C1E34" stroke="#C5A059" stroke-width="2.5"/>
+                        <path d="M72 115 L128 115 L116 95 L84 95 Z" fill="#C5A059" fill-opacity="0.35"/>
+                        <circle cx="100" cy="106" r="3.5" fill="#FFFFFF"/>
+                        <circle cx="112" cy="102" r="2.5" fill="#FFFFFF"/>
+                    </svg>
+                </div>
+                <div class="card-body">
+                    <h3>Chemical Methanol (Grade AA)</h3>
+                    <p>Ultra-pure methyl alcohol intermediate designed for formaldehydes, acetic acid synthesis, biodiesel esterification, and industrial solvent formulations.</p>
+                    <table class="param-table">
+                        <tr><td>Chemical Purity</td><td>99.85% Minimum wt</td></tr>
+                        <tr><td>Water Content</td><td>Max 0.10% wt</td></tr>
+                        <tr><td>Density @ 20°C</td><td>0.791 – 0.793 g/cm³</td></tr>
+                        <tr><td>Distillation Range</td><td>Max 1.0 °C (including 64.6°C)</td></tr>
+                        <tr><td>Delivery Mode</td><td>Parcel Chemical Tankers / Stainless ISO</td></tr>
+                    </table>
+                    <a href="#desk" class="btn-card-inquire">Request Quotation & SGS Assay</a>
+                </div>
+            </div>
+
+            <!-- VIRGIN POLYMERS -->
+            <div class="card-enterprise" data-cat="petro">
+                <div class="vector-showcase">
+                    <span class="card-category-badge">Polymer Division</span>
+                    <!-- Hexagonal Polymer Chain Vector -->
+                    <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="100,35 135,55 135,95 100,115 65,95 65,55" fill="none" stroke="#C5A059" stroke-width="2.5"/>
+                        <circle cx="100" cy="35" r="6" fill="#0C1E34" stroke="#C5A059" stroke-width="2"/>
+                        <circle cx="135" cy="55" r="6" fill="#0C1E34" stroke="#C5A059" stroke-width="2"/>
+                        <circle cx="135" cy="95" r="6" fill="#0C1E34" stroke="#C5A059" stroke-width="2"/>
+                        <circle cx="100" cy="115" r="6" fill="#0C1E34" stroke="#C5A059" stroke-width="2"/>
+                        <circle cx="65" cy="95" r="6" fill="#0C1E34" stroke="#C5A059" stroke-width="2"/>
+                        <circle cx="65" cy="55" r="6" fill="#0C1E34" stroke="#C5A059" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="card-body">
+                    <h3>Virgin Polymers (HDPE / LLDPE / PVC)</h3>
+                    <p>First-class petrochemical resin granules for injection molding, high-pressure agricultural piping, geomembranes, and flexible packaging films.</p>
+                    <table class="param-table">
+                        <tr><td>Grades Available</td><td>Film Extrusion, Blow Molding, Pipe (PE100)</td></tr>
+                        <tr><td>Melt Flow Index (MFI)</td><td>Strict Batch Certified</td></tr>
+                        <tr><td>Tensile Strength</td><td>ASTM D638 Verified</td></tr>
+                        <tr><td>Certification</td><td>Full Manufacturer COA & Batch Traceability</td></tr>
+                        <tr><td>Standard Packing</td><td>25kg Shrink-Wrapped Export Pallets</td></tr>
+                    </table>
+                    <a href="#desk" class="btn-card-inquire">Request Quotation & SGS Assay</a>
+                </div>
+            </div>
+
+            <!-- FUEL OIL CST 180 / 380 -->
+            <div class="card-enterprise" data-cat="oil">
+                <div class="vector-showcase">
+                    <span class="card-category-badge">Marine / Power</span>
+                    <!-- Marine Bunker Tanker Vector -->
+                    <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 95 L50 95 L68 70 L150 70 L150 95 L175 95 L165 120 L35 120 Z" fill="#0C1E34" stroke="#C5A059" stroke-width="2.5"/>
+                        <line x1="90" y1="58" x2="90" y2="70" stroke="#C5A059" stroke-width="3"/>
+                        <line x1="125" y1="52" x2="125" y2="70" stroke="#C5A059" stroke-width="3"/>
+                        <path d="M20 130 C40 127, 50 133, 70 130 C90 127, 100 133, 120 130 C140 127, 150 133, 170 130" stroke="#C5A059" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="card-body">
+                    <h3>Heavy Fuel Oil (CST 180 & CST 380)</h3>
+                    <p>High calorific value residual fuel engineered for heavy thermal power plants, industrial furnace heat, and international maritime vessel bunkering.</p>
+                    <table class="param-table">
+                        <tr><td>Kinematic Viscosity @ 50°C</td><td>Max 180 / 380 cSt</td></tr>
+                        <tr><td>Sulfur Content</td><td>2.0% – 3.5%</td></tr>
+                        <tr><td>Flash Point</td><td>Min 66 °C</td></tr>
+                        <tr><td>Gross Calorific Value</td><td>Min 10,200 kcal/kg</td></tr>
+                        <tr><td>Delivery Mode</td><td>FOB BND / STS Fujairah / Tanker Vessel</td></tr>
+                    </table>
+                    <a href="#desk" class="btn-card-inquire">Request Quotation & SGS Assay</a>
+                </div>
+            </div>
+
+            <!-- BASE OIL SN500 / SN150 -->
+            <div class="card-enterprise" data-cat="oil">
+                <div class="vector-showcase">
+                    <span class="card-category-badge">Lubricant Stock</span>
+                    <!-- Lubricant Droplet Vector -->
+                    <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100 35 C85 68, 62 85, 62 108 C62 128, 78 140, 100 140 C122 140, 138 128, 138 108 C138 85, 115 68, 100 35 Z" fill="#0C1E34" stroke="#C5A059" stroke-width="2.5"/>
+                        <path d="M100 75 C90 92, 78 102, 78 112 C78 122, 86 128, 100 128" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="card-body">
+                    <h3>Virgin Base Oils (SN500 & SN150)</h3>
+                    <p>Paraffinic solvent-neutral virgin mineral stocks refined for automotive motor oils, industrial hydraulic fluids, and performance gear lubricants.</p>
+                    <table class="param-table">
+                        <tr><td>Kinematic Viscosity @ 100°C</td><td>10.5 – 11.8 cSt (SN500)</td></tr>
+                        <tr><td>Viscosity Index (VI)</td><td>Min 95</td></tr>
+                        <tr><td>Flash Point (COC)</td><td>Min 230 °C</td></tr>
+                        <tr><td>Color (ASTM D1500)</td><td>Max 2.0</td></tr>
+                        <tr><td>Standard Packing</td><td>Flexitanks in 20ft Containers / Steel Drums</td></tr>
+                    </table>
+                    <a href="#desk" class="btn-card-inquire">Request Quotation & SGS Assay</a>
+                </div>
+            </div>
+
+            <!-- LIQUEFIED PETROLEUM GAS -->
+            <div class="card-enterprise" data-cat="oil">
+                <div class="vector-showcase">
+                    <span class="card-category-badge">Gas Division</span>
+                    <!-- Horton Pressure Sphere Vector -->
+                    <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="100" cy="75" r="38" fill="#0C1E34" stroke="#C5A059" stroke-width="2.5"/>
+                        <line x1="72" y1="102" x2="60" y2="135" stroke="#C5A059" stroke-width="3"/>
+                        <line x1="128" y1="102" x2="140" y2="135" stroke="#C5A059" stroke-width="3"/>
+                        <line x1="100" y1="113" x2="100" y2="135" stroke="#C5A059" stroke-width="2"/>
+                        <line x1="55" y1="135" x2="145" y2="135" stroke="#C5A059" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="card-body">
+                    <h3>Liquefied Petroleum Gas (LPG)</h3>
+                    <p>Refinery pressurized commercial propane/butane mixtures (70:30 & 50:50 blends) suited for municipal distribution grids and automotive autogas fleets.</p>
+                    <table class="param-table">
+                        <tr><td>Propane / Butane Ratio</td><td>Certified Customized Ratios</td></tr>
+                        <tr><td>Vapor Pressure @ 37.8°C</td><td>Max 1430 kPa</td></tr>
+                        <tr><td>Total Sulfur Content</td><td>Max 50 ppm</td></tr>
+                        <tr><td>Residue on Evaporation</td><td>Max 0.05 ml/100ml</td></tr>
+                        <tr><td>Dispatch Mode</td><td>Refrigerated / Pressurized Gas Tanker (VLGC)</td></tr>
+                    </table>
+                    <a href="#desk" class="btn-card-inquire">Request Quotation & SGS Assay</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Marine & Terminal Infrastructure Section -->
+    <section class="infrastructure-wrap" id="logistics">
+        <div style="max-width:1400px; margin: 0 auto; margin-bottom: 3.5rem; text-align: center;">
+            <span style="color:var(--gold-burnished); font-size:0.8rem; letter-spacing:0.15em; font-weight:700; text-transform:uppercase;">Maritime Operational Backbone</span>
+            <h2 style="font-family:var(--font-display); font-size:2.4rem; color:#FFFFFF; margin-top:0.5rem;" id="infraTitle">Persian Gulf Terminals & Logistics Corridors</h2>
         </div>
 
-        <!-- Petrochemical Grid -->
-        <div class="grid" id="grid-petro" style="display:none;">
-            <!-- Urea 46% -->
-            <div class="card">
-                <div class="vector-box">
-                    <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="70" cy="70" r="18" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
-                        <circle cx="130" cy="70" r="18" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
-                        <circle cx="100" cy="40" r="14" fill="#C5A059"/>
-                        <line x1="84" y1="60" x2="94" y2="48" stroke="#C5A059" stroke-width="2"/>
-                        <line x1="116" y1="60" x2="106" y2="48" stroke="#C5A059" stroke-width="2"/>
-                        <circle cx="70" cy="70" r="4" fill="#FFFFFF"/>
-                        <circle cx="130" cy="70" r="4" fill="#FFFFFF"/>
-                    </svg>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Granular Urea 46%</h3>
-                    <p class="card-desc">Solid technical & agricultural grade nitrogen fertilizer prilled directly from world-class synthesis units.</p>
-                    <ul class="spec-list">
-                        <li><span>Nitrogen Content:</span> <strong>46.0% Minimum</strong></li>
-                        <li><span>Biuret:</span> <strong>1.0% Maximum</strong></li>
-                        <li><span>Moisture:</span> <strong>0.5% Maximum</strong></li>
-                        <li><span>Packaging:</span> <strong>50kg PP Bags / 1000kg Jumbo</strong></li>
-                    </ul>
-                </div>
+        <div class="infra-grid">
+            <div class="infra-card">
+                <h4>Shahid Rajaee / Bandar Abbas</h4>
+                <p>Iran’s paramount deep-water maritime gateway, commanding modern container terminals and dedicated bitumen drum & bulk berths with quick vessel turnaround.</p>
+                <ul class="infra-list">
+                    <li>Direct connection to national pipeline & rail network</li>
+                    <li>Automated drum loading & pallet staging facilities</li>
+                    <li>SGS, Saybolt, and Bureau Veritas on-site testing berths</li>
+                </ul>
             </div>
 
-            <!-- Methanol -->
-            <div class="card">
-                <div class="vector-box">
-                    <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M92 35 L108 35 L108 60 L135 105 A6 6 0 0 1 130 115 L70 115 A6 6 0 0 1 65 105 L92 60 Z" fill="#0B1B32" stroke="#C5A059" stroke-width="2.5"/>
-                        <path d="M72 105 L128 105 L118 90 L82 90 Z" fill="#C5A059" fill-opacity="0.4"/>
-                        <circle cx="100" cy="98" r="3" fill="#FFFFFF"/>
-                        <circle cx="110" cy="94" r="2" fill="#FFFFFF"/>
-                    </svg>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Chemical Methanol (Grade AA)</h3>
-                    <p class="card-desc">High-purity liquid solvent and basic petrochemical building block for downstream synthesis.</p>
-                    <ul class="spec-list">
-                        <li><span>Purity:</span> <strong>99.85% Minimum</strong></li>
-                        <li><span>Water Content:</span> <strong>Max 0.10% w/w</strong></li>
-                        <li><span>Density @ 20°C:</span> <strong>0.791 – 0.793 g/cm³</strong></li>
-                        <li><span>Delivery:</span> <strong>Chemical Tankers / ISO Tanks</strong></li>
-                    </ul>
-                </div>
+            <div class="infra-card">
+                <h4>Bandar Imam Khomeini (BIK)</h4>
+                <p>The core petrochemical loading terminal situated along the northern Persian Gulf, handling major polymer, methanol, and chemical tanker operations.</p>
+                <ul class="infra-list">
+                    <li>Specialized stainless-steel petrochemical berths</li>
+                    <li>Dedicated liquid hydrocarbon and LPG loading arms</li>
+                    <li>Seamless custom bonded storage & warehousing</li>
+                </ul>
             </div>
 
-            <!-- Polymers -->
-            <div class="card">
-                <div class="vector-box">
-                    <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <polygon points="100,30 130,45 130,75 100,90 70,75 70,45" fill="none" stroke="#C5A059" stroke-width="2"/>
-                        <circle cx="100" cy="30" r="5" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
-                        <circle cx="130" cy="45" r="5" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
-                        <circle cx="130" cy="75" r="5" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
-                        <circle cx="100" cy="90" r="5" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
-                        <circle cx="70" cy="75" r="5" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
-                        <circle cx="70" cy="45" r="5" fill="#0B1B32" stroke="#C5A059" stroke-width="2"/>
-                    </svg>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Virgin Polymers (HDPE / LLDPE)</h3>
-                    <p class="card-desc">Primary thermoplastic polymer resin beads for blow molding, film extrusion, and pipe manufacturing.</p>
-                    <ul class="spec-list">
-                        <li><span>Grades:</span> <strong>Film, Blow Molding, Pipe</strong></li>
-                        <li><span>Melt Flow Index (MFI):</span> <strong>Strict Batch Assayed</strong></li>
-                        <li><span>Origin:</span> <strong>Certified Iranian Petrochemical Plants</strong></li>
-                        <li><span>Packaging:</span> <strong>25kg Export Bags on Pallets</strong></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Oil & Distillates Grid -->
-        <div class="grid" id="grid-oil" style="display:none;">
-            <!-- Fuel Oil -->
-            <div class="card">
-                <div class="vector-box">
-                    <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M30 85 L50 85 L65 60 L145 60 L145 85 L170 85 L160 105 L40 105 Z" fill="#0B1B32" stroke="#C5A059" stroke-width="2.5"/>
-                        <line x1="85" y1="50" x2="85" y2="60" stroke="#C5A059" stroke-width="3"/>
-                        <line x1="120" y1="45" x2="120" y2="60" stroke="#C5A059" stroke-width="3"/>
-                        <path d="M25 115 C45 112, 55 118, 75 115 C95 112, 105 118, 125 115 C145 112, 155 118, 175 115" stroke="#C5A059" stroke-width="2"/>
-                    </svg>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Fuel Oil (CST 180 / 380)</h3>
-                    <p class="card-desc">Heavy residual hydrocarbon blend engineered for industrial boiler furnaces and marine vessel bunkering.</p>
-                    <ul class="spec-list">
-                        <li><span>Viscosity:</span> <strong>180 / 380 CST @ 50°C</strong></li>
-                        <li><span>Sulfur Content:</span> <strong>2.5% – 3.5%</strong></li>
-                        <li><span>Flash Point:</span> <strong>Min 66 °C</strong></li>
-                        <li><span>Logistics:</span> <strong>Bulk Vessel FOB / STS</strong></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Base Oils -->
-            <div class="card">
-                <div class="vector-box">
-                    <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M100 30 C85 60, 65 75, 65 95 C65 115, 80 125, 100 125 C120 125, 135 115, 135 95 C135 75, 115 60, 100 30 Z" fill="#0B1B32" stroke="#C5A059" stroke-width="2.5"/>
-                        <path d="M100 65 C92 80, 80 90, 80 100 C80 110, 88 116, 100 116" stroke="#C5A059" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Virgin Base Oils (SN500 / SN150)</h3>
-                    <p class="card-desc">Solvent-neutral mineral lubricant stocks for specialized automotive and industrial motor oil blenders.</p>
-                    <ul class="spec-list">
-                        <li><span>Viscosity @ 100°C:</span> <strong>10.5 – 11.5 cSt (SN500)</strong></li>
-                        <li><span>Viscosity Index:</span> <strong>Min 95</strong></li>
-                        <li><span>Color:</span> <strong>Max 2.0 (ASTM D1500)</strong></li>
-                        <li><span>Dispatch:</span> <strong>Flexitanks / Drums / Bulk</strong></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- LPG -->
-            <div class="card">
-                <div class="vector-box">
-                    <svg viewBox="0 0 200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="100" cy="65" r="35" fill="#0B1B32" stroke="#C5A059" stroke-width="2.5"/>
-                        <line x1="75" y1="90" x2="65" y2="120" stroke="#C5A059" stroke-width="3"/>
-                        <line x1="125" y1="90" x2="135" y2="120" stroke="#C5A059" stroke-width="3"/>
-                        <line x1="100" y1="100" x2="100" y2="120" stroke="#C5A059" stroke-width="2"/>
-                        <line x1="60" y1="120" x2="140" y2="120" stroke="#C5A059" stroke-width="2"/>
-                    </svg>
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Liquefied Petroleum Gas (LPG)</h3>
-                    <p class="card-desc">Refined propane and butane commercial mix for utility networks, transport fuels, and bottling operations.</p>
-                    <ul class="spec-list">
-                        <li><span>Composition:</span> <strong>Custom Propane/Butane (70:30 / 50:50)</strong></li>
-                        <li><span>Vapor Pressure:</span> <strong>Strict Certified Limits</strong></li>
-                        <li><span>Handling:</span> <strong>Pressurized Gas Tankers</strong></li>
-                        <li><span>Terminal:</span> <strong>Persian Gulf Ports</strong></li>
-                    </ul>
-                </div>
+            <div class="infra-card">
+                <h4>Inspection & Trade Governance</h4>
+                <p>Zero-tolerance quality verification. Every commercial shipment undergoes stringent international inspection before Bill of Lading (B/L) issuance.</p>
+                <ul class="infra-list">
+                    <li>Independent assay verification: SGS / Saybolt / GeoChem</li>
+                    <li>Standard trade terms: FOB Bandar Abbas, CFR, CIF</li>
+                    <li>Official SWIFT Letters of Credit (L/C) & Escrow structures</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Trade Desk / Contact -->
-    <section class="desk-section">
-        <div class="desk-container">
-            <h3 id="deskTitle">Direct Commercial Trade Desk</h3>
-            <p id="deskSubtitle">For formal inquiries, Letters of Intent (LOI), and verifiable refinery quotas, submit inquiries directly to executive sales management.</p>
-            <a href="mailto:arvanenergy@proton.me" class="email-badge">
-                <span>✉ arvanenergy@proton.me</span>
-            </a>
+    <!-- Governance & Leadership Tribute Section -->
+    <section class="governance-section" id="governance">
+        <div class="gov-container">
+            <div class="gov-tribute-box">
+                <span class="gov-role" id="govRoleTag">Corporate Directorate & Leadership</span>
+                <h3 id="govMdName">Managing Director Mohadese</h3>
+                <p class="gov-quote" id="govQuote">"In energy trade, sovereignty is built on precision, reliability, and unquestioned execution. Arvan Energy Parseh bridges world-scale refinery output with international physical markets."</p>
+                <ul class="gov-meta-list">
+                    <li><strong>Company:</strong> ARVAN ENERGY PARSEH (آروان انرژی پارسه)</li>
+                    <li><strong>Corporate Seat:</strong> Tehran, Islamic Republic of Iran</li>
+                    <li><strong>Operational Scope:</strong> Global Bulk Energy & Petrochemical Export</li>
+                </ul>
+            </div>
+
+            <div class="gov-content">
+                <span class="section-tag" id="govTag">Institutional Standing</span>
+                <h4 id="govHeading">Uncompromising Standards in Global Commodity Trading</h4>
+                <p id="govText1">Under the executive leadership of <strong>Managing Director Mohadese</strong>, <strong>ARVAN ENERGY PARSEH</strong> operates as a structured commercial enterprise dedicated to the direct export of Iranian petrochemicals, virgin bitumen grades, and refined fuels.</p>
+                <p id="govText2">Through strategic coordination with premier refineries and marine terminals, the enterprise eliminates unnecessary intermediary layers, ensuring authentic laboratory assays, secure banking conduits, and punctual vessel discharge across the GCC, South Asia, Africa, and East Asia.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Official Trade Desk & RFQ Builder -->
+    <section class="trade-desk-section" id="desk">
+        <div class="trade-desk-card">
+            <div class="desk-info-panel">
+                <h3 id="formTitle">Commercial Trade Desk</h3>
+                <p id="formSubhead">Submit formal purchase inquiries, Requests for Quotation (RFQ), or Letters of Intent (LOI) directly to executive trade coordination.</p>
+                
+                <div class="contact-channel">
+                    <span class="channel-label">Official Correspondence Email</span>
+                    <a href="mailto:arvanenergy@proton.me" class="channel-val">arvanenergy@proton.me</a>
+                </div>
+
+                <div class="contact-channel">
+                    <span class="channel-label">Headquarters / Trade Hub</span>
+                    <div class="channel-val" style="font-size:0.95rem; font-weight:400; line-height:1.5;">Tehran • Bandar Abbas • International Energy Desk</div>
+                </div>
+
+                <div class="contact-channel">
+                    <span class="channel-label">Official Registry Document</span>
+                    <div style="font-size:0.85rem; color:#A0AEC0;">Verified Iranian Enterprise Registration</div>
+                </div>
+            </div>
+
+            <div class="desk-form-panel">
+                <h4 id="formBoxHeading">Generate Commercial Inward RFQ</h4>
+                <form onsubmit="handleRfqSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label id="lblBuyerName">Buyer / Company Name</label>
+                            <input type="text" id="rfqCompany" class="form-control" required placeholder="e.g., Sovereign Commodities Ltd.">
+                        </div>
+                        <div class="form-group">
+                            <label id="lblTargetProduct">Target Commodity</label>
+                            <select id="rfqCommodity" class="form-control" required>
+                                <option value="Bitumen 60/70">Bitumen 60/70</option>
+                                <option value="Bitumen 80/100">Bitumen 80/100</option>
+                                <option value="Bitumen VG-30 / VG-10">Bitumen VG-30 / VG-10</option>
+                                <option value="Granular Urea 46%">Granular Urea 46%</option>
+                                <option value="Chemical Methanol AA">Chemical Methanol (Grade AA)</option>
+                                <option value="Virgin Polymers (HDPE/LLDPE)">Virgin Polymers (HDPE/LLDPE)</option>
+                                <option value="Fuel Oil CST 180 / 380">Fuel Oil CST 180 / 380</option>
+                                <option value="Virgin Base Oils (SN500/150)">Virgin Base Oils (SN500/150)</option>
+                                <option value="Liquefied Petroleum Gas (LPG)">Liquefied Petroleum Gas (LPG)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label id="lblQuantity">Quantity (Metric Tons)</label>
+                            <input type="text" id="rfqQuantity" class="form-control" required placeholder="e.g., 5,000 MT / Month">
+                        </div>
+                        <div class="form-group">
+                            <label id="lblIncoterm">Desired Incoterm / Destination</label>
+                            <input type="text" id="rfqIncoterm" class="form-control" required placeholder="e.g., FOB Bandar Abbas / CIF Nhava Sheva">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="lblBuyerEmail">Direct Corporate Email</label>
+                        <input type="email" id="rfqEmail" class="form-control" required placeholder="director@energytrading.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label id="lblNotes">Technical Specifications & Packaging Requirements</label>
+                        <textarea id="rfqNotes" rows="3" class="form-control" placeholder="Specify new steel drums, jumbo bags, bitutainers, target pricing, or required lab assay parameters..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit-rfq" id="btnSubmitRfq">Transmit Direct RFQ via Email</button>
+                </form>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-brand">ARVAN ENERGY PARSEH (آروان انرژی پارسه)</div>
-        <p style="font-size:0.9rem;">Tehran • Bandar Abbas • International Energy Desk</p>
-        <p class="footer-note">© 2026 Arvan Energy Parseh. All Rights Reserved.</p>
+        <div class="footer-inner">
+            <div>
+                <div class="footer-logo-title">ARVAN ENERGY PARSEH</div>
+                <div style="font-family:var(--font-fa); color:var(--gold-leaf); font-size:1.05rem; margin-bottom:1rem; font-weight:700;">آروان انرژی پارسه</div>
+                <p class="footer-desc">Specialized physical export house dedicated to the trade and supply of refined Iranian bitumen, petrochemical intermediate liquids, fertilizers, and heavy hydrocarbon fractions.</p>
+            </div>
+
+            <div class="footer-col">
+                <h5 id="footerCol1">Key Commodities</h5>
+                <ul class="footer-links">
+                    <li><a href="#commodities">Bitumen 60/70 & 80/100</a></li>
+                    <li><a href="#commodities">Viscosity Grades (VG-30/10)</a></li>
+                    <li><a href="#commodities">Granular Urea 46%</a></li>
+                    <li><a href="#commodities">Chemical Methanol (AA)</a></li>
+                    <li><a href="#commodities">Base Oils SN500 / SN150</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 id="footerCol2">Ports & Operations</h5>
+                <ul class="footer-links">
+                    <li><a href="#logistics">Bandar Abbas Port (Shahid Rajaee)</a></li>
+                    <li><a href="#logistics">Bandar Imam Khomeini (BIK)</a></li>
+                    <li><a href="#logistics">SGS & Saybolt Testing</a></li>
+                    <li><a href="#logistics">FOB, CFR & CIF Shipments</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5 id="footerCol3">Corporate Desk</h5>
+                <ul class="footer-links">
+                    <li><a href="mailto:arvanenergy@proton.me">arvanenergy@proton.me</a></li>
+                    <li><a href="#governance">Managing Director Mohadese</a></li>
+                    <li><a href="#desk">Submit Commercial RFQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>© 2026 ARVAN ENERGY PARSEH (آروان انرژی پارسه). All International Rights Reserved.</div>
+            <div style="color:var(--gold-burnished);">Tehran • Bandar Abbas • Global Energy Trading</div>
+        </div>
     </footer>
 
-    <!-- Dual Language Script -->
+    <!-- Dual Language System & Interactive Handlers -->
     <script>
-        let isPersian = false;
+        let currentLang = 'en';
 
-        const content = {
+        const i18n = {
             en: {
                 langBtn: "فارسی / Persian",
+                navCommodities: "Commodities",
+                navLogistics: "Marine Logistics",
+                navGovernance: "Governance",
+                navDesk: "Trade Desk",
                 heroBadge: "Commercial Energy Directorate • Tehran, Iran",
-                heroHeading: "Direct Refinery Supply & Bulk Commodity Allocations",
-                heroSubheading: "Specialized physical export trade desks covering Bitumen, Industrial Petrochemicals, and Energy Fractions across major Middle East hubs.",
-                heroCtaBtn: "Inquire via Trade Desk",
-                catalogTitle: "Export Commodity Portfolio",
-                catalogSubtitle: "Laboratory verified, export-grade specifications for international bulk supply",
-                tabBitumen: "Bitumen Division",
+                heroHeading: "Direct Sovereign Allocations & Strategic Bulk Energy Desks",
+                heroSubhead: "Specialized international trading desks handling virgin Bitumen grades, industrial Petrochemicals, and refined Hydrocarbon distillates via dedicated maritime corridors in Bandar Abbas and Persian Gulf export terminals.",
+                heroBtnInquire: "Submit Official LOI / RFQ",
+                heroBtnSpecs: "View Technical Matrix",
+                stat1Label: "Annual Bulk Export Throughput Capacity",
+                stat2Label: "SGS & Saybolt Certified Laboratory Assays",
+                stat3Label: "Flexible Global Commercial Delivery Terms",
+                commSectionTag: "Refinery Origin Allocations",
+                commHeading: "Export Commodity Portfolio",
+                commSubhead: "Precision-analyzed specifications for infrastructure contractors, national highway authorities, and industrial chemical processors.",
+                tabBitumen: "Bitumen & Asphalt Division",
                 tabPetro: "Petrochemicals & Polymers",
-                tabOil: "Oil & Distillates",
-                deskTitle: "Direct Commercial Trade Desk",
-                deskSubtitle: "For formal inquiries, Letters of Intent (LOI), and verifiable refinery quotas, submit inquiries directly to executive sales management."
+                tabOil: "Heavy Distillates & Base Oils",
+                infraTitle: "Persian Gulf Terminals & Logistics Corridors",
+                govRoleTag: "Corporate Directorate & Leadership",
+                govMdName: "Managing Director Mohadese",
+                govQuote: "\"In energy trade, sovereignty is built on precision, reliability, and unquestioned execution. Arvan Energy Parseh bridges world-scale refinery output with international physical markets.\"",
+                govTag: "Institutional Standing",
+                govHeading: "Uncompromising Standards in Global Commodity Trading",
+                govText1: "Under the executive leadership of Managing Director Mohadese, ARVAN ENERGY PARSEH operates as a structured commercial enterprise dedicated to the direct export of Iranian petrochemicals, virgin bitumen grades, and refined fuels.",
+                govText2: "Through strategic coordination with premier refineries and marine terminals, the enterprise eliminates unnecessary intermediary layers, ensuring authentic laboratory assays, secure banking conduits, and punctual vessel discharge across the GCC, South Asia, Africa, and East Asia.",
+                formTitle: "Commercial Trade Desk",
+                formSubhead: "Submit formal purchase inquiries, Requests for Quotation (RFQ), or Letters of Intent (LOI) directly to executive trade coordination.",
+                formBoxHeading: "Generate Commercial Inward RFQ",
+                lblBuyerName: "Buyer / Company Name",
+                lblTargetProduct: "Target Commodity",
+                lblQuantity: "Quantity (Metric Tons)",
+                lblIncoterm: "Desired Incoterm / Destination",
+                lblBuyerEmail: "Direct Corporate Email",
+                lblNotes: "Technical Specifications & Packaging Requirements",
+                btnSubmitRfq: "Transmit Direct RFQ via Email"
             },
             fa: {
                 langBtn: "English / انگلیسی",
+                navCommodities: "سبد کالاها",
+                navLogistics: "لجستیک دریایی",
+                navGovernance: "مدیریت ارشد",
+                navDesk: "میز بازرگانی",
                 heroBadge: "مدیریت بازرگانی و صادرات انرژی • تهران، ایران",
-                heroHeading: "تأمین مستقیم پالایشگاهی و تخصیص کالاهای اساسی",
-                heroSubheading: "میز تخصصی صادرات فیزیکی انواع قیر، محصولات پتروشیمی صنعتی و فرآورده‌های نفتی در مبادی خلیج فارس.",
-                heroCtaBtn: "ارتباط با واحد بازرگانی",
-                catalogTitle: "سبد کالاهای صادراتی",
-                catalogSubtitle: "مشخصات فنی استاندارد پالایشگاهی، تضمین کیفیت و گواهی بازرسی بین‌المللی",
-                tabBitumen: "فرآورده‌های قیر",
+                heroHeading: "تأمین مستقیم پالایشگاهی و تخصیص کالاهای اساسی انرژی",
+                heroSubhead: "میز تخصصی صادرات فیزیکی انواع قیر خالص پالایشگاهی، فرآورده‌های پتروشیمی صنعتی و مشتقات هیدروکربنی از طریق مبادی استراتژیک بندرعباس و خلیج فارس.",
+                heroBtnInquire: "ارسال درخواست رسمی خرید (LOI)",
+                heroBtnSpecs: "مشاهده مشخصات فنی",
+                stat1Label: "ظرفیت سالانه ترانزیت و صادرات فله",
+                stat2Label: "آنالیزهای آزمایشگاهی با گواهی SGS و Saybolt",
+                stat3Label: "شرایط تحویل بین‌المللی FOB، CFR و CIF",
+                commSectionTag: "تخصیص‌های مستقیم پالایشگاهی",
+                commHeading: "سبد کالاهای صادراتی",
+                commSubhead: "مشخصات فنی استاندارد جهت پروژه‌های عمرانی، وزارتخانه‌های راه و صنایع پایین‌دستی پتروشیمی.",
+                tabBitumen: "فرآورده‌های قیر و آسفالت",
                 tabPetro: "پتروشیمی و پلیمرها",
-                tabOil: "نفت و مشتقات هیدروکربنی",
-                deskTitle: "میز بازرگانی و هماهنگی قراردادها",
-                deskSubtitle: "جهت ارسال درخواست‌های رسمی خرید (LOI) و دریافت آنالیز آزمایشگاهی با ایمیل مدیریت تماس حاصل فرمایید."
+                tabOil: "مشتقات سنگین و روغن پایه",
+                infraTitle: "پایانه‌های صادراتی و زیرساخت لجستیک خلیج فارس",
+                govRoleTag: "مدیریت عاملی و راهبری بازرگانی",
+                govMdName: "سرکار خانم محدثه — مدیرعامل",
+                govQuote: "«در تجارت بین‌الملل انرژی، اعتبار حقیقی بر پایه دقت فنی، پایداری در تعهدات و شفافیت عملیاتی استوار است. شرکت آروان انرژی پارسه تأمین پایدار محصولات پالایشگاهی را به بازارهای جهانی پیوند می‌دهد.»",
+                govTag: "جایگاه سازمانی",
+                govHeading: "استانداردهای نوین در تجارت فیزیکی فرآورده‌های انرژی",
+                govText1: "تحت هدایت و مدیریت عاملی سرکار خانم محدثه، شرکت آروان انرژی پارسه (ARVAN ENERGY PARSEH) به عنوان یک هاب تجاری قدرتمند در حوزه صادرات فرآورده‌های نفتی، قیرهای نفوذی و ویسکوزیته و محصولات پتروشیمی فعالیت می‌نماید.",
+                govText2: "این مجموعه با حذف واسطه‌های غیرضروری و اتصال مستقیم به منابع تولید، کیفیت محصولات را با بازرسی‌های بین‌المللی تضمین نموده و بستر ارسال کالا به مقاصد حاشیه خلیج فارس، شبه‌قاره هند، آفریقا و آسیای شرقی را فراهم می‌آورد.",
+                formTitle: "میز رسمی بازرگانی",
+                formSubhead: "جهت ارسال درخواست‌های رسمی خرید (LOI)، استعلام قیمت و دریافت آنالیز روز آزمایشگاهی با واحد فروش تماس حاصل فرمایید.",
+                formBoxHeading: "ثبت استعلام خرید (RFQ)",
+                lblBuyerName: "نام شرکت خریدار",
+                lblTargetProduct: "کالای مورد تقاضا",
+                lblQuantity: "تناژ درخواستی (تن متری)",
+                lblIncoterm: "ترم تجاری / بندر مقصد",
+                lblBuyerEmail: "ایمیل سازمانی",
+                lblNotes: "مشخصات درخواستی و نوع بسته‌بندی",
+                btnSubmitRfq: "ارسال استعلام رسمی به ایمیل مدیریت"
             }
         };
 
-        function switchCategory(catId, btn) {
-            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-
-            document.getElementById('grid-bitumen').style.display = 'none';
-            document.getElementById('grid-petro').style.display = 'none';
-            document.getElementById('grid-oil').style.display = 'none';
-
-            document.getElementById('grid-' + catId).style.display = 'grid';
-        }
-
         function toggleLanguage() {
-            isPersian = !isPersian;
+            currentLang = (currentLang === 'en') ? 'fa' : 'en';
             const html = document.documentElement;
-
-            if (isPersian) {
+            
+            if (currentLang === 'fa') {
                 html.setAttribute('dir', 'rtl');
                 html.setAttribute('lang', 'fa');
-                applyText('fa');
             } else {
                 html.setAttribute('dir', 'ltr');
                 html.setAttribute('lang', 'en');
-                applyText('en');
             }
+            
+            renderLanguage();
         }
 
-        function applyText(lang) {
-            const data = content[lang];
-            document.getElementById('langToggleBtn').innerText = data.langBtn;
+        function renderLanguage() {
+            const data = i18n[currentLang];
+            document.getElementById('langSwitchBtn').innerText = data.langBtn;
+            document.getElementById('navCommodities').innerText = data.navCommodities;
+            document.getElementById('navLogistics').innerText = data.navLogistics;
+            document.getElementById('navGovernance').innerText = data.navGovernance;
+            document.getElementById('navDesk').innerText = data.navDesk;
             document.getElementById('heroBadge').innerText = data.heroBadge;
             document.getElementById('heroHeading').innerText = data.heroHeading;
-            document.getElementById('heroSubheading').innerText = data.heroSubheading;
-            document.getElementById('heroCtaBtn').innerText = data.heroCtaBtn;
-            document.getElementById('catalogTitle').innerText = data.catalogTitle;
-            document.getElementById('catalogSubtitle').innerText = data.catalogSubtitle;
+            document.getElementById('heroSubhead').innerText = data.heroSubhead;
+            document.getElementById('heroBtnInquire').innerText = data.heroBtnInquire;
+            document.getElementById('heroBtnSpecs').innerText = data.heroBtnSpecs;
+            document.getElementById('stat1Label').innerText = data.stat1Label;
+            document.getElementById('stat2Label').innerText = data.stat2Label;
+            document.getElementById('stat3Label').innerText = data.stat3Label;
+            document.getElementById('commSectionTag').innerText = data.commSectionTag;
+            document.getElementById('commHeading').innerText = data.commHeading;
+            document.getElementById('commSubhead').innerText = data.commSubhead;
             document.getElementById('tabBitumen').innerText = data.tabBitumen;
             document.getElementById('tabPetro').innerText = data.tabPetro;
             document.getElementById('tabOil').innerText = data.tabOil;
-            document.getElementById('deskTitle').innerText = data.deskTitle;
-            document.getElementById('deskSubtitle').innerText = data.deskSubtitle;
+            document.getElementById('infraTitle').innerText = data.infraTitle;
+            document.getElementById('govRoleTag').innerText = data.govRoleTag;
+            document.getElementById('govMdName').innerText = data.govMdName;
+            document.getElementById('govQuote').innerText = data.govQuote;
+            document.getElementById('govTag').innerText = data.govTag;
+            document.getElementById('govHeading').innerText = data.govHeading;
+            document.getElementById('govText1').innerText = data.govText1;
+            document.getElementById('govText2').innerText = data.govText2;
+            document.getElementById('formTitle').innerText = data.formTitle;
+            document.getElementById('formSubhead').innerText = data.formSubhead;
+            document.getElementById('formBoxHeading').innerText = data.formBoxHeading;
+            document.getElementById('lblBuyerName').innerText = data.lblBuyerName;
+            document.getElementById('lblTargetProduct').innerText = data.lblTargetProduct;
+            document.getElementById('lblQuantity').innerText = data.lblQuantity;
+            document.getElementById('lblIncoterm').innerText = data.lblIncoterm;
+            document.getElementById('lblBuyerEmail').innerText = data.lblBuyerEmail;
+            document.getElementById('lblNotes').innerText = data.lblNotes;
+            document.getElementById('btnSubmitRfq').innerText = data.btnSubmitRfq;
+        }
+
+        function filterCatalog(category, btn) {
+            document.querySelectorAll('.tab-trigger').forEach(el => el.classList.remove('active'));
+            btn.classList.add('active');
+
+            const cards = document.querySelectorAll('.card-enterprise');
+            cards.forEach(card => {
+                if (card.getAttribute('data-cat') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Initialize display to bitumen on load
+        window.addEventListener('DOMContentLoaded', () => {
+            const firstTab = document.getElementById('tabBitumen');
+            if (firstTab) filterCatalog('bitumen', firstTab);
+        });
+
+        // RFQ Email Form Handler
+        function handleRfqSubmit(e) {
+            e.preventDefault();
+            const company = document.getElementById('rfqCompany').value;
+            const commodity = document.getElementById('rfqCommodity').value;
+            const quantity = document.getElementById('rfqQuantity').value;
+            const incoterm = document.getElementById('rfqIncoterm').value;
+            const buyerEmail = document.getElementById('rfqEmail').value;
+            const notes = document.getElementById('rfqNotes').value;
+
+            const subject = encodeURIComponent(`COMMERCIAL RFQ / LOI: ${commodity} - ${company}`);
+            const body = encodeURIComponent(
+                `ARVAN ENERGY PARSEH (Commercial Trade Desk)\n` +
+                `--------------------------------------------------\n` +
+                `Prospective Buyer / Company: ${company}\n` +
+                `Target Commodity: ${commodity}\n` +
+                `Required Volume: ${quantity}\n` +
+                `Preferred Incoterm / Destination: ${incoterm}\n` +
+                `Direct Corporate Email: ${buyerEmail}\n\n` +
+                `Technical Parameters / Packaging / Notes:\n${notes}\n` +
+                `--------------------------------------------------\n` +
+                `Transmitted via Arvan Energy Parseh Web Portal`
+            );
+
+            window.location.href = `mailto:arvanenergy@proton.me?subject=${subject}&body=${body}`;
         }
     </script>
 </body>
