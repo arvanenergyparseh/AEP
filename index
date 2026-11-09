@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARVAN ENERGY PARSEH | آروان انرژی پارسه - Petrochemicals, Bitumen & Energy Commodities</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Cormorant Garamond (Serif), Plus Jakarta Sans (Modern Clean), Vazirmatn (Premium Persian/Arabic font) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            alabaster: '#FAF8F5',
+            parchment: '#F3EFEA',
+            persianNavy: {
+              DEFAULT: '#0B1B32',
+              deep: '#060F1E',
+              royal: '#112544',
+              soft: '#1B365D'
+            },
+            persianGold: {
+              DEFAULT: '#C5A059',
+              light: '#E5C989',
+              dark: '#9B7836',
+              glow: '#FDF5E6'
+            },
+            persianTeal: '#1A5F7A',
+            slateMuted: '#68778D'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            farsi: ['"Vazirmatn"', '"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Persian Geometric Arabesque Borders and Patterns */
+    .bg-persian-pattern {
+      background-color: #FAF8F5;
+      background-image: radial-gradient(#C5A059 0.75px, transparent 0.75px), radial-gradient(#0B1B32 0.75px, #FAF8F5 0.75px);
+      background-size: 30px 30px;
+      background-position: 0 0, 15px 15px;
+      background-opacity: 0.05;
+    }
+
+    .persian-gold-border {
+      border: 1px solid rgba(197, 160, 89, 0.4);
+      position: relative;
+    }
+
+    .persian-corner-frame {
+      position: relative;
+    }
+    .persian-corner-frame::before, .persian-corner-frame::after {
+      content: "";
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      pointer-events: none;
+      border-color: #C5A059;
+    }
+    .persian-corner-frame::before {
+      top: 6px;
+      left: 6px;
+      border-top: 2px solid #C5A059;
+      border-left: 2px solid #C5A059;
+    }
+    .persian-corner-frame::after {
+      bottom: 6px;
+      right: 6px;
+      border-bottom: 2px solid #C5A059;
+      border-right: 2px solid #C5A059;
+    }
+
+    /* Subtle Khatam Ornamental Stripe */
+    .khatam-stripe {
+      background: repeating-linear-gradient(
+        45deg,
+        #0B1B32,
+        #0B1B32 10px,
+        #C5A059 10px,
+        #C5A059 12px,
+        #112544 12px,
+        #112544 22px
+      );
+    }
+
+    /* Persian calligraphy/font alignment */
+    [dir="rtl"] {
+      font-family: 'Vazirmatn', sans-serif;
+    }
+    [dir="rtl"] .font-serif {
+      font-family: 'Vazirmatn', serif;
+      font-weight: 700;
+    }
+    [dir="ltr"] {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-alabaster text-persianNavy selection:bg-persianGold selection:text-persianNavy antialiased font-sans transition-colors duration-300">
+
+  <!-- TOP SOVEREIGN BANNER -->
+  <div class="khatam-stripe h-1.5 w-full"></div>
+  <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-persianGold/30 shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-22 py-2">
+        
+        <!-- Brand Logo & Calligraphic Emblem -->
+        <a href="#hero" class="flex items-center gap-3.5 group">
+          <div class="relative w-12 h-12 rounded-lg bg-persianNavy flex items-center justify-center border-2 border-persianGold shadow-md group-hover:bg-persianNavy-royal transition-all duration-300 overflow-hidden">
+            <!-- Custom GitHub Logo with Graceful Fallback -->
+            <img 
+              src="aeplogo.png" 
+              alt="ARVAN ENERGY PARSEH" 
+              class="w-full h-full object-contain p-1"
+              onerror="this.style.display='none'; document.getElementById('logo-fallback-header').style.display='flex';"
+            >
+            <!-- Elegant Fallback Crest if aeplogo.png is not yet uploaded -->
+            <div id="logo-fallback-header" class="hidden w-full h-full items-center justify-center">
+              <svg class="w-7 h-7 text-persianGold-light" viewBox="0 0 100 100" fill="currentColor">
+                <polygon points="50,5 64,36 98,36 71,57 82,90 50,70 18,90 29,57 2,36 36,36" fill="none" stroke="#C5A059" stroke-width="6"/>
+                <circle cx="50" cy="50" r="16" fill="#C5A059"/>
+                <path d="M50 20 L50 80 M20 50 L80 50" stroke="#FAF8F5" stroke-width="3"/>
+              </svg>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-xl sm:text-2xl font-serif font-bold tracking-wider text-persianNavy uppercase group-hover:text-persianGold-dark transition-colors">
+              ARVAN ENERGY PARSEH
+            </span>
+            <span class="text-xs text-persianGold-dark font-farsi font-semibold tracking-widest">
+              شرکت بین‌المللی آروان انرژی پارسه (سهامی خاص)
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-persianNavy-soft">
+          <a href="#about" class="hover:text-persianGold-dark transition-colors" data-i18n="nav_about">About Arvan</a>
+          <a href="#bitumen" class="hover:text-persianGold-dark transition-colors" data-i18n="nav_bitumen">Bitumen Division</a>
+          <a href="#petrochemicals" class="hover:text-persianGold-dark transition-colors" data-i18n="nav_petrochem">Petrochemicals</a>
+          <a href="#oilgas" class="hover:text-persianGold-dark transition-colors" data-i18n="nav_oilgas">Oil & Distillates</a>
+          <a href="#qa" class="hover:text-persianGold-dark transition-colors" data-i18n="nav_qa">Quality & Logistics</a>
+          <a href="#contact" class="hover:text-persianGold-dark transition-colors" data-i18n="nav_contact">Trade Desk</a>
+        </nav>
+
+        <!-- Right Side: Dual-Language Switcher & Inquire CTA -->
+        <div class="flex items-center gap-3">
+          <!-- Language Toggle Button -->
+          <button id="langToggleBtn" onclick="toggleLanguage()" class="px-3 py-1.5 rounded-md border border-persianGold/50 bg-parchment text-persianNavy text-xs font-semibold hover:border-persianGold hover:bg-persianGold/10 flex items-center gap-2 transition-all shadow-sm">
+            <i class="fa-solid fa-globe text-persianGold-dark"></i>
+            <span id="langLabel">فارسی / FA</span>
+          </button>
+
+          <!-- Direct LOI Action -->
+          <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-md bg-persianNavy text-white hover:bg-persianNavy-royal border border-persianGold text-xs uppercase tracking-wider font-semibold transition-all shadow hover:shadow-lg">
+            <span data-i18n="btn_submit_rfq">Submit LOI / RFQ</span>
+            <i class="fa-solid fa-arrow-right-long text-persianGold"></i>
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button id="mobileMenuBtn" onclick="toggleMobileMenu()" class="lg:hidden p-2 text-persianNavy hover:text-persianGold transition-colors">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-persianGold/20 bg-alabaster px-4 pt-3 pb-6 space-y-3">
+      <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium border-b border-persianGold/10" data-i18n="nav_about">About Arvan</a>
+      <a href="#bitumen" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium border-b border-persianGold/10" data-i18n="nav_bitumen">Bitumen Division</a>
+      <a href="#petrochemicals" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium border-b border-persianGold/10" data-i18n="nav_petrochem">Petrochemicals</a>
+      <a href="#oilgas" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium border-b border-persianGold/10" data-i18n="nav_oilgas">Oil & Distillates</a>
+      <a href="#qa" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium border-b border-persianGold/10" data-i18n="nav_qa">Quality & Logistics</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-sm font-medium text-persianGold-dark font-semibold" data-i18n="nav_contact">Trade Desk (LOI / Inquiries)</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative overflow-hidden pt-12 pb-24 md:pt-20 md:pb-32 bg-alabaster">
+    <!-- Subtle Background Persian Motif Watermark -->
+    <div class="absolute inset-0 opacity-[0.03] pointer-events-none flex items-center justify-center">
+      <svg class="w-[900px] h-[900px] text-persianNavy" viewBox="0 0 100 100" fill="currentColor">
+        <polygon points="50,0 65,35 100,50 65,65 50,100 35,65 0,50 35,35" />
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="max-w-4xl mx-auto text-center">
+        
+        <!-- Sovereign Heritage Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-parchment border border-persianGold/40 text-persianGold-dark text-xs sm:text-sm font-semibold mb-6 shadow-sm">
+          <i class="fa-solid fa-shield-halved text-persianGold"></i>
+          <span data-i18n="hero_badge">Iranian Plateau Energy Corridors • Direct Refinery Sourcing</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-serif font-bold tracking-tight text-persianNavy leading-[1.15] mb-6">
+          <span data-i18n="hero_title_1">Sovereign Supply of</span><br class="hidden sm:inline">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-persianNavy via-persianTeal to-persianNavy" data-i18n="hero_title_2">Petrochemicals, Bitumen & Energy</span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-slateMuted leading-relaxed max-w-3xl mx-auto mb-10 font-sans" data-i18n="hero_desc">
+          ARVAN ENERGY PARSEH (آروان انرژی پارسه) coordinates bulk supply, maritime chartering, and refinery-direct allocation of premium penetration bitumen, polymer grades, fertilizers, and base oils from Bandar Abbas and Persian Gulf logistics hubs to sovereign and industrial buyers worldwide.
+        </p>
+
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="#bitumen" class="w-full sm:w-auto px-8 py-3.5 rounded-md bg-persianNavy text-white hover:bg-persianNavy-royal border border-persianGold shadow-md hover:shadow-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2">
+            <span data-i18n="hero_cta_specs">Explore Commodity Grades</span>
+            <i class="fa-solid fa-angles-down text-persianGold text-xs"></i>
+          </a>
+          <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 rounded-md bg-white text-persianNavy hover:bg-parchment border-2 border-persianGold/50 font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 shadow-sm">
+            <i class="fa-regular fa-file-lines text-persianGold-dark"></i>
+            <span data-i18n="hero_cta_rfq">Direct Trade Desk (LOI / SCO)</span>
+          </a>
+        </div>
+
+        <!-- Port Authority Indicator Banner -->
+        <div class="mt-14 pt-8 border-t border-persianGold/20 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div class="p-3 bg-white/70 rounded-lg border border-persianGold/20 shadow-sm">
+            <p class="text-xs text-slateMuted uppercase tracking-wider" data-i18n="stat_origin_label">Export Origin</p>
+            <p class="text-sm font-bold text-persianNavy mt-0.5" data-i18n="stat_origin_val">Bandar Abbas / BIK Port</p>
+          </div>
+          <div class="p-3 bg-white/70 rounded-lg border border-persianGold/20 shadow-sm">
+            <p class="text-xs text-slateMuted uppercase tracking-wider" data-i18n="stat_specs_label">Inspection Standard</p>
+            <p class="text-sm font-bold text-persianNavy mt-0.5" data-i18n="stat_specs_val">SGS / Geo-Chem Certified</p>
+          </div>
+          <div class="p-3 bg-white/70 rounded-lg border border-persianGold/20 shadow-sm">
+            <p class="text-xs text-slateMuted uppercase tracking-wider" data-i18n="stat_terms_label">Trade Terms</p>
+            <p class="text-sm font-bold text-persianNavy mt-0.5" data-i18n="stat_terms_val">FOB • CFR • CIF Global</p>
+          </div>
+          <div class="p-3 bg-white/70 rounded-lg border border-persianGold/20 shadow-sm">
+            <p class="text-xs text-slateMuted uppercase tracking-wider" data-i18n="stat_exec_label">Leadership</p>
+            <p class="text-sm font-bold text-persianNavy mt-0.5" data-i18n="stat_exec_val">Mohadese & Executive Board</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & CORPORATE HERITAGE -->
+  <section id="about" class="py-20 bg-parchment relative border-y border-persianGold/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Executive Framing -->
+        <div class="lg:col-span-5">
+          <div class="persian-corner-frame bg-white p-8 rounded-xl shadow-md border border-persianGold/30">
+            <div class="flex items-center gap-3 mb-4">
+              <span class="w-8 h-0.5 bg-persianGold"></span>
+              <span class="text-xs font-bold uppercase tracking-widest text-persianGold-dark" data-i18n="about_tag">Corporate Profile</span>
+            </div>
+            
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold text-persianNavy mb-4" data-i18n="about_heading">
+              Strategic Trading Desk & Energy Architecture
+            </h2>
+            
+            <p class="text-sm text-slateMuted leading-relaxed mb-6 font-sans" data-i18n="about_p1">
+              Registered under the sovereign laws of the Islamic Republic of Iran, <strong>ARVAN ENERGY PARSEH (آروان انرژی پارسه)</strong> serves as a direct bridge connecting major petrochemical refineries, vacuum bottom distillation complexes, and chemical production clusters with high-demand corridors in India, China, the UAE, and East Africa.
+            </p>
+            
+            <p class="text-sm text-slateMuted leading-relaxed mb-6 font-sans" data-i18n="about_p2">
+              Under the strategic leadership of <strong>Managing Director Mohadese</strong>, Arvan Energy Parseh maintains unyielding commitment to prompt documentation, batch chemical purity verification, flexible vessel chartering, and bankable international execution.
+            </p>
+
+            <div class="bg-alabaster p-4 rounded-lg border-l-4 rtl:border-l-0 rtl:border-r-4 border-persianGold">
+              <p class="text-xs italic text-persianNavy font-medium" data-i18n="about_quote">
+                "Energy logistics require absolute precision, uncompromising contract honor, and sovereign dependability on every consignment."
+              </p>
+              <p class="text-[11px] font-bold text-persianGold-dark mt-2" data-i18n="about_quote_author">
+                — Mohadese, Managing Director & Trade Principal
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Strategic Advantages Pillars -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            
+            <!-- Pillar 1 -->
+            <div class="bg-white p-6 rounded-lg border border-persianGold/20 shadow-sm hover:border-persianGold transition-all">
+              <div class="w-10 h-10 rounded-md bg-persianNavy flex items-center justify-center text-persianGold mb-4">
+                <i class="fa-solid fa-oil-well text-lg"></i>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-persianNavy mb-2" data-i18n="pillar_1_title">Refinery-Direct Vacuum Bottom</h3>
+              <p class="text-xs text-slateMuted leading-relaxed font-sans" data-i18n="pillar_1_desc">
+                Guaranteed allocations directly from Isfahan, Pasargad, Jey, and Bandar Abbas refineries, ensuring pure bitumen feedstock without secondary blending adulteration.
+              </p>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="bg-white p-6 rounded-lg border border-persianGold/20 shadow-sm hover:border-persianGold transition-all">
+              <div class="w-10 h-10 rounded-md bg-persianNavy flex items-center justify-center text-persianGold mb-4">
+                <i class="fa-solid fa-ship text-lg"></i>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-persianNavy mb-2" data-i18n="pillar_2_title">Maritime Logistics Mastery</h3>
+              <p class="text-xs text-slateMuted leading-relaxed font-sans" data-i18n="pillar_2_desc">
+                Dedicated berthing coordination at Shahid Rajaee (Bandar Abbas), BIK, and Bushehr with reliable ISO tank fleets, specialized bitutainers, and break-bulk vessel operations.
+              </p>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="bg-white p-6 rounded-lg border border-persianGold/20 shadow-sm hover:border-persianGold transition-all">
+              <div class="w-10 h-10 rounded-md bg-persianNavy flex items-center justify-center text-persianGold mb-4">
+                <i class="fa-solid fa-certificate text-lg"></i>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-persianNavy mb-2" data-i18n="pillar_3_title">Independent Laboratory Verification</h3>
+              <p class="text-xs text-slateMuted leading-relaxed font-sans" data-i18n="pillar_3_desc">
+                Every loading is governed by full SGS, Geo-Chem, or Bureau Veritas pre-shipment inspection certificates confirming flash point, penetration, ductility, and purity.
+              </p>
+            </div>
+
+            <!-- Pillar 4 -->
+            <div class="bg-white p-6 rounded-lg border border-persianGold/20 shadow-sm hover:border-persianGold transition-all">
+              <div class="w-10 h-10 rounded-md bg-persianNavy flex items-center justify-center text-persianGold mb-4">
+                <i class="fa-solid fa-coins text-lg"></i>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-persianNavy mb-2" data-i18n="pillar_4_title">Flexible Settlement Mechanisms</h3>
+              <p class="text-xs text-slateMuted leading-relaxed font-sans" data-i18n="pillar_4_desc">
+                Multilateral commercial agreements structured through regional financial channels in Dubai (AED), China (CNY), India (INR), and telegraphic transfer (TT) corridors.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMODITY MASTER SECTION: BITUMEN DIVISION -->
+  <section id="bitumen" class="py-20 bg-alabaster">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-parchment border border-persianGold/40 text-persianGold-dark text-xs font-bold uppercase mb-3">
+          <i class="fa-solid fa-road text-persianGold"></i>
+          <span data-i18n="bitumen_badge">Primary Pillar</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-persianNavy mb-4" data-i18n="bitumen_title">
+          World-Standard Bitumen Division
+        </h2>
+        <p class="text-sm text-slateMuted font-sans" data-i18n="bitumen_sub">
+          Supplying asphalt infrastructure contractors and sovereign public works authorities with laboratory-certified paving grades, viscosity grades, and customized performance packaging.
+        </p>
+      </div>
+
+      <!-- Bitumen Specification Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Grade 60/70 -->
+        <div class="bg-white rounded-xl border border-persianGold/30 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between border-b border-persianGold/20 pb-3 mb-4">
+              <span class="text-xs font-bold uppercase text-persianGold-dark tracking-wider">Penetration Grade</span>
+              <span class="px-2.5 py-1 bg-persianNavy text-white rounded text-[11px] font-mono">ASTM D5</span>
+            </div>
+            <h3 class="text-2xl font-serif font-bold text-persianNavy mb-2">Bitumen 60/70</h3>
+            <p class="text-xs text-slateMuted mb-5 leading-relaxed font-sans" data-i18n="b6070_desc">
+              The international benchmark for highway construction, airport runways, and heavy-traffic asphalt wearing courses in temperate climates.
+            </p>
+            
+            <div class="space-y-2.5 text-xs text-persianNavy bg-alabaster p-3.5 rounded-lg border border-persianGold/10">
+              <div class="flex justify-between">
+                <span class="text-slateMuted" data-i18n="spec_penetration">Penetration @ 25°C:</span>
+                <span class="font-semibold font-mono">60 – 70 (0.1 mm)</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slateMuted" data-i18n="spec_softening">Softening Point:</span>
+                <span class="font-semibold font-mono">49 – 56 °C</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slateMuted" data-i18n="spec_ductility">Ductility @ 25°C:</span>
+                <span class="font-semibold font-mono">Min 100 cm</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slateMuted" data-i18n="spec_flashpoint">Flash Point:</span>
+                <span class="font-semibold font-mono">Min 250 °C</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-persianGold/10 flex items-center justify-between text-xs">
+            <span class="text-persianGold-dark font-medium" data-i18n="pack_drums">New Steel Drums • Polybag • Bulk</span>
+            <a href="#contact" class="text-persianNavy hover:text-persianGold font-bold flex items-center gap-1">Inquire <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+        <!-- Grade 80/100 -->
+        <div class="bg-white rounded-xl border border-persianGold/30 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between border-b border-persianGold/20 pb-3 mb-4">
+              <span class="text-xs font-bold uppercase text-persianGold-dark tracking-wider">Penetration Grade</span>
+              <span class="px-2.5 py-1 bg-persianNavy text-white rounded text-[11px] font-mono">ASTM D5</span>
+            </div>
+            <h3 class="text-2xl font-serif font-bold text-persianNavy mb-2">Bitumen 80/100</h3>
+            <p class="text-xs text-slateMuted mb-5 leading-relaxed font-sans" data-i18n="b80100_desc">
+              Engineered for colder zones, secondary road networks, and mastic waterproofing formulations requiring higher ductility and elasticity.
+            </p>
+            
+            <div class="space-y-2.5 text-xs text-persianNavy bg-alabaster p-3.5 rounded-lg border border-persianGold/10">
+              <div class="flex justify-between">
+                <span class="text-slateMuted" data-i18n="spec_penetration">Penetration @ 25°C:</span>
+                <span class="font-semibold font-mono">80 – 100 (0.1 mm)</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slateMuted" data-i18n="spec_softening">Softening Point:</span>
+                <span class="font-semibold font-mono">45 – 52 °C</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slateMuted" data-i18n="spec_ductility">Ductility @ 25°C:</span>
+                <span class="font-semibold font-mono">Min 100 cm</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slateMuted" data-i18n="spec_flashpoint">Flash Point:</span>
+                <span class="font-semibold font-mono">Min 230 °C</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-persianGold/10 flex items-center justify-between text-xs">
+            <span class="text-persianGold-dark font-medium" data-i18n="pack_drums">180kg / 240kg Drum • Jumbo Bag</span>
+            <a href="#contact" class="text-persianNavy hover:text-persianGold font-bold flex items-center gap-1">Inquire <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+        <!-- Viscosity / Performance Grades (VG30 / PG) -->
+        <div class="bg-white rounded-xl border border-persianGold/30 p-6 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between border-b border-persianGold/20 pb-3 mb-4">
+              <span class="text-xs font-bold uppercase text-persianGold-dark tracking-wider">Viscosity & PG Spec</span>
+              <span class="px-2.5 py-1 bg-persianNavy text-white rounded text-[11px] font-mono">IS 73 / AASHTO</span>
+            </div>
+            <h3 class="text-2xl font-serif font-bold text-persianNavy mb-2">VG-30 / VG-10 / PG 64-22</h3>
+            <p class="text-xs text-slateMuted mb-5 leading-relaxed font-sans" data-i18n="bvg_desc">
+              Tailored for Indian sub-continent and Southeast Asian road tenders meeting rigorous Bureau of Indian Standards (BIS) IS 73 regulations.
+            </p>
+            
+            <div class="space-y-2.5 text-xs text-persianNavy bg-alabaster p-3.5 rounded-lg border border-persianGold/10">
+              <div class="flex justify-between">
+                <span class="text-slateMuted">Absolute Viscosity @ 60°C:</span>
+                <span class="font-semibold font-mono">2400 – 3600 Poises</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slateMuted">Kinematic Viscosity @ 135°C:</span>
+                <span class="font-semibold font-mono">Min 350 cSt</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slateMuted" data-i18n="spec_softening">Softening Point:</span>
+                <span class="font-semibold font-mono">Min 47 °C</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-slateMuted">Solubility in TCE:</span>
+                <span class="font-semibold font-mono">Min 99.0 %</span>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-persianGold/10 flex items-center justify-between text-xs">
+            <span class="text-persianGold-dark font-medium" data-i18n="pack_drums">Direct Bitutainer & Bulk Tanker</span>
+            <a href="#contact" class="text-persianNavy hover:text-persianGold font-bold flex items-center gap-1">Inquire <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Packaging Modes Showcase -->
+      <div class="mt-12 bg-parchment rounded-xl p-6 border border-persianGold/30">
+        <h4 class="text-base font-serif font-bold text-persianNavy mb-4 text-center uppercase tracking-wider" data-i18n="packaging_title">
+          Flexible Export Packaging & Discharge Solutions
+        </h4>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div class="bg-white p-4 rounded-lg border border-persianGold/20">
+            <i class="fa-solid fa-oil-can text-persianGold-dark text-xl mb-2"></i>
+            <h5 class="text-xs font-bold text-persianNavy" data-i18n="pack_1">New Steel Drums</h5>
+            <p class="text-[11px] text-slateMuted mt-1">150kg / 180kg / 240kg high-tensile anti-leak drums</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border border-persianGold/20">
+            <i class="fa-solid fa-box-archive text-persianGold-dark text-xl mb-2"></i>
+            <h5 class="text-xs font-bold text-persianNavy" data-i18n="pack_2">Jumbo Poly Bags</h5>
+            <p class="text-[11px] text-slateMuted mt-1">1000kg / 300kg multi-layer melted-bag systems</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border border-persianGold/20">
+            <i class="fa-solid fa-boxes-stacked text-persianGold-dark text-xl mb-2"></i>
+            <h5 class="text-xs font-bold text-persianNavy" data-i18n="pack_3">Bitutainers (ISO Tanks)</h5>
+            <p class="text-[11px] text-slateMuted mt-1">20ft / 25MT heated ISO containers for direct transit</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border border-persianGold/20">
+            <i class="fa-solid fa-ferry text-persianGold-dark text-xl mb-2"></i>
+            <h5 class="text-xs font-bold text-persianNavy" data-i18n="pack_4">Bulk Bitumen Vessels</h5>
+            <p class="text-[11px] text-slateMuted mt-1">1,000 to 5,000 MT specialized heated liquid parcel carriers</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PETROCHEMICALS PORTFOLIO -->
+  <section id="petrochemicals" class="py-20 bg-parchment relative border-t border-persianGold/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-alabaster border border-persianGold/40 text-persianGold-dark text-xs font-bold uppercase mb-3">
+          <i class="fa-solid fa-flask-vial text-persianGold"></i>
+          <span data-i18n="petro_badge">Petrochemicals & Polymers</span>
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-persianNavy mb-4" data-i18n="petro_title">
+          Refined Petrochemical & Industrial Chemical Portfolio
+        </h2>
+        <p class="text-sm text-slateMuted font-sans" data-i18n="petro_sub">
+          Supplying primary polymers, nitrogen fertilizers, and industrial alcohols sourced from Bandar Imam (BIK), Pardis, and Zagros petrochemical zones.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Commodity 1: Urea -->
+        <div class="bg-white rounded-lg p-5 border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[11px] font-bold text-persianGold-dark uppercase tracking-widest">Fertilizers</span>
+            <span class="text-xs px-2 py-0.5 bg-parchment rounded text-persianNavy font-mono font-bold">N 46%</span>
+          </div>
+          <h4 class="font-serif font-bold text-xl text-persianNavy mb-1">Granular & Prilled Urea</h4>
+          <p class="text-xs text-slateMuted mb-4 leading-relaxed font-sans" data-i18n="urea_desc">
+            Agricultural Grade 46% Nitrogen content, anti-caking treated, ideal for bulk shipping and 50kg bag distribution across agriculture ministries.
+          </p>
+          <div class="border-t border-persianGold/10 pt-3 text-[11px] text-persianNavy space-y-1">
+            <p><strong>Biuret:</strong> &lt; 1.0 % Max</p>
+            <p><strong>Moisture:</strong> 0.5 % Max</p>
+            <p><strong>Particle Size:</strong> 2.0 – 4.75 mm (90% min)</p>
+          </div>
+        </div>
+
+        <!-- Commodity 2: Methanol -->
+        <div class="bg-white rounded-lg p-5 border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[11px] font-bold text-persianGold-dark uppercase tracking-widest">Liquid Petrochem</span>
+            <span class="text-xs px-2 py-0.5 bg-parchment rounded text-persianNavy font-mono font-bold">99.85%</span>
+          </div>
+          <h4 class="font-serif font-bold text-xl text-persianNavy mb-1">Chemical Methanol</h4>
+          <p class="text-xs text-slateMuted mb-4 leading-relaxed font-sans" data-i18n="methanol_desc">
+            Technical AA purity grade chemical feedstock for formaldehyde, acetic acid, and MTBE synthetic processes. Bulk parcel parcel tanker bookings.
+          </p>
+          <div class="border-t border-persianGold/10 pt-3 text-[11px] text-persianNavy space-y-1">
+            <p><strong>Purity:</strong> 99.85 % Min wt</p>
+            <p><strong>Water Content:</strong> 0.1 % Max</p>
+            <p><strong>Color (Pt-Co):</strong> 5 Max</p>
+          </div>
+        </div>
+
+        <!-- Commodity 3: Polymers (PE / PP / PVC) -->
+        <div class="bg-white rounded-lg p-5 border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[11px] font-bold text-persianGold-dark uppercase tracking-widest">Plastics</span>
+            <span class="text-xs px-2 py-0.5 bg-parchment rounded text-persianNavy font-mono font-bold">Prime Virgin</span>
+          </div>
+          <h4 class="font-serif font-bold text-xl text-persianNavy mb-1">Polymers (HDPE, LLDPE, PVC)</h4>
+          <p class="text-xs text-slateMuted mb-4 leading-relaxed font-sans" data-i18n="polymer_desc">
+            Film, blow-molding, and pipe grades (HDPE PE100, LLDPE 218W, PVC Suspension S-65) in original 25kg refinery shrink-wrapped pallets.
+          </p>
+          <div class="border-t border-persianGold/10 pt-3 text-[11px] text-persianNavy space-y-1">
+            <p><strong>MFI:</strong> Standard Grade Verified</p>
+            <p><strong>Density:</strong> 0.918 – 0.955 g/cm³</p>
+            <p><strong>Origin:</strong> Jam / Arya Sasol / Bandar Imam</p>
+          </div>
+        </div>
+
+        <!-- Commodity 4: Caustic Soda & MEG -->
+        <div class="bg-white rounded-lg p-5 border border-persianGold/30 shadow-sm hover:border-persianNavy transition-all">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-[11px] font-bold text-persianGold-dark uppercase tracking-widest">Chemical Agents</span>
+            <span class="text-xs px-2 py-0.5 bg-parchment rounded text-persianNavy font-mono font-bold">98.5% Flakes</span>
+          </div>
+          <h4 class="font-serif font-bold text-xl text-persianNavy mb-1">Caustic Soda & Glycols</h4>
+          <p class="text-xs text-slateMuted mb-4 leading-relaxed font-sans" data-i18n="chemicals_desc">
+            Caustic Soda Flakes (NaOH 98.5%) and Monoethylene Glycol (MEG Fiber Grade) for textiles, detergents, aluminum refining, and polyester fibers.
+          </p>
+          <div class="border-t border-persianGold/10 pt-3 text-[11px] text-persianNavy space-y-1">
+            <p><strong>NaOH Flakes:</strong> 98.5% Min Purity</p>
+            <p><strong>MEG Purity:</strong> 99.8% Min</p>
+            <p><strong>Packing:</strong> 25kg Bags / Bulk Liquid Drums</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- OIL, GAS & HEAVY DISTILLATES -->
+  <section id="oilgas" class="py-20 bg-alabaster">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-5">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-parchment border border-persianGold/40 text-persianGold-dark text-xs font-bold uppercase mb-4">
+            <i class="fa-solid fa-fire-flame-simple text-persianGold"></i>
+            <span data-i18n="oil_badge">Energy & Distillates</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-serif font-bold text-persianNavy mb-5 leading-tight" data-i18n="oil_title">
+            Oil & Gas Energy Commodities
+          </h2>
+          <p class="text-sm text-slateMuted leading-relaxed mb-6 font-sans" data-i18n="oil_desc">
+            Directly positioned within the Persian Gulf bunkering and refining architecture, ARVAN ENERGY PARSEH facilitates secure STS (Ship-to-Ship), shore tank storage, and FOB loadings of heavy fuel oils, virgin base oils, gasoil, and liquefied hydrocarbons.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-circle-check text-persianGold text-sm"></i>
+              <span class="text-xs font-semibold text-persianNavy" data-i18n="oil_check_1">Strict conformity to ISO 8217 bunkering standards</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-circle-check text-persianGold text-sm"></i>
+              <span class="text-xs font-semibold text-persianNavy" data-i18n="oil_check_2">Prompt loading at designated STS anchorage corridors</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-circle-check text-persianGold text-sm"></i>
+              <span class="text-xs font-semibold text-persianNavy" data-i18n="oil_check_3">Full Ullage reports and customs export clearance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Products Matrix -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+          
+          <!-- Product Card 1 -->
+          <div class="bg-white p-5 rounded-lg border border-persianGold/30 shadow-sm">
+            <div class="text-persianGold-dark text-xs font-bold uppercase tracking-wider mb-1">Fuel Oil</div>
+            <h4 class="font-serif font-bold text-lg text-persianNavy mb-2">Fuel Oil CST 180 / CST 380</h4>
+            <p class="text-xs text-slateMuted mb-3 font-sans">
+              High-caloric marine fuel oil suitable for regional maritime transport and thermal power generation.
+            </p>
+            <span class="inline-block text-[10px] font-mono bg-parchment text-persianNavy px-2 py-0.5 rounded">Sulfur standard tailored</span>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="bg-white p-5 rounded-lg border border-persianGold/30 shadow-sm">
+            <div class="text-persianGold-dark text-xs font-bold uppercase tracking-wider mb-1">Lubricants Feedstock</div>
+            <h4 class="font-serif font-bold text-lg text-persianNavy mb-2">Base Oils (SN 500 / SN 150)</h4>
+            <p class="text-xs text-slateMuted mb-3 font-sans">
+              Virgin Group I solvent neutral base oils refined for premium automotive and industrial lubricant compounding.
+            </p>
+            <span class="inline-block text-[10px] font-mono bg-parchment text-persianNavy px-2 py-0.5 rounded">High Viscosity Index (VI 95+)</span>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="bg-white p-5 rounded-lg border border-persianGold/30 shadow-sm">
+            <div class="text-persianGold-dark text-xs font-bold uppercase tracking-wider mb-1">Middle Distillates</div>
+            <h4 class="font-serif font-bold text-lg text-persianNavy mb-2">Gasoil / Diesel (10 ppm & 500 ppm)</h4>
+            <p class="text-xs text-slateMuted mb-3 font-sans">
+              Low-sulfur diesel fuel meeting automotive and commercial generator performance specifications.
+            </p>
+            <span class="inline-block text-[10px] font-mono bg-parchment text-persianNavy px-2 py-0.5 rounded">EN 590 / GOST Standard</span>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="bg-white p-5 rounded-lg border border-persianGold/30 shadow-sm">
+            <div class="text-persianGold-dark text-xs font-bold uppercase tracking-wider mb-1">Gaseous Fuel</div>
+            <h4 class="font-serif font-bold text-lg text-persianNavy mb-2">Liquefied Petroleum Gas (LPG)</h4>
+            <p class="text-xs text-slateMuted mb-3 font-sans">
+              Commercial Propane & Butane blends (50/50 or 70/30) in pressurized gas carriers and bulk cylinders.
+            </p>
+            <span class="inline-block text-[10px] font-mono bg-parchment text-persianNavy px-2 py-0.5 rounded">Refrigerated / Pressurized</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- QUALITY ASSURANCE & LOGISTICS (SGS / GEO-CHEM) -->
+  <section id="qa" class="py-16 bg-persianNavy text-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h3 class="text-xs font-bold uppercase tracking-widest text-persianGold mb-2" data-i18n="qa_sub">Stringent Protocol</h3>
+        <h2 class="text-3xl font-serif font-bold text-white mb-3" data-i18n="qa_title">Independent Laboratory & Vessel Clearances</h2>
+        <p class="text-xs text-gray-300 font-sans" data-i18n="qa_desc">
+          Zero tolerance for non-specification material. Every MT allocated under ARVAN ENERGY PARSEH undergoes rigorous international inspection before any bill of lading is signed.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <div class="p-6 rounded-lg bg-persianNavy-royal border border-persianGold/30">
+          <div class="text-persianGold text-3xl mb-3"><i class="fa-solid fa-microscope"></i></div>
+          <h4 class="font-serif font-bold text-base mb-1" data-i18n="qa_1_title">Pre-Shipment Assay</h4>
+          <p class="text-xs text-gray-300 font-sans" data-i18n="qa_1_desc">Comprehensive chemical breakdown verifying viscosity, ash content, flashpoint, and sulfur ratio by certified laboratories.</p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-persianNavy-royal border border-persianGold/30">
+          <div class="text-persianGold text-3xl mb-3"><i class="fa-solid fa-compass-drafting"></i></div>
+          <h4 class="font-serif font-bold text-base mb-1" data-i18n="qa_2_title">Terminal Ullage & Draft Survey</h4>
+          <p class="text-xs text-gray-300 font-sans" data-i18n="qa_2_desc">Independent surveyor monitoring during vessel loading at Shahid Rajaee and BIK to certify exact tonnage and prevent line contamination.</p>
+        </div>
+
+        <div class="p-6 rounded-lg bg-persianNavy-royal border border-persianGold/30">
+          <div class="text-persianGold text-3xl mb-3"><i class="fa-solid fa-file-shield"></i></div>
+          <h4 class="font-serif font-bold text-base mb-1" data-i18n="qa_3_title">Direct Origin Documentation</h4>
+          <p class="text-xs text-gray-300 font-sans" data-i18n="qa_3_desc">Clean, certified Certificate of Origin (COO), commercial invoices, cargo manifests, and laboratory test reports provided promptly.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TRADE DESK & INQUIRY FORM (LOI / RFQ) -->
+  <section id="contact" class="py-20 bg-parchment relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Direct Office Contact Info -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="persian-corner-frame bg-white p-8 rounded-xl border border-persianGold/40 shadow-sm">
+            <span class="text-xs font-bold uppercase tracking-widest text-persianGold-dark block mb-2" data-i18n="contact_tag">Trade Desk Communications</span>
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold text-persianNavy mb-4" data-i18n="contact_title">
+              Initiate Commercial Allocation
+            </h2>
+            <p class="text-xs text-slateMuted leading-relaxed mb-6 font-sans" data-i18n="contact_desc">
+              All commercial transactions proceed strictly against valid <strong>Letter of Intent (LOI)</strong> or <strong>Irrevocable Corporate Purchase Order (ICPO)</strong> with full banking coordinates and company profile.
+            </p>
+
+            <div class="space-y-4 text-xs text-persianNavy">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded bg-parchment flex items-center justify-center text-persianGold-dark mt-0.5">
+                  <i class="fa-solid fa-building"></i>
+                </div>
+                <div>
+                  <p class="font-bold uppercase tracking-wider" data-i18n="contact_entity">Corporate Entity</p>
+                  <p class="text-slateMuted">ARVAN ENERGY PARSEH (آروان انرژی پارسه)</p>
+                  <p class="text-[11px] text-persianGold-dark font-medium" data-i18n="contact_registry">National Persian Registration & Energy Guild Member</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded bg-parchment flex items-center justify-center text-persianGold-dark mt-0.5">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <p class="font-bold uppercase tracking-wider" data-i18n="contact_hq">Headquarters & Port Desks</p>
+                  <p class="text-slateMuted">Central Trade Office: Tehran, Islamic Republic of Iran</p>
+                  <p class="text-[11px] text-slateMuted">Maritime Terminal: Shahid Rajaee Port, Bandar Abbas</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded bg-parchment flex items-center justify-center text-persianGold-dark mt-0.5">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <p class="font-bold uppercase tracking-wider" data-i18n="contact_email_title">Official Trade Desk</p>
+                  <p class="text-slateMuted font-mono">desk@arvanenergy.com / trade@arvanenergyparseh.com</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded bg-parchment flex items-center justify-center text-persianGold-dark mt-0.5">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div>
+                  <p class="font-bold uppercase tracking-wider" data-i18n="contact_dir_title">Executive Authority</p>
+                  <p class="text-slateMuted">Under the Directorship of Mohadese</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Interactive RFQ Submission Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-white p-8 rounded-xl border border-persianGold/40 shadow-md">
+            <h3 class="text-xl font-serif font-bold text-persianNavy mb-2" data-i18n="form_heading">Submit Commercial Inquiry / LOI</h3>
+            <p class="text-xs text-slateMuted mb-6 font-sans" data-i18n="form_sub">
+              Complete the details below to receive a Soft Corporate Offer (SCO) and current FOB/CIF price indications.
+            </p>
+
+            <form id="tradeInquiryForm" onsubmit="handleInquirySubmit(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_name">Authorized Representative</label>
+                  <input type="text" required placeholder="Full Name & Title" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_company">Purchaser / Corporate Name</label>
+                  <input type="text" required placeholder="Company Name" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_email">Corporate Email</label>
+                  <input type="email" required placeholder="trade@yourcompany.com" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_phone">Contact / WhatsApp / Phone</label>
+                  <input type="tel" required placeholder="+971... / +91... / +98..." class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_commodity">Target Commodity</label>
+                  <select class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
+                    <option value="Bitumen 60/70">Bitumen 60/70 (Penetration Grade)</option>
+                    <option value="Bitumen 80/100">Bitumen 80/100</option>
+                    <option value="Bitumen VG-30/VG-10">Bitumen VG-30 / VG-10</option>
+                    <option value="Granular Urea 46%">Granular Urea 46% (Fertilizer)</option>
+                    <option value="Chemical Methanol">Chemical Methanol 99.85%</option>
+                    <option value="Polymers (HDPE/LLDPE/PVC)">Polymers (HDPE / LLDPE / PVC)</option>
+                    <option value="Fuel Oil CST 180/380">Fuel Oil CST 180 / 380</option>
+                    <option value="Base Oils SN500/150">Base Oils (SN 500 / SN 150)</option>
+                    <option value="LPG">LPG (Propane / Butane)</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_qty">Estimated Quantity (MT / Month)</label>
+                  <input type="text" placeholder="e.g. 5,000 MT Spot / 20,000 MT Annual" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_terms">Destination Port & Incoterm</label>
+                <input type="text" placeholder="e.g., CIF Mundra Port, India / CFR Qingdao, China / FOB Bandar Abbas" class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-persianNavy uppercase tracking-wider mb-1" data-i18n="form_notes">Specifications & Scope of Order</label>
+                <textarea rows="3" placeholder="Specify packaging (e.g. 180kg new steel drums or bulk vessel), target target delivery dates, or target price..." class="w-full px-3.5 py-2.5 text-xs bg-alabaster border border-persianGold/30 rounded focus:border-persianNavy focus:outline-none transition-colors"></textarea>
+              </div>
+
+              <div id="formSuccessMessage" class="hidden p-3 bg-emerald-50 border border-emerald-400 text-emerald-800 rounded text-xs">
+                <i class="fa-solid fa-circle-check text-emerald-600 mr-1.5"></i>
+                <span data-i18n="msg_success">Your commercial inquiry has been logged with the Arvan Energy Parseh Trade Desk. An executive will contact you shortly.</span>
+              </div>
+
+              <button type="submit" class="w-full py-3 bg-persianNavy text-white hover:bg-persianNavy-royal border border-persianGold rounded font-semibold text-xs uppercase tracking-wider transition-all duration-300 shadow hover:shadow-lg flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane text-persianGold"></i>
+                <span data-i18n="form_submit">Transmit Trade Inquiry to Managing Director</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REFINED PERSIAN GEOMETRIC FOOTER -->
+  <footer class="bg-persianNavy-deep text-white border-t-2 border-persianGold pt-12 pb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-persianGold/20">
+        
+        <div class="flex items-center gap-3">
+          <div class="relative w-11 h-11 rounded bg-persianNavy border border-persianGold flex items-center justify-center overflow-hidden">
+            <!-- Custom Footer Logo with Fallback -->
+            <img 
+              src="aeplogo.png" 
+              alt="AEP Logo" 
+              class="w-full h-full object-contain p-1"
+              onerror="this.style.display='none'; document.getElementById('logo-fallback-footer').style.display='flex';"
+            >
+            <div id="logo-fallback-footer" class="hidden w-full h-full items-center justify-center">
+              <svg class="w-5 h-5 text-persianGold" viewBox="0 0 100 100" fill="currentColor">
+                <polygon points="50,5 64,36 98,36 71,57 82,90 50,70 18,90 29,57 2,36 36,36" fill="none" stroke="#C5A059" stroke-width="8"/>
+              </svg>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-serif font-bold text-lg text-white">ARVAN ENERGY PARSEH</h4>
+            <p class="text-xs text-persianGold-light font-farsi">شرکت آروان انرژی پارسه (سهامی خاص)</p>
+          </div>
+        </div>
+
+        <div class="text-center md:text-right text-xs text-gray-400 space-y-1">
+          <p><span class="text-persianGold font-semibold">Managing Director:</span> Mohadese | رئیس هیئت مدیره و مدیرعامل: مهندس محدثه</p>
+          <p>Iranian Commercial Registration • Trade License for Bulk Petrochemical & Bitumen Export</p>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
+        <p>© <span id="currentYear">2026</span> ARVAN ENERGY PARSEH. All Sovereign Rights Reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#hero" class="hover:text-persianGold transition-colors" data-i18n="ft_top">Back to Top</a>
+          <a href="#about" class="hover:text-persianGold transition-colors" data-i18n="ft_heritage">Corporate Heritage</a>
+          <a href="#contact" class="hover:text-persianGold transition-colors" data-i18n="ft_desk">Trade Desk</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BILINGUAL TRANSLATION & INTERACTIVE SCRIPTS -->
+  <script>
+    // Set dynamic current year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Bilingual Translation Dictionary
+    const translations = {
+      en: {
+        nav_about: "About Arvan",
+        nav_bitumen: "Bitumen Division",
+        nav_petrochem: "Petrochemicals",
+        nav_oilgas: "Oil & Distillates",
+        nav_qa: "Quality & Logistics",
+        nav_contact: "Trade Desk",
+        btn_submit_rfq: "Submit LOI / RFQ",
+        hero_badge: "Iranian Plateau Energy Corridors • Direct Refinery Sourcing",
+        hero_title_1: "Sovereign Supply of",
+        hero_title_2: "Petrochemicals, Bitumen & Energy",
+        hero_desc: "ARVAN ENERGY PARSEH (آروان انرژی پارسه) coordinates bulk supply, maritime chartering, and refinery-direct allocation of premium penetration bitumen, polymer grades, fertilizers, and base oils from Bandar Abbas and Persian Gulf logistics hubs to sovereign and industrial buyers worldwide.",
+        hero_cta_specs: "Explore Commodity Grades",
+        hero_cta_rfq: "Direct Trade Desk (LOI / SCO)",
+        stat_origin_label: "Export Origin",
+        stat_origin_val: "Bandar Abbas / BIK Port",
+        stat_specs_label: "Inspection Standard",
+        stat_specs_val: "SGS / Geo-Chem Certified",
+        stat_terms_label: "Trade Terms",
+        stat_terms_val: "FOB • CFR • CIF Global",
+        stat_exec_label: "Leadership",
+        stat_exec_val: "Mohadese & Executive Board",
+        about_tag: "Corporate Profile",
+        about_heading: "Strategic Trading Desk & Energy Architecture",
+        about_p1: "Registered under the sovereign laws of the Islamic Republic of Iran, ARVAN ENERGY PARSEH (آروان انرژی پارسه) serves as a direct bridge connecting major petrochemical refineries, vacuum bottom distillation complexes, and chemical production clusters with high-demand corridors in India, China, the UAE, and East Africa.",
+        about_p2: "Under the strategic leadership of Managing Director Mohadese, Arvan Energy Parseh maintains unyielding commitment to prompt documentation, batch chemical purity verification, flexible vessel chartering, and bankable international execution.",
+        about_quote: "\"Energy logistics require absolute precision, uncompromising contract honor, and sovereign dependability on every consignment.\"",
+        about_quote_author: "— Mohadese, Managing Director & Trade Principal",
+        pillar_1_title: "Refinery-Direct Vacuum Bottom",
+        pillar_1_desc: "Guaranteed allocations directly from Isfahan, Pasargad, Jey, and Bandar Abbas refineries, ensuring pure bitumen feedstock without secondary blending adulteration.",
+        pillar_2_title: "Maritime Logistics Mastery",
+        pillar_2_desc: "Dedicated berthing coordination at Shahid Rajaee (Bandar Abbas), BIK, and Bushehr with reliable ISO tank fleets, specialized bitutainers, and break-bulk vessel operations.",
+        pillar_3_title: "Independent Laboratory Verification",
+        pillar_3_desc: "Every loading is governed by full SGS, Geo-Chem, or Bureau Veritas pre-shipment inspection certificates confirming flash point, penetration, ductility, and purity.",
+        pillar_4_title: "Flexible Settlement Mechanisms",
+        pillar_4_desc: "Multilateral commercial agreements structured through regional financial channels in Dubai (AED), China (CNY), India (INR), and telegraphic transfer (TT) corridors.",
+        bitumen_badge: "Primary Pillar",
+        bitumen_title: "World-Standard Bitumen Division",
+        bitumen_sub: "Supplying asphalt infrastructure contractors and sovereign public works authorities with laboratory-certified paving grades, viscosity grades, and customized performance packaging.",
+        b6070_desc: "The international benchmark for highway construction, airport runways, and heavy-traffic asphalt wearing courses in temperate climates.",
+        b80100_desc: "Engineered for colder zones, secondary road networks, and mastic waterproofing formulations requiring higher ductility and elasticity.",
+        bvg_desc: "Tailored for Indian sub-continent and Southeast Asian road tenders meeting rigorous Bureau of Indian Standards (BIS) IS 73 regulations.",
+        spec_penetration: "Penetration @ 25°C:",
+        spec_softening: "Softening Point:",
+        spec_ductility: "Ductility @ 25°C:",
+        spec_flashpoint: "Flash Point:",
+        pack_drums: "New Steel Drums • Polybag • Bulk",
+        packaging_title: "Flexible Export Packaging & Discharge Solutions",
+        pack_1: "New Steel Drums",
+        pack_2: "Jumbo Poly Bags",
+        pack_3: "Bitutainers (ISO Tanks)",
+        pack_4: "Bulk Bitumen Vessels",
+        petro_badge: "Petrochemicals & Polymers",
+        petro_title: "Refined Petrochemical & Industrial Chemical Portfolio",
+        petro_sub: "Supplying primary polymers, nitrogen fertilizers, and industrial alcohols sourced from Bandar Imam (BIK), Pardis, and Zagros petrochemical zones.",
+        urea_desc: "Agricultural Grade 46% Nitrogen content, anti-caking treated, ideal for bulk shipping and 50kg bag distribution across agriculture ministries.",
+        methanol_desc: "Technical AA purity grade chemical feedstock for formaldehyde, acetic acid, and MTBE synthetic processes. Bulk parcel parcel tanker bookings.",
+        polymer_desc: "Film, blow-molding, and pipe grades (HDPE PE100, LLDPE 218W, PVC Suspension S-65) in original 25kg refinery shrink-wrapped pallets.",
+        chemicals_desc: "Caustic Soda Flakes (NaOH 98.5%) and Monoethylene Glycol (MEG Fiber Grade) for textiles, detergents, aluminum refining, and polyester fibers.",
+        oil_badge: "Energy & Distillates",
+        oil_title: "Oil & Gas Energy Commodities",
+        oil_desc: "Directly positioned within the Persian Gulf bunkering and refining architecture, ARVAN ENERGY PARSEH facilitates secure STS (Ship-to-Ship), shore tank storage, and FOB loadings of heavy fuel oils, virgin base oils, gasoil, and liquefied hydrocarbons.",
+        oil_check_1: "Strict conformity to ISO 8217 bunkering standards",
+        oil_check_2: "Prompt loading at designated STS anchorage corridors",
+        oil_check_3: "Full Ullage reports and customs export clearance",
+        qa_sub: "Stringent Protocol",
+        qa_title: "Independent Laboratory & Vessel Clearances",
+        qa_desc: "Zero tolerance for non-specification material. Every MT allocated under ARVAN ENERGY PARSEH undergoes rigorous international inspection before any bill of lading is signed.",
+        qa_1_title: "Pre-Shipment Assay",
+        qa_1_desc: "Comprehensive chemical breakdown verifying viscosity, ash content, flashpoint, and sulfur ratio by certified laboratories.",
+        qa_2_title: "Terminal Ullage & Draft Survey",
+        qa_2_desc: "Independent surveyor monitoring during vessel loading at Shahid Rajaee and BIK to certify exact tonnage and prevent line contamination.",
+        qa_3_title: "Direct Origin Documentation",
+        qa_3_desc: "Clean, certified Certificate of Origin (COO), commercial invoices, cargo manifests, and laboratory test reports provided promptly.",
+        contact_tag: "Trade Desk Communications",
+        contact_title: "Initiate Commercial Allocation",
+        contact_desc: "All commercial transactions proceed strictly against valid Letter of Intent (LOI) or Irrevocable Corporate Purchase Order (ICPO) with full banking coordinates and company profile.",
+        contact_entity: "Corporate Entity",
+        contact_registry: "National Persian Registration & Energy Guild Member",
+        contact_hq: "Headquarters & Port Desks",
+        contact_email_title: "Official Trade Desk",
+        contact_dir_title: "Executive Authority",
+        form_heading: "Submit Commercial Inquiry / LOI",
+        form_sub: "Complete the details below to receive a Soft Corporate Offer (SCO) and current FOB/CIF price indications.",
+        form_name: "Authorized Representative",
+        form_company: "Purchaser / Corporate Name",
+        form_email: "Corporate Email",
+        form_phone: "Contact / WhatsApp / Phone",
+        form_commodity: "Target Commodity",
+        form_qty: "Estimated Quantity (MT / Month)",
+        form_terms: "Destination Port & Incoterm",
+        form_notes: "Specifications & Scope of Order",
+        form_submit: "Transmit Trade Inquiry to Managing Director",
+        msg_success: "Your commercial inquiry has been logged with the Arvan Energy Parseh Trade Desk. An executive will contact you shortly.",
+        ft_top: "Back to Top",
+        ft_heritage: "Corporate Heritage",
+        ft_desk: "Trade Desk"
+      },
+      fa: {
+        nav_about: "درباره آروان",
+        nav_bitumen: "واحد قیر صادراتی",
+        nav_petrochem: "پتروشیمی و پلیمر",
+        nav_oilgas: "نفت و مشتقات",
+        nav_qa: "تضمین کیفیت و بازرسی",
+        nav_contact: "میز بازرگانی",
+        btn_submit_rfq: "ارسال درخواست رسمی (LOI)",
+        hero_badge: "شاهراه تأمین انرژی فلات ایران • تأمین مستقیم از پالایشگاه",
+        hero_title_1: "تأمین حاکمیتی و صادراتی",
+        hero_title_2: "محصولات پتروشیمی، قیر و فرآورده‌های نفتی",
+        hero_desc: "شرکت بین‌المللی «آروان انرژی پارسه» تأمین‌کننده مستقیم و متمرکز انواع قیر نفوذی و عملکردی، محصولات پلیمری و شیمیایی، کود اوره و روغن‌های پایه از مبادی بنادر شهید رجایی و امام خمینی به مقاصد بین‌المللی در آسیا و خاورمیانه.",
+        hero_cta_specs: "مشاهده گریدها و آنالیزها",
+        hero_cta_rfq: "ارتباط با میز بازرگانی (LOI / SCO)",
+        stat_origin_label: "مبادی بارگیری",
+        stat_origin_val: "بندرعباس / بندر امام خمینی",
+        stat_specs_label: "استاندارد بازرسی",
+        stat_specs_val: "تأییدیه بین‌المللی SGS / Geo-Chem",
+        stat_terms_label: "شرایط تحویل",
+        stat_terms_val: "FOB • CFR • CIF بین‌الملل",
+        stat_exec_label: "مدیریت ارشد",
+        stat_exec_val: "مهندس محدثه و هیئت مدیره",
+        about_tag: "مشخصات سازمانی",
+        about_heading: "ساختار بازرگانی و معماری زنجیره تأمین انرژی",
+        about_p1: "شرکت آروان انرژی پارسه با ثبت رسمی تحت قوانین جمهوری اسلامی ایران، به عنوان پل تجاری و استراتژیک میان پالایشگاه‌های نفت، صنایع تقطیر وکیوم باتوم و مجتمع‌های پتروشیمی خلیج فارس با بازارهای هدف در هند، چین، امارات و شرق آفریقا فعالیت می‌نماید.",
+        about_p2: "با مدیریت راهبردی سرکار خانم مهندس محدثه، این مجموعه همواره بر ارائه اسناد شفاف و قانونی، صحت‌سنجی خلوص مواد اولیه، چارترینگ مطمئن شناورهای اقیانوس‌پیما و تعهد تام به زمان‌بندی قراردادها استوار است.",
+        about_quote: "«لجستیک انرژی مستلزم دقت ریاضی، تعهد بی چون و چرا به مفاد قرارداد و قابلیت اطمینان مطلق در هر محموله است.»",
+        about_quote_author: "— مهندس محدثه، مدیرعامل و مدیر ارشد بازرگانی",
+        pillar_1_title: "تأمین وکیوم باتوم خالص پالایشگاهی",
+        pillar_1_desc: "تخصیص تضمین‌شده از پالایشگاه‌های اصفهان، پاسارگاد، نفت جی و بندرعباس، تضمین‌کننده کیفیت قیر بدون هرگونه افزودنی غیرمجاز.",
+        pillar_2_title: "تسلط بر لجستیک و بنادر جنوبی",
+        pillar_2_desc: "هماهنگی مستقیم پهلوگیری در اسکله‌های بندر شهید رجایی و بندر امام، مجهز به ناوگان ایزوتانک، بیتوتینر و بارگیری فله فیدرها.",
+        pillar_3_title: "بازرسی و کنترل کیفیت مستقل",
+        pillar_3_desc: "صدور گواهینامه‌های رسمی SGS و بازرسی مستقل پیش از بارگیری شامل درجه نفوذ، نقطه اشتعال، ویسکوزیته و خلوص شیمیایی.",
+        pillar_4_title: "کانال‌های مالی منعطف بین‌المللی",
+        pillar_4_desc: "تسویه قراردادها از طریق مسیرهای رسمی ارزی منطقه‌ای در دبی (درهم)، چین (یوآن)، هند (روپیه) و حواله‌های معتبر تجاری.",
+        bitumen_badge: "محصول استراتژیک",
+        bitumen_title: "واحد بین‌المللی قیرهای ساختمانی و راه‌سازی",
+        bitumen_sub: "تأمین انواع گریدهای نفوذی، گریدهای عملکردی (PG) و ویسکوزیته بر اساس استانداردهای روز جهانی جهت پروژه‌های زیرساختی و آزادراهی.",
+        b6070_desc: "استاندارد طلایی صادرات جهت راه‌سازی، آسفالت بزرگراه‌ها و باندهای فرودگاهی در شرایط آب و هوایی معتدل.",
+        b80100_desc: "مناسب مناطق با اقلیم سردسیر و راه‌های فرعی با انعطاف‌پذیری و خاصیت ارتجاعی بسیار بالا.",
+        bvg_desc: "طراحی و پالایش ویژه مطابق استاندارد IS 73 جهت صادرات مستقیم به بنادر و مناقصات آزادراهی هندوستان و آسیای جنوب شرقی.",
+        spec_penetration: "درجه نفوذ در دمای ۲۵ درجه:",
+        spec_softening: "نقطه نرمی:",
+        spec_ductility: "خاصیت کشسانی (Ductility):",
+        spec_flashpoint: "نقطه اشتعال:",
+        pack_drums: "بشکه‌های نو فلزی • جامبوبگ • فله",
+        packaging_title: "روش‌های تخصصی بسته‌بندی و حمل قیر",
+        pack_1: "بشکه نو فولادی",
+        pack_2: "جامبوبگ‌های پلیمری",
+        pack_3: "بیتوتینر (کانتینر حرارتی)",
+        pack_4: "کشتی‌های تانکر فله",
+        petro_badge: "محصولات پلیمری و شیمیایی",
+        petro_title: "سبد کالایی پتروشیمی و مواد پایه صنعتی",
+        petro_sub: "تأمین انواع پلیمرها، کودهای ازته و الکل‌های صنعتی از پتروشیمی‌های بزرگ بندر امام، پردیس و زاگرس.",
+        urea_desc: "کود اوره گرانول با خلوص ۴۶ درصد نیتروژن، دارای پوشش ضد کلوخه‌شدن، بارگیری فله و کیسه‌های ۵۰ کیلویی برای مصارف کشاورزی بین‌المللی.",
+        methanol_desc: "متانول گرید AA با خلوص ۹۹.۸۵ درصد به عنوان خوراک پایه‌ای صنایع شیمیایی، تولید اسید استیک و فرمالدئید.",
+        polymer_desc: "انواع گریدهای فیلم، بادی و لوله (HDPE PE100، LLDPE 218W، PVC S-65) در بسته‌بندی پالتی ۲۵ کیلویی پالایشگاهی.",
+        chemicals_desc: "سود پرک (Caustic Soda 98.5%) و منواتیلن گلایکول (MEG) جهت صنایع نساجی، شوینده‌ها و تولید الیاف پلی‌استر.",
+        oil_badge: "نفت، گاز و مشتقات سنگین",
+        oil_title: "هیدروکربن‌ها و فرآورده‌های انرژی",
+        oil_desc: "بهره‌گیری از زیرساخت‌های بانکرینگ و ترانزیت خلیج فارس، عملیات ایمن STS، مخازن ساحلی و بارگیری محموله‌های سنگین نفتی و روغن‌های پایه.",
+        oil_check_1: "تطابق کامل با استاندارد بین‌المللی ISO 8217 بانکرینگ",
+        oil_check_2: "بارگیری سریع در لنگرگاه‌های مجاز و هماهنگی STS",
+        oil_check_3: "گزارشات دقیق تلورانس و برگه‌های رسمی ترخیص گمرکی",
+        qa_sub: "پروتکل نظارتی دقیق",
+        qa_title: "بازرسی و کنترل کیفیت توسط آزمایشگاه‌های مستقل",
+        qa_desc: "عدم پذیرش هرگونه انحراف از آنالیز توافق‌شده. تمامی محموله‌ها پیش از امضای بارنامه توسط بازرسان بین‌المللی بررسی و تأیید می‌گردند.",
+        qa_1_title: "آنالیز جامع پیش از بارگیری",
+        qa_1_desc: "بررسی کامل نقطه اشتعال، میزان خاکستر، درصد گوگرد و گرانروی در مجهزترین آزمایشگاه‌های معتبر.",
+        qa_2_title: "درافت سروری و اندازه‌گیری مخازن",
+        qa_2_desc: "حضور بازرس بین‌المللی در زمان بارگیری کشتی در بندر شهید رجایی جهت تأیید تناژ دقیق و سلامت خطوط لوله.",
+        qa_3_title: "اسناد و سرتیفیکیت معتبر مبدا",
+        qa_3_desc: "ارائه سریع گواهی مبدأ، سیاهه تجاری، بارنامه دریایی و گواهی سلامت کالا جهت تسویه بانکی و گمرکات مقصد.",
+        contact_tag: "ارتباط با میز بازرگانی",
+        contact_title: "شروع فرایند تخصیص و ثبت سفارش",
+        contact_desc: "آغاز هرگونه مذاکره رسمی مستلزم ارائه نامه تمایل به خرید (LOI) یا سفارش رسمی شرکتی (ICPO) با مشخصات کامل بانکی خریدار است.",
+        contact_entity: "شخصیت حقوقی شرکت",
+        contact_registry: "ثبت رسمی شرکت‌ها و عضو انجمن‌های تخصصی صادرات انرژی",
+        contact_hq: "دفتر مرکزی و دفاتر بندری",
+        contact_email_title: "ایمیل رسمی میز بازرگانی",
+        contact_dir_title: "مدیریت ارشد اجرایی",
+        form_heading: "ارسال استعلام تجاری و درخواست خرید",
+        form_sub: "جهت دریافت پیشنهاد اولیه (SCO) و اطلاع از مظنه‌های به‌روز FOB و CIF فرم زیر را تکمیل نمایید.",
+        form_name: "نام و سمت نماینده مجاز",
+        form_company: "نام شرکت یا سازمان خریدار",
+        form_email: "ایمیل رسمی شرکتی",
+        form_phone: "شماره تماس / واتس‌اپ تجاری",
+        form_commodity: "کالای مورد تقاضا",
+        form_qty: "تناژ درخواستی (ماهانه یا پارت محموله)",
+        form_terms: "بندر مقصد و ترم تجاری (Incoterms)",
+        form_notes: "مشخصات فنی و شرایط ویژه قرارداد",
+        form_submit: "ارسال استعلام رسمی به دفتر مدیریت عامل",
+        msg_success: "استعلام شما در سیستم میز بازرگانی آروان انرژی پارسه ثبت گردید. کارشناسان ما به زودی با شما تماس خواهند گرفت.",
+        ft_top: "بازگشت به بالا",
+        ft_heritage: "هویت سازمانی",
+        ft_desk: "میز بازرگانی"
+      }
+    };
+
+    let currentLang = 'en';
+
+    function toggleLanguage() {
+      currentLang = currentLang === 'en' ? 'fa' : 'en';
+      const htmlEl = document.documentElement;
+      const langLabel = document.getElementById('langLabel');
+
+      if (currentLang === 'fa') {
+        htmlEl.setAttribute('lang', 'fa');
+        htmlEl.setAttribute('dir', 'rtl');
+        langLabel.textContent = 'English / EN';
+      } else {
+        htmlEl.setAttribute('lang', 'en');
+        htmlEl.setAttribute('dir', 'ltr');
+        langLabel.textContent = 'فارسی / FA';
+      }
+
+      // Update text for all elements with data-i18n
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[currentLang][key]) {
+          el.innerHTML = translations[currentLang][key];
+        }
+      });
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    function handleInquirySubmit(event) {
+      event.preventDefault();
+      const form = document.getElementById('tradeInquiryForm');
+      const msg = document.getElementById('formSuccessMessage');
+      
+      msg.classList.remove('hidden');
+      form.reset();
+
+      setTimeout(() => {
+        msg.classList.add('hidden');
+      }, 7000);
+    }
+  </script>
+
+</body>
+</html>
