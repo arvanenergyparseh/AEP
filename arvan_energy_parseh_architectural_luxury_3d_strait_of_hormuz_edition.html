@@ -1,0 +1,2056 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arvan Energy Parseh | آروان انرژی پارسه — Petrochemicals, Fertilizers & Energy</title>
+
+  <!-- Google Fonts: Refined Luxury Serif, Clean Modern Sans, Persian, Arabic & Chinese -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+SC:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Chart.js for Light Editorial Market Intelligence -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+
+  <!-- Globe.gl for Real-Life 3D Satellite Strait of Hormuz & Maritime Routes -->
+  <script src="https://cdn.jsdelivr.net/npm/globe.gl@2.46.2/dist/globe.gl.min.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            alabaster: '#FAF8F5',
+            silk: '#FFFFFF',
+            limestone: '#F3EFEA',
+            reserved: '#EFECE6',
+            ink: '#1A1D20',
+            stone: '#525860',
+            muted: '#848B94',
+            champagne: '#B08D57',
+            champagneLight: '#DFD2BD',
+            teal: '#0F6E6E',
+            tealDark: '#0A5252',
+            hairline: '#E6E0D6',
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            persian: ['Vazirmatn', 'sans-serif'],
+            arabic: ['Amiri', 'serif'],
+            chinese: ['Noto Sans SC', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Base Light Architectural Theme */
+    body {
+      background-color: #FAF8F5;
+      color: #1A1D20;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .font-editorial {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    html[lang="fa"] body,
+    html[lang="fa"] .font-editorial {
+      font-family: 'Vazirmatn', sans-serif;
+      letter-spacing: 0 !important;
+    }
+    html[lang="ar"] body,
+    html[lang="ar"] .font-editorial {
+      font-family: 'Amiri', 'Vazirmatn', serif;
+      letter-spacing: 0 !important;
+    }
+    html[lang="zh"] body,
+    html[lang="zh"] .font-editorial {
+      font-family: 'Noto Sans SC', sans-serif;
+      letter-spacing: 0.02em;
+    }
+
+    /* Ultra-Delicate Persian Girih Geometric Watermark */
+    .girih-watermark {
+      background-image: url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23B08D57' stroke-opacity='0.055' stroke-width='0.9'%3E%3Cpolygon points='80,10 98,62 150,80 98,98 80,150 62,98 10,80 62,62'/%3E%3Cpolygon points='80,32 114,46 128,80 114,114 80,128 46,114 32,80 46,46'/%3E%3Ccircle cx='80' cy='80' r='20'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    /* Refined Champagne Hairline Divider */
+    .persian-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #DFD2BD 20%, #B08D57 50%, #DFD2BD 80%, transparent);
+    }
+
+    /* Architectural Reserved Image Frame Fallback */
+    .reserved-frame {
+      position: relative;
+      background-color: #EFECE6;
+      border: 1px dashed rgba(176, 141, 87, 0.55);
+      transition: border-color 0.3s ease, background-color 0.3s ease;
+    }
+    .reserved-frame::before,
+    .reserved-frame::after {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      pointer-events: none;
+      opacity: 0.75;
+    }
+    .reserved-frame::before {
+      top: 8px;
+      left: 8px;
+      border-top: 1.5px solid #B08D57;
+      border-left: 1.5px solid #B08D57;
+    }
+    .reserved-frame::after {
+      bottom: 8px;
+      right: 8px;
+      border-bottom: 1.5px solid #B08D57;
+      border-right: 1.5px solid #B08D57;
+    }
+
+    /* Calm Luxury Card */
+    .luxury-card {
+      background-color: #FFFFFF;
+      border: 1px solid #E6E0D6;
+      box-shadow: 0 2px 12px rgba(26, 29, 32, 0.025);
+      transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s ease, border-color 0.28s ease;
+    }
+    .luxury-card:hover {
+      border-color: #B08D57;
+      box-shadow: 0 12px 30px rgba(26, 29, 32, 0.06);
+      transform: translateY(-2px);
+    }
+
+    /* Focus Mode: Hides chrome & widens editorial margins */
+    body.focus-mode #deskBar,
+    body.focus-mode #mainNavLinks,
+    body.focus-mode #conciergeRoot,
+    body.focus-mode footer {
+      display: none !important;
+    }
+    body.focus-mode section > div {
+      max-width: 56rem !important;
+      transition: max-width 0.3s ease;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 7px; height: 7px; }
+    ::-webkit-scrollbar-track { background: #FAF8F5; }
+    ::-webkit-scrollbar-thumb { background: #D4C8B4; border-radius: 99px; }
+    ::-webkit-scrollbar-thumb:hover { background: #B08D57; }
+  </style>
+</head>
+<body class="bg-alabaster text-ink selection:bg-champagne/20 selection:text-ink">
+
+  <!-- ==================== 0. READING PROGRESS BAR ==================== -->
+  <div id="readingProgress" class="fixed top-0 left-0 h-[2.5px] bg-champagne z-50 transition-all duration-100" style="width: 0%;"></div>
+
+  <!-- ==================== 1. GLOBAL TRADING DESK BAR ==================== -->
+  <div id="deskBar" class="bg-limestone border-b border-hairline text-[11px] text-stone">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-2 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-1" id="globalClocks">
+        <!-- Populated live by JS: Tehran, Dubai, Mumbai, Shanghai, Moscow -->
+      </div>
+      <div class="hidden md:flex items-center gap-3 text-[10px] uppercase tracking-[0.16em] text-champagne font-medium">
+        <span><i class="fa-solid fa-anchor mr-1"></i>Strait of Hormuz Active</span>
+        <span class="text-hairline">|</span>
+        <span>SGS · Intertek · BV</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 2. STICKY MINIMALIST HEADER ==================== -->
+  <header class="sticky top-0 z-40 bg-silk/95 backdrop-blur-md border-b border-hairline">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between gap-3">
+      <!-- Brand Logo (arvan.jpg with AEP monogram fallback) -->
+      <a href="#overview" class="flex items-center gap-3 group shrink-0">
+        <div class="w-11 h-11 rounded-xl border border-champagne/60 bg-alabaster flex items-center justify-center overflow-hidden relative">
+          <img src="arvan.jpg" alt="Arvan Energy Parseh Logo" class="w-full h-full object-contain p-1"
+               onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
+          <div class="hidden w-full h-full flex items-center justify-center font-editorial font-bold text-sm tracking-widest text-champagne bg-alabaster">
+            AEP
+          </div>
+        </div>
+        <div class="leading-tight">
+          <div class="font-editorial text-base sm:text-lg font-semibold tracking-wider text-ink" data-i18n="brandName">ARVAN ENERGY PARSEH</div>
+          <div class="text-[11px] text-champagne font-persian tracking-wide" data-i18n="brandSub">آروان انرژی پارسه</div>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav id="mainNavLinks" class="hidden xl:flex items-center gap-6 text-[13px] font-medium text-stone">
+        <a href="#commodities" class="hover:text-teal transition" data-i18n="navCommodities">Commodities</a>
+        <a href="#hormuz-3d" class="hover:text-teal transition" data-i18n="navRoutes">3D Hormuz Routes</a>
+        <a href="#tools" class="hover:text-teal transition" data-i18n="navTools">Trade Tools</a>
+        <a href="#compliance" class="hover:text-teal transition" data-i18n="navCompliance">COA & Compliance</a>
+        <a href="#insights" class="hover:text-teal transition" data-i18n="navInsights">Market Insights</a>
+        <a href="#loi-builder" class="hover:text-teal transition" data-i18n="navLoi">LOI Builder</a>
+      </nav>
+
+      <!-- Right Controls: Focus Mode, Printable Profile, Cargo Brief, 5-Language Switcher -->
+      <div class="flex items-center gap-2">
+        <!-- Focus Mode Toggle -->
+        <button onclick="toggleFocusMode()" id="focusModeBtn" title="Toggle Focus Reading Mode"
+                class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border border-hairline bg-alabaster text-[11px] font-medium text-stone hover:border-champagne hover:text-ink transition">
+          <i class="fa-regular fa-eye text-champagne"></i>
+          <span class="hidden md:inline" data-i18n="btnFocus">Focus</span>
+        </button>
+
+        <!-- One-Click Printable Company Profile -->
+        <button onclick="openPrintableProfile()" title="Printable Company Profile"
+                class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border border-hairline bg-alabaster text-[11px] font-medium text-stone hover:border-teal hover:text-teal transition">
+          <i class="fa-solid fa-file-pdf text-teal"></i>
+          <span class="hidden lg:inline" data-i18n="btnProfile">Profile PDF</span>
+        </button>
+
+        <!-- Cargo Brief Drawer Trigger -->
+        <button onclick="toggleCargoDrawer()" class="relative inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-champagne/60 bg-alabaster text-[11px] font-medium text-ink hover:bg-limestone transition">
+          <i class="fa-solid fa-briefcase text-champagne"></i>
+          <span class="hidden md:inline" data-i18n="btnBrief">Brief</span>
+          <span id="cargoCountBadge" class="px-1.5 py-0.5 rounded-full bg-teal text-silk text-[10px] font-semibold">0</span>
+        </button>
+
+        <!-- 5-Language Switcher -->
+        <div class="flex items-center bg-alabaster border border-hairline rounded-xl p-0.5 gap-0.5" role="group" aria-label="Language Switcher">
+          <button onclick="setLanguage('en')" data-lang="en" class="lang-btn px-2 py-1 rounded-lg text-[10px] font-medium transition">EN</button>
+          <button onclick="setLanguage('fa')" data-lang="fa" class="lang-btn px-2 py-1 rounded-lg text-[10px] font-persian font-medium transition">FA</button>
+          <button onclick="setLanguage('ar')" data-lang="ar" class="lang-btn px-2 py-1 rounded-lg text-[10px] font-arabic font-medium transition">AR</button>
+          <button onclick="setLanguage('zh')" data-lang="zh" class="lang-btn px-2 py-1 rounded-lg text-[10px] font-chinese font-medium transition">ZH</button>
+          <button onclick="setLanguage('ru')" data-lang="ru" class="lang-btn px-2 py-1 rounded-lg text-[10px] font-medium transition">RU</button>
+        </div>
+
+        <button onclick="toggleMobileNav()" class="xl:hidden w-9 h-9 rounded-xl border border-hairline bg-alabaster text-ink flex items-center justify-center hover:border-champagne transition" aria-label="Menu">
+          <i class="fa-solid fa-bars text-xs"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileNav" class="hidden xl:hidden bg-silk border-t border-hairline px-5 py-4 space-y-1.5">
+      <a href="#commodities" onclick="toggleMobileNav()" class="block px-4 py-2 rounded-xl text-sm text-stone hover:bg-alabaster hover:text-teal" data-i18n="navCommodities">Commodities</a>
+      <a href="#hormuz-3d" onclick="toggleMobileNav()" class="block px-4 py-2 rounded-xl text-sm text-stone hover:bg-alabaster hover:text-teal" data-i18n="navRoutes">3D Hormuz Routes</a>
+      <a href="#tools" onclick="toggleMobileNav()" class="block px-4 py-2 rounded-xl text-sm text-stone hover:bg-alabaster hover:text-teal" data-i18n="navTools">Trade Tools</a>
+      <a href="#compliance" onclick="toggleMobileNav()" class="block px-4 py-2 rounded-xl text-sm text-stone hover:bg-alabaster hover:text-teal" data-i18n="navCompliance">COA &amp; Compliance</a>
+      <a href="#insights" onclick="toggleMobileNav()" class="block px-4 py-2 rounded-xl text-sm text-stone hover:bg-alabaster hover:text-teal" data-i18n="navInsights">Market Insights</a>
+      <a href="#loi-builder" onclick="toggleMobileNav()" class="block px-4 py-2 rounded-xl text-sm text-stone hover:bg-alabaster hover:text-teal" data-i18n="navLoi">LOI Builder</a>
+      <div class="pt-2 flex gap-2">
+        <button onclick="openPrintableProfile(); toggleMobileNav();" class="flex-1 py-2 rounded-xl bg-teal text-silk text-xs font-medium">Company Profile PDF</button>
+        <button onclick="toggleFocusMode(); toggleMobileNav();" class="flex-1 py-2 rounded-xl border border-hairline text-xs text-stone">Focus Mode</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 3. EDITORIAL HERO SECTION (1.jpg) ==================== -->
+  <section id="overview" class="relative girih-watermark border-b border-hairline">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 sm:py-20 lg:py-24">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-silk border border-champagne/40 mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-teal"></span>
+            <span class="text-[11px] font-medium uppercase tracking-[0.18em] text-champagne" data-i18n="heroEyebrow">ISLAMIC REPUBLIC OF IRAN • GLOBAL ENERGY EXPORT</span>
+          </div>
+
+          <h1 class="font-editorial text-4xl sm:text-5xl lg:text-6xl font-medium text-ink leading-[1.12] tracking-tight mb-6" data-i18n="heroHeadline">
+            Refined Persian Energy &amp; Petrochemical Commerce.
+          </h1>
+
+          <p class="text-base sm:text-lg text-stone leading-relaxed max-w-2xl mb-8 font-light" data-i18n="heroDesc">
+            Arvan Energy Parseh bridges Iran’s premier petrochemical complexes and natural gas reserves with international industrial buyers—delivering prime polymers, granular sulfur, urea N46, bitumen, LPG, and LNG with institutional precision.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-3.5 mb-10">
+            <a href="#loi-builder" class="px-7 py-3.5 rounded-xl bg-teal hover:bg-tealDark text-silk text-sm font-medium tracking-wide transition shadow-sm" data-i18n="heroCtaPrimary">
+              Draft Instant LOI
+            </a>
+            <a href="#hormuz-3d" class="px-7 py-3.5 rounded-xl bg-silk hover:bg-limestone border border-hairline hover:border-champagne text-ink text-sm font-medium tracking-wide transition" data-i18n="heroCtaSecondary">
+              Explore 3D Export Routes
+            </a>
+          </div>
+
+          <div class="grid grid-cols-3 gap-5 pt-7 border-t border-hairline max-w-xl">
+            <div>
+              <div class="font-editorial text-3xl sm:text-4xl font-semibold text-ink">10</div>
+              <div class="text-xs text-stone mt-1" data-i18n="metric1">Core Commodities</div>
+            </div>
+            <div>
+              <div class="font-editorial text-3xl sm:text-4xl font-semibold text-ink">03</div>
+              <div class="text-xs text-stone mt-1" data-i18n="metric2">Persian Gulf Hubs</div>
+            </div>
+            <div>
+              <div class="font-editorial text-3xl sm:text-4xl font-semibold text-ink">FOB<span class="text-champagne font-light">/</span>CIF</div>
+              <div class="text-xs text-stone mt-1" data-i18n="metric3">Global Maritime Reach</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Frame (1.jpg with Architectural Reserved Fallback) -->
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl overflow-hidden w-full aspect-[4/5] bg-reserved relative shadow-sm">
+            <img src="1.jpg" alt="Persian Gulf Energy Infrastructure" class="w-full h-full object-cover"
+                 onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
+            <div class="hidden reserved-frame w-full h-full flex flex-col items-center justify-center p-8 text-center">
+              <div class="w-12 h-12 rounded-full border border-champagne/45 bg-silk/80 flex items-center justify-center text-champagne mb-4">
+                <i class="fa-regular fa-image text-lg"></i>
+              </div>
+              <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-ink/75">RESERVED FRAME · 1.jpg</p>
+              <span class="mt-2 text-[11px] text-muted font-light">Persian Gulf Energy Infrastructure (4:5)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. REAL-LIFE 3D SATELLITE STRAIT OF HORMUZ & EXPORT ROUTES ==================== -->
+  <section id="hormuz-3d" class="py-20 sm:py-24 bg-silk border-b border-hairline">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+        <div class="max-w-2xl">
+          <div class="text-[11px] font-semibold uppercase tracking-[0.2em] text-champagne mb-2" data-i18n="sec3dEyebrow">LIVE SATELLITE MARITIME CORRIDORS</div>
+          <h2 class="font-editorial text-3xl sm:text-4xl font-medium text-ink" data-i18n="sec3dTitle">Strait of Hormuz &amp; Global Export Lanes</h2>
+          <p class="text-sm sm:text-base text-stone mt-2 font-light" data-i18n="sec3dSub">
+            Interactive 3D satellite visualization of vessels departing Bandar Abbas, Assaluyeh, and Bandar Imam through the Strait of Hormuz toward global industrial hubs.
+          </p>
+        </div>
+
+        <!-- Camera Quick Controls -->
+        <div class="flex flex-wrap gap-2">
+          <button onclick="focusGlobe('hormuz')" class="px-4 py-2 rounded-xl bg-teal text-silk text-xs font-medium hover:bg-tealDark transition">
+            <i class="fa-solid fa-crosshairs mr-1.5"></i>Strait of Hormuz
+          </button>
+          <button onclick="focusGlobe('global')" class="px-4 py-2 rounded-xl bg-alabaster border border-hairline text-ink text-xs font-medium hover:border-champagne transition">
+            <i class="fa-solid fa-earth-asia mr-1.5 text-champagne"></i>Global Export Lanes
+          </button>
+          <button onclick="focusGlobe('reset')" class="px-4 py-2 rounded-xl bg-alabaster border border-hairline text-stone text-xs font-medium hover:border-champagne transition">
+            Reset View
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <!-- 3D Globe Container (Light Alabaster Frame) -->
+        <div class="lg:col-span-8 rounded-2xl border border-hairline bg-alabaster overflow-hidden relative min-h-[420px] sm:min-h-[500px] shadow-sm">
+          <div id="globeViz" class="w-full h-[420px] sm:h-[500px] cursor-grab active:cursor-grabbing"></div>
+          <div class="absolute bottom-4 left-4 bg-silk/90 backdrop-blur-sm border border-hairline rounded-xl px-3.5 py-2 text-[11px] text-stone pointer-events-none">
+            <span class="inline-block w-2 h-2 rounded-full bg-teal mr-1.5"></span>Origin: Bandar Abbas, Assaluyeh, Bandar Imam
+            <span class="mx-2 text-hairline">|</span>
+            <span class="inline-block w-2 h-2 rounded-full bg-champagne mr-1.5"></span>Drag to orbit · Scroll to zoom
+          </div>
+        </div>
+
+        <!-- Destination Port Selector & Route Telemetry -->
+        <div class="lg:col-span-4 flex flex-col justify-between bg-alabaster rounded-2xl border border-hairline p-6">
+          <div>
+            <div class="text-[11px] font-semibold uppercase tracking-[0.18em] text-champagne mb-3">SELECT DESTINATION HUB</div>
+            <div class="grid grid-cols-2 gap-2 mb-6" id="destPortButtons">
+              <!-- Rendered by JS -->
+            </div>
+
+            <div class="bg-silk rounded-xl border border-hairline p-5 space-y-3.5" id="routeInfoCard">
+              <div class="flex items-center justify-between">
+                <span id="rtName" class="font-editorial text-2xl font-semibold text-ink">Mundra, India</span>
+                <span id="rtCode" class="text-[10px] font-semibold uppercase tracking-widest px-2.5 py-1 rounded-full bg-alabaster border border-hairline text-teal">INMUN</span>
+              </div>
+              <div class="grid grid-cols-2 gap-3 pt-2 border-t border-hairline">
+                <div>
+                  <div class="text-[10px] uppercase tracking-wider text-muted">Sailing Window</div>
+                  <div id="rtDays" class="text-sm font-semibold text-teal mt-0.5">4 – 6 Days</div>
+                </div>
+                <div>
+                  <div class="text-[10px] uppercase tracking-wider text-muted">Nautical Distance</div>
+                  <div id="rtDist" class="text-sm font-semibold text-ink mt-0.5">~890 NM</div>
+                </div>
+              </div>
+              <div class="pt-2 border-t border-hairline">
+                <div class="text-[10px] uppercase tracking-wider text-muted">Standard Vessel / Container</div>
+                <div id="rtVessel" class="text-xs text-stone mt-1 leading-relaxed">Feeder FCL, Handymax Bulk &amp; Bitumen Tankers</div>
+              </div>
+              <div class="pt-2 border-t border-hairline">
+                <div class="text-[10px] uppercase tracking-wider text-muted">Primary Origin Corridor</div>
+                <div id="rtOrigin" class="text-xs font-medium text-champagne mt-0.5">Bandar Abbas (IRBND) → Strait of Hormuz</div>
+              </div>
+            </div>
+          </div>
+
+          <a href="#loi-builder" class="mt-5 w-full py-3 rounded-xl bg-teal hover:bg-tealDark text-silk text-xs font-medium text-center transition">
+            Request Freight Quote on This Corridor
+          </a>
+        </div>
+      </div>
+
+      <!-- 3-Slot Port Gallery (12.jpg, 13.jpg, 14.jpg) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        <!-- 12.jpg -->
+        <div class="rounded-2xl overflow-hidden border border-hairline bg-silk">
+          <div class="aspect-[16/10] bg-reserved relative overflow-hidden">
+            <img src="12.jpg" alt="Bandar Abbas Shahid Rajaee Port" class="w-full h-full object-cover"
+                 onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
+            <div class="hidden reserved-frame w-full h-full flex flex-col items-center justify-center p-4 text-center">
+              <i class="fa-regular fa-image text-champagne mb-2"></i>
+              <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-ink/75">RESERVED FRAME · 12.jpg</span>
+              <span class="text-[10px] text-muted mt-1">Bandar Abbas (Shahid Rajaee)</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="text-[10px] uppercase tracking-widest text-teal font-semibold">UN/LOCODE: IRBND · -15.0m Draft</div>
+            <div class="font-editorial text-xl font-medium text-ink mt-0.5">Bandar Abbas (Shahid Rajaee)</div>
+            <p class="text-xs text-stone font-light mt-1">Flagship container, bitumen drum &amp; bulk sulfur hub at the Strait of Hormuz.</p>
+          </div>
+        </div>
+
+        <!-- 13.jpg -->
+        <div class="rounded-2xl overflow-hidden border border-hairline bg-silk">
+          <div class="aspect-[16/10] bg-reserved relative overflow-hidden">
+            <img src="13.jpg" alt="Assaluyeh PSEEZ Terminal" class="w-full h-full object-cover"
+                 onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
+            <div class="hidden reserved-frame w-full h-full flex flex-col items-center justify-center p-4 text-center">
+              <i class="fa-regular fa-image text-champagne mb-2"></i>
+              <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-ink/75">RESERVED FRAME · 13.jpg</span>
+              <span class="text-[10px] text-muted mt-1">Assaluyeh (Pars SEZ)</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="text-[10px] uppercase tracking-widest text-teal font-semibold">UN/LOCODE: IRPGU · -14.5m Draft</div>
+            <div class="font-editorial text-xl font-medium text-ink mt-0.5">Assaluyeh (PSEEZ)</div>
+            <p class="text-xs text-stone font-light mt-1">South Pars gas, Urea N46, granular sulfur &amp; VLGC LPG export jetties.</p>
+          </div>
+        </div>
+
+        <!-- 14.jpg -->
+        <div class="rounded-2xl overflow-hidden border border-hairline bg-silk">
+          <div class="aspect-[16/10] bg-reserved relative overflow-hidden">
+            <img src="14.jpg" alt="Bandar Imam Khomeini SEZ" class="w-full h-full object-cover"
+                 onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
+            <div class="hidden reserved-frame w-full h-full flex flex-col items-center justify-center p-4 text-center">
+              <i class="fa-regular fa-image text-champagne mb-2"></i>
+              <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-ink/75">RESERVED FRAME · 14.jpg</span>
+              <span class="text-[10px] text-muted mt-1">Bandar Imam Khomeini SEZ</span>
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="text-[10px] uppercase tracking-widest text-teal font-semibold">UN/LOCODE: IRBKM · -13.5m Draft</div>
+            <div class="font-editorial text-xl font-medium text-ink mt-0.5">Bandar Imam Khomeini SEZ</div>
+            <p class="text-xs text-stone font-light mt-1">Integrated polymer &amp; chemical tanker terminal with direct pipeline manifolds.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. 10 CORE COMMODITIES SHOWCASE (2.jpg – 11.jpg) ==================== -->
+  <section id="commodities" class="py-20 sm:py-24 bg-alabaster">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+        <div class="max-w-2xl">
+          <div class="text-[11px] font-semibold uppercase tracking-[0.2em] text-champagne mb-2" data-i18n="secCommEyebrow">EXPORT PORTFOLIO</div>
+          <h2 class="font-editorial text-3xl sm:text-4xl font-medium text-ink" data-i18n="secCommTitle">Core Commodities Portfolio</h2>
+          <p class="text-sm sm:text-base text-stone mt-2 font-light" data-i18n="secCommSub">
+            Inspect full technical dossiers, bundle multiple products into your Cargo Brief, or tick 2–3 commodities to compare specifications side by side.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-2" id="commodityFilters">
+          <button onclick="filterCommodities('all')" data-cat="all" class="comm-filter px-4 py-2 rounded-full text-xs font-medium border transition bg-teal text-silk border-teal" data-i18n="catAll">All</button>
+          <button onclick="filterCommodities('petrochemicals')" data-cat="petrochemicals" class="comm-filter px-4 py-2 rounded-full text-xs font-medium border transition bg-silk text-stone border-hairline hover:border-champagne" data-i18n="catPetro">Petrochemicals</button>
+          <button onclick="filterCommodities('fertilizers')" data-cat="fertilizers" class="comm-filter px-4 py-2 rounded-full text-xs font-medium border transition bg-silk text-stone border-hairline hover:border-champagne" data-i18n="catFert">Fertilizers &amp; Minerals</button>
+          <button onclick="filterCommodities('hydrocarbons')" data-cat="hydrocarbons" class="comm-filter px-4 py-2 rounded-full text-xs font-medium border transition bg-silk text-stone border-hairline hover:border-champagne" data-i18n="catHydro">Hydrocarbons &amp; Gas</button>
+        </div>
+      </div>
+
+      <div id="commodityGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+        <!-- Rendered dynamically by JS -->
+      </div>
+    </div>
+  </section>
+
+  <div class="persian-divider max-w-7xl mx-auto"></div>
+
+  <!-- ==================== 6. COMMERCIAL TOOLS: GRADE FINDER, LOAD CALCULATOR & CONVERTER ==================== -->
+  <section id="tools" class="py-20 sm:py-24 bg-silk">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl mb-12">
+        <div class="text-[11px] font-semibold uppercase tracking-[0.2em] text-champagne mb-2" data-i18n="secToolsEyebrow">PROCUREMENT UTILITIES</div>
+        <h2 class="font-editorial text-3xl sm:text-4xl font-medium text-ink" data-i18n="secToolsTitle">Grade Finder, Load Calculator &amp; Unit Converter</h2>
+        <p class="text-sm sm:text-base text-stone mt-2 font-light">
+          Precision B2B tools designed for procurement teams to match specifications, plan container loads, and convert international trade units instantaneously.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- 6A. Interactive Polymer & Bitumen Grade Finder -->
+        <div class="lg:col-span-6 bg-alabaster rounded-2xl border border-hairline p-6 sm:p-8 flex flex-col justify-between">
+          <div>
+            <div class="text-[10px] font-semibold uppercase tracking-[0.18em] text-teal mb-1">2-STEP SPECIFICATION MATCHER</div>
+            <h3 class="font-editorial text-2xl font-medium text-ink mb-5">Interactive Polymer &amp; Bitumen Grade Finder</h3>
+
+            <div class="space-y-4 mb-6">
+              <div>
+                <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone mb-1.5">1. Select End-Use Application</label>
+                <select id="gfEndUse" onchange="runGradeFinder()" class="w-full px-4 py-2.5 rounded-xl bg-silk border border-hairline text-sm text-ink focus:border-teal focus:outline-none">
+                  <option value="film">Packaging Film &amp; Stretch Wrap</option>
+                  <option value="injection">Injection Molding &amp; Rigid Containers</option>
+                  <option value="pipes">Blow Molding &amp; Pressure Pipes (PE100)</option>
+                  <option value="paving">Hot-Climate Road Paving &amp; Runways</option>
+                  <option value="agri">Agricultural Blending &amp; Crop Nutrition</option>
+                  <option value="acid">Industrial Sulfuric Acid &amp; Chemical Feedstock</option>
+                  <option value="energy">Clean Industrial Energy &amp; Heating</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone mb-1.5">2. Primary Technical Priority</label>
+                <div class="grid grid-cols-3 gap-2">
+                  <button type="button" onclick="setGfPriority('strength')" data-gfp="strength" class="gfp-btn py-2 rounded-xl text-xs font-medium border bg-teal text-silk border-teal">High Strength</button>
+                  <button type="button" onclick="setGfPriority('thermal')" data-gfp="thermal" class="gfp-btn py-2 rounded-xl text-xs font-medium border bg-silk text-stone border-hairline">Thermal Stability</button>
+                  <button type="button" onclick="setGfPriority('cost')" data-gfp="cost" class="gfp-btn py-2 rounded-xl text-xs font-medium border bg-silk text-stone border-hairline">Cost Efficiency</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recommendation Output -->
+            <div class="bg-silk rounded-xl border border-champagne/50 p-5">
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="text-[10px] font-semibold uppercase tracking-widest text-champagne">RECOMMENDED ARVAN GRADE</span>
+                <span id="gfHs" class="text-[10px] text-muted">HS 3901.10</span>
+              </div>
+              <div id="gfTitle" class="font-editorial text-2xl font-semibold text-ink">LLDPE C4/C6 Film Grade</div>
+              <p id="gfSpecs" class="text-xs text-stone font-light mt-1.5 leading-relaxed"></p>
+            </div>
+          </div>
+
+          <button onclick="addGradeFinderToBrief()" class="mt-5 w-full py-3 rounded-xl bg-teal hover:bg-tealDark text-silk text-xs font-medium transition">
+            <i class="fa-solid fa-plus mr-1.5"></i>Add Recommended Grade to Cargo Brief
+          </button>
+        </div>
+
+        <!-- 6B. Container & Packaging Load Calculator + Micro-Converter -->
+        <div class="lg:col-span-6 space-y-6">
+          <!-- Load Calculator -->
+          <div class="bg-alabaster rounded-2xl border border-hairline p-6 sm:p-7">
+            <div class="text-[10px] font-semibold uppercase tracking-[0.18em] text-champagne mb-1">LOGISTICS SIZING</div>
+            <h3 class="font-editorial text-2xl font-medium text-ink mb-4">Container &amp; Packaging Load Calculator</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+              <div>
+                <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone mb-1.5">Target Tonnage (MT)</label>
+                <input type="number" id="lcTonnage" min="20" max="100000" value="500" oninput="runLoadCalc()" class="w-full px-3.5 py-2.5 rounded-xl bg-silk border border-hairline text-sm text-ink focus:border-teal focus:outline-none" />
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone mb-1.5">Packaging Format</label>
+                <select id="lcPkg" onchange="runLoadCalc()" class="w-full px-3.5 py-2.5 rounded-xl bg-silk border border-hairline text-sm text-ink focus:border-teal focus:outline-none">
+                  <option value="pp50">50 kg PP Bags</option>
+                  <option value="jumbo">1 MT Jumbo Bags</option>
+                  <option value="drums">180 kg Steel Drums (Bitumen)</option>
+                  <option value="bitubag">1 MT Bitubags</option>
+                  <option value="iso">ISO Tanks (20 MT Net)</option>
+                  <option value="bulk">Handymax Bulk Vessel</option>
+                </select>
+              </div>
+            </div>
+            <div class="grid grid-cols-3 gap-3 bg-silk p-4 rounded-xl border border-hairline text-center">
+              <div>
+                <div class="text-[10px] uppercase tracking-wider text-muted">Units Required</div>
+                <div id="lcUnits" class="text-sm font-semibold text-ink mt-1">10,000 Bags</div>
+              </div>
+              <div>
+                <div class="text-[10px] uppercase tracking-wider text-muted">Containers / Vessels</div>
+                <div id="lcContainers" class="text-sm font-semibold text-teal mt-1">20 × 20ft FCL</div>
+              </div>
+              <div>
+                <div class="text-[10px] uppercase tracking-wider text-muted">Est. Pallets</div>
+                <div id="lcPallets" class="text-sm font-semibold text-champagne mt-1">400 Pallets</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Commodity Unit & Currency Micro-Converter -->
+          <div class="bg-alabaster rounded-2xl border border-hairline p-6 sm:p-7">
+            <div class="text-[10px] font-semibold uppercase tracking-[0.18em] text-teal mb-1">TRADER UTILITY</div>
+            <h3 class="font-editorial text-2xl font-medium text-ink mb-4">Unit &amp; Currency Micro-Converter</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+              <!-- MT <-> Barrels -->
+              <div class="bg-silk p-3.5 rounded-xl border border-hairline">
+                <div class="font-semibold text-ink mb-1.5">MT ↔ Barrels</div>
+                <select id="mcFactor" onchange="runMicroConverter()" class="w-full mb-1.5 px-2 py-1 rounded-lg bg-alabaster border border-hairline text-[11px]">
+                  <option value="6.15">Bitumen (6.15 bbl/MT)</option>
+                  <option value="11.6">LPG (11.60 bbl/MT)</option>
+                  <option value="7.33">Crude/Fuel (7.33 bbl/MT)</option>
+                </select>
+                <input type="number" id="mcMt" value="100" oninput="runMicroConverter()" class="w-full px-2 py-1 rounded-lg bg-alabaster border border-hairline text-xs" />
+                <div id="mcBblOut" class="mt-1.5 font-semibold text-teal">= 615.0 bbl</div>
+              </div>
+
+              <!-- °C <-> °F -->
+              <div class="bg-silk p-3.5 rounded-xl border border-hairline">
+                <div class="font-semibold text-ink mb-1.5">Flash / Softening (°C → °F)</div>
+                <input type="number" id="mcCelsius" value="52" oninput="runMicroConverter()" class="w-full px-2 py-1 rounded-lg bg-alabaster border border-hairline text-xs mt-7" />
+                <div id="mcFahrOut" class="mt-1.5 font-semibold text-teal">= 125.6 °F</div>
+              </div>
+
+              <!-- Currency Estimate -->
+              <div class="bg-silk p-3.5 rounded-xl border border-hairline">
+                <div class="font-semibold text-ink mb-1.5">USD Estimate</div>
+                <input type="number" id="mcUsd" value="10000" oninput="runMicroConverter()" class="w-full px-2 py-1 rounded-lg bg-alabaster border border-hairline text-xs mb-1.5" />
+                <div id="mcFxOut" class="text-[11px] text-stone leading-snug">
+                  EUR 9,200 · AED 36,725<br/>CNY 72,400
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="persian-divider max-w-7xl mx-auto"></div>
+
+  <!-- ==================== 7. TRADE PROCEDURE STEPPER & INCOTERMS 2020 VISUALIZER ==================== -->
+  <section class="py-20 sm:py-24 bg-alabaster">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 space-y-14">
+      <!-- 7A. 7-Stage Trade Procedure Stepper -->
+      <div>
+        <div class="max-w-2xl mb-8">
+          <div class="text-[11px] font-semibold uppercase tracking-[0.2em] text-champagne mb-2">INSTITUTIONAL EXECUTION</div>
+          <h2 class="font-editorial text-3xl sm:text-4xl font-medium text-ink">7-Stage Trade Procedure Stepper</h2>
+          <p class="text-sm text-stone font-light mt-1.5">Click any milestone to inspect required corporate documentation and standard turnaround timelines.</p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2.5 mb-5" id="stepperButtons">
+          <!-- Populated by JS -->
+        </div>
+
+        <div class="bg-silk rounded-2xl border border-hairline p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div>
+            <div class="flex items-center gap-3 mb-2">
+              <span id="stNum" class="px-2.5 py-0.5 rounded-full bg-teal text-silk text-[10px] font-semibold uppercase tracking-widest">STAGE 01</span>
+              <span id="stTime" class="text-xs font-medium text-champagne">Turnaround: Same Day</span>
+            </div>
+            <h3 id="stTitle" class="font-editorial text-2xl sm:text-3xl font-medium text-ink">Letter of Intent (LOI)</h3>
+            <p id="stDesc" class="text-sm text-stone font-light mt-2 max-w-2xl leading-relaxed"></p>
+          </div>
+          <div class="md:w-72 shrink-0 bg-alabaster rounded-xl border border-hairline p-4">
+            <div class="text-[10px] font-semibold uppercase tracking-widest text-muted mb-1.5">REQUIRED DOCUMENTS</div>
+            <div id="stDocs" class="text-xs text-ink leading-relaxed"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7B. Interactive Incoterms 2020 Visualizer -->
+      <div class="bg-silk rounded-2xl border border-hairline p-6 sm:p-9">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-7">
+          <div>
+            <div class="text-[11px] font-semibold uppercase tracking-[0.18em] text-champagne mb-1">RISK &amp; COST ALLOCATION</div>
+            <h3 class="font-editorial text-2xl sm:text-3xl font-medium text-ink">Interactive Incoterms 2020 Visualizer</h3>
+          </div>
+          <div class="flex flex-wrap gap-2" id="incoButtons">
+            <button onclick="setIncoterm('EXW')" data-inco="EXW" class="inco-btn px-4 py-2 rounded-xl text-xs font-medium border bg-alabaster text-stone border-hairline">EXW</button>
+            <button onclick="setIncoterm('FOB')" data-inco="FOB" class="inco-btn px-4 py-2 rounded-xl text-xs font-medium border bg-teal text-silk border-teal">FOB Bandar Abbas</button>
+            <button onclick="setIncoterm('CFR')" data-inco="CFR" class="inco-btn px-4 py-2 rounded-xl text-xs font-medium border bg-alabaster text-stone border-hairline">CFR</button>
+            <button onclick="setIncoterm('CIF')" data-inco="CIF" class="inco-btn px-4 py-2 rounded-xl text-xs font-medium border bg-alabaster text-stone border-hairline">CIF</button>
+          </div>
+        </div>
+
+        <!-- Visual Split Bar -->
+        <div class="grid grid-cols-1 sm:grid-cols-5 gap-2.5 mb-5" id="incoBar">
+          <!-- Populated dynamically by JS -->
+        </div>
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-hairline text-xs">
+          <div class="flex items-center gap-5">
+            <span class="flex items-center gap-2"><span class="w-3 h-3 rounded-sm bg-teal"></span>Arvan Energy Parseh Responsibility</span>
+            <span class="flex items-center gap-2"><span class="w-3 h-3 rounded-sm bg-champagneLight border border-champagne"></span>Buyer Responsibility</span>
+          </div>
+          <span id="incoSummary" class="text-stone font-light"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. COA VAULT, HS COMPLIANCE, SEASONAL CALENDAR & PACKAGING GUIDE ==================== -->
+  <section id="compliance" class="py-20 sm:py-24 bg-silk border-t border-hairline">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 space-y-16">
+      <!-- 8A. COA Vault & HS Code Compliance Lookup -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- COA Vault -->
+        <div class="lg:col-span-7 bg-alabaster rounded-2xl border border-hairline p-6 sm:p-8">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+            <div>
+              <div class="text-[10px] font-semibold uppercase tracking-[0.18em] text-champagne">SGS / INTERTEK LAB BENCHMARKS</div>
+              <h3 class="font-editorial text-2xl sm:text-3xl font-medium text-ink">Interactive COA Vault</h3>
+            </div>
+            <select id="coaSelect" onchange="renderCoa()" class="px-3.5 py-2 rounded-xl bg-silk border border-hairline text-xs font-medium text-ink focus:border-teal focus:outline-none">
+              <option value="sulfur">Granular Sulfur (99.5%)</option>
+              <option value="urea">Urea N46 (Prilled/Granular)</option>
+              <option value="bitumen">Bitumen 60/70 &amp; VG-30</option>
+              <option value="pp">Polypropylene (PP)</option>
+              <option value="hdpe">HDPE (PE100 / Blow)</option>
+              <option value="pet">PET Bottle Grade</option>
+            </select>
+          </div>
+
+          <div class="bg-silk rounded-xl border border-hairline overflow-hidden">
+            <div class="px-5 py-3 bg-limestone/70 border-b border-hairline flex items-center justify-between text-[11px] font-semibold uppercase tracking-wider text-stone">
+              <span>Parameter (Hover / Tap for Tolerance Note)</span>
+              <span>Guaranteed Value</span>
+            </div>
+            <div id="coaRows" class="divide-y divide-hairline"></div>
+          </div>
+          <div id="coaNoteBox" class="mt-4 p-3.5 rounded-xl bg-silk border border-champagne/40 text-xs text-stone font-light">
+            <i class="fa-solid fa-circle-info text-champagne mr-1.5"></i>
+            <span id="coaNoteText">Select or hover any laboratory parameter above to inspect quality tolerance criteria.</span>
+          </div>
+        </div>
+
+        <!-- HS Code & Shipping Compliance Lookup -->
+        <div class="lg:col-span-5 bg-alabaster rounded-2xl border border-hairline p-6 sm:p-8">
+          <div class="text-[10px] font-semibold uppercase tracking-[0.18em] text-teal mb-1">EXPORT DOCUMENTATION</div>
+          <h3 class="font-editorial text-2xl sm:text-3xl font-medium text-ink mb-4">HS Code &amp; Compliance Lookup</h3>
+          <input type="text" id="hsSearch" oninput="renderHsLookup()" placeholder="Search product (e.g., Sulfur, Urea, LPG, PET)..." class="w-full px-4 py-2.5 rounded-xl bg-silk border border-hairline text-xs text-ink focus:border-teal focus:outline-none mb-4" />
+          <div id="hsResults" class="space-y-3 max-h-[340px] overflow-y-auto pr-1"></div>
+        </div>
+      </div>
+
+      <!-- 8B. Seasonal Procurement Calendar -->
+      <div class="bg-alabaster rounded-2xl border border-hairline p-6 sm:p-8">
+        <div class="mb-6">
+          <div class="text-[10px] font-semibold uppercase tracking-[0.18em] text-champagne mb-1">FORWARD CONTRACT PLANNING</div>
+          <h3 class="font-editorial text-2xl sm:text-3xl font-medium text-ink">Seasonal Procurement Calendar (12-Month Peak Windows)</h3>
+        </div>
+        <div class="overflow-x-auto">
+          <div class="min-w-[680px] space-y-3 text-xs">
+            <div class="grid grid-cols-13 gap-1 text-[10px] font-semibold uppercase tracking-wider text-muted pb-2 border-b border-hairline" style="grid-template-columns: 140px repeat(12, 1fr);">
+              <div>Commodity</div>
+              <div class="text-center">Jan</div><div class="text-center">Feb</div><div class="text-center">Mar</div><div class="text-center">Apr</div>
+              <div class="text-center">May</div><div class="text-center">Jun</div><div class="text-center">Jul</div><div class="text-center">Aug</div>
+              <div class="text-center">Sep</div><div class="text-center">Oct</div><div class="text-center">Nov</div><div class="text-center">Dec</div>
+            </div>
+            <div id="calendarRows" class="space-y-2.5"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8C. Interactive Packaging & Storage Guide -->
+      <div>
+        <div class="mb-6">
+          <div class="text-[10px] font-semibold uppercase tracking-[0.18em] text-teal mb-1">HANDLING &amp; PRESERVATION</div>
+          <h3 class="font-editorial text-2xl sm:text-3xl font-medium text-ink">Interactive Packaging &amp; Storage Guide</h3>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-5" id="pkgTabs"></div>
+        <div id="pkgDetailCard" class="bg-alabaster rounded-2xl border border-hairline p-6 grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="persian-divider max-w-7xl mx-auto"></div>
+
+  <!-- ==================== 9. MARKET INTELLIGENCE (CHART.JS) & NOV 2026 NEWS ==================== -->
+  <section id="insights" class="py-20 sm:py-24 bg-alabaster">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl mb-10">
+        <div class="text-[11px] font-semibold uppercase tracking-[0.2em] text-champagne mb-2" data-i18n="secMarketEyebrow">NOVEMBER 2026 EXECUTIVE BRIEFING</div>
+        <h2 class="font-editorial text-3xl sm:text-4xl font-medium text-ink" data-i18n="secMarketTitle">Market Intelligence &amp; Global Energy News</h2>
+        <p class="text-sm sm:text-base text-stone mt-2 font-light">
+          2026 benchmark price trajectories (Brent ~$92.18/bbl, WTI ~$83.22/bbl) paired with curated November 2026 coverage from Forbes, The Economic Times, and The Business Times.
+        </p>
+      </div>
+
+      <!-- Chart Card -->
+      <div class="bg-silk rounded-2xl border border-hairline p-6 sm:p-8 mb-10 shadow-sm">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+          <div>
+            <h3 class="font-editorial text-2xl font-medium text-ink">2026 Commodity Price Trajectories</h3>
+            <p class="text-xs text-stone mt-0.5">Benchmarks: Brent Crude ($92.18/bbl) · WTI ($83.22/bbl) · Persian Gulf FOB Urea, Sulfur, Bitumen &amp; PP (USD/MT)</p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <button onclick="renderMarketChart('crude')" data-chart="crude" class="chart-btn px-4 py-1.5 rounded-full text-xs font-medium border bg-teal text-silk border-teal">Brent &amp; WTI ($/bbl)</button>
+            <button onclick="renderMarketChart('commodities')" data-chart="commodities" class="chart-btn px-4 py-1.5 rounded-full text-xs font-medium border bg-alabaster text-stone border-hairline">Urea, Sulfur, Bitumen &amp; PP ($/MT)</button>
+          </div>
+        </div>
+        <div class="h-72 sm:h-80 w-full">
+          <canvas id="marketChartCanvas"></canvas>
+        </div>
+      </div>
+
+      <!-- News Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="newsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ==================== 10. INSTANT LOI (LETTER OF INTENT) DRAFT GENERATOR ==================== -->
+  <section id="loi-builder" class="py-20 sm:py-24 bg-silk border-t border-hairline">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div class="lg:col-span-5">
+          <div class="text-[11px] font-semibold uppercase tracking-[0.2em] text-champagne mb-2">GUIDED 3-STEP BUILDER</div>
+          <h2 class="font-editorial text-3xl sm:text-4xl font-medium text-ink mb-4">Instant LOI Draft Generator</h2>
+          <p class="text-sm sm:text-base text-stone font-light leading-relaxed mb-6">
+            Generate a formatted, print-ready corporate Letter of Intent on Arvan Energy Parseh letterhead in under 60 seconds—ready for internal signature or immediate dispatch to our export desk.
+          </p>
+          <div class="space-y-3 text-xs text-stone border-t border-hairline pt-5">
+            <div class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-teal text-silk flex items-center justify-center font-semibold">1</span><span>Corporate Buyer Entity &amp; Signatory</span></div>
+            <div class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-alabaster border border-champagne text-champagne flex items-center justify-center font-semibold">2</span><span>Commodity, Tonnage &amp; Destination Port</span></div>
+            <div class="flex items-center gap-3"><span class="w-6 h-6 rounded-full bg-alabaster border border-champagne text-champagne flex items-center justify-center font-semibold">3</span><span>Payment Instrument (LC / TT) &amp; Print/Copy</span></div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7 bg-alabaster rounded-2xl border border-hairline p-6 sm:p-9">
+          <!-- Step Indicator -->
+          <div class="flex items-center gap-2 mb-6">
+            <button type="button" onclick="goLoiStep(1)" id="loiTab1" class="flex-1 py-2 rounded-xl text-xs font-medium bg-teal text-silk transition">Step 1: Company</button>
+            <button type="button" onclick="goLoiStep(2)" id="loiTab2" class="flex-1 py-2 rounded-xl text-xs font-medium bg-silk border border-hairline text-stone transition">Step 2: Cargo</button>
+            <button type="button" onclick="goLoiStep(3)" id="loiTab3" class="flex-1 py-2 rounded-xl text-xs font-medium bg-silk border border-hairline text-stone transition">Step 3: Terms</button>
+          </div>
+
+          <form id="loiForm" onsubmit="generateLoiDraft(event)" class="space-y-4">
+            <!-- Step 1 -->
+            <div id="loiStep1" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone mb-1.5">Buyer Company Name *</label>
+                  <input type="text" id="loiCompany" required placeholder="e.g., Horizon Petrochem Trading LLC" class="w-full px-4 py-2.5 rounded-xl bg-silk border border-hairline text-sm focus:border-teal focus:outline-none" />
+                </div>
+                <div>
+                  <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone mb-1.5">Authorized Signatory *</label>
+                  <input type="text" id="loiSignatory" required placeholder="Full Name &amp; Title" class="w-full px-4 py-2.5 rounded-xl bg-silk border border-hairline text-sm focus:border-teal focus:outline-none" />
+                </div>
+              </div>
+              <div>
+                <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone mb-1.5">Corporate Email *</label>
+                <input type="email" id="loiEmail" required placeholder="procurement@company.com" class="w-full px-4 py-2.5 rounded-xl bg-silk border border-hairline text-sm focus:border-teal focus:outline-none" />
+              </div>
+              <div class="flex justify-end">
+                <button type="button" onclick="goLoiStep(2)" class="px-6 py-2.5 rounded-xl bg-teal text-silk text-xs font-medium">Next: Cargo Details →</button>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div id="loiStep2" class="hidden space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone mb-1.5">Commodity *</label>
+                  <select id="loiCommodity" class="w-full px-4 py-2.5 rounded-xl bg-silk border border-hairline text-sm focus:border-teal focus:outline-none">
+                    <option value="Polypropylene (PP)">Polypropylene (PP)</option>
+                    <option value="LDPE">LDPE</option>
+                    <option value="HDPE">HDPE</option>
+                    <option value="LLDPE">LLDPE</option>
+                    <option value="PET (Bottle & Textile)">PET (Bottle &amp; Textile)</option>
+                    <option value="Granular Sulfur (99.5%)">Granular Sulfur (99.5%)</option>
+                    <option value="Urea N46 (Prilled/Granular)">Urea N46 (Prilled/Granular)</option>
+                    <option value="Bitumen (60/70 & VG-30)">Bitumen (60/70 &amp; VG-30)</option>
+                    <option value="LPG (Propane/Butane)">LPG (Propane/Butane)</option>
+                    <option value="LNG">LNG</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone mb-1.5">Quantity (MT) *</label>
+                  <input type="number" id="loiQty" required min="100" value="2500" class="w-full px-4 py-2.5 rounded-xl bg-silk border border-hairline text-sm focus:border-teal focus:outline-none" />
+                </div>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone mb-1.5">Incoterm</label>
+                  <select id="loiInco" class="w-full px-4 py-2.5 rounded-xl bg-silk border border-hairline text-sm focus:border-teal focus:outline-none">
+                    <option value="FOB Bandar Abbas">FOB Bandar Abbas</option>
+                    <option value="FOB Assaluyeh">FOB Assaluyeh</option>
+                    <option value="CFR Destination Port">CFR Destination Port</option>
+                    <option value="CIF Destination Port">CIF Destination Port</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone mb-1.5">Destination Port *</label>
+                  <input type="text" id="loiPort" required placeholder="e.g., Mundra / Shanghai / Mersin" class="w-full px-4 py-2.5 rounded-xl bg-silk border border-hairline text-sm focus:border-teal focus:outline-none" />
+                </div>
+              </div>
+              <div class="flex justify-between">
+                <button type="button" onclick="goLoiStep(1)" class="px-5 py-2.5 rounded-xl border border-hairline bg-silk text-xs text-stone">← Back</button>
+                <button type="button" onclick="goLoiStep(3)" class="px-6 py-2.5 rounded-xl bg-teal text-silk text-xs font-medium">Next: Payment Terms →</button>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div id="loiStep3" class="hidden space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone mb-1.5">Payment Instrument</label>
+                  <select id="loiPayment" class="w-full px-4 py-2.5 rounded-xl bg-silk border border-hairline text-sm focus:border-teal focus:outline-none">
+                    <option value="Irrevocable Confirmed DLC at Sight">Irrevocable Confirmed DLC at Sight</option>
+                    <option value="TT (30% Advance / 70% Against BL & SGS)">TT (30% Advance / 70% Against BL &amp; SGS)</option>
+                    <option value="SBLC + MT103 Settlement">SBLC + MT103 Settlement</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[11px] font-semibold uppercase tracking-wider text-stone mb-1.5">Inspection Agency</label>
+                  <select id="loiInspection" class="w-full px-4 py-2.5 rounded-xl bg-silk border border-hairline text-sm focus:border-teal focus:outline-none">
+                    <option value="SGS at Loading Port">SGS at Loading Port</option>
+                    <option value="Intertek at Loading Port">Intertek at Loading Port</option>
+                    <option value="Bureau Veritas at Loading Port">Bureau Veritas at Loading Port</option>
+                  </select>
+                </div>
+              </div>
+              <div class="flex justify-between pt-2">
+                <button type="button" onclick="goLoiStep(2)" class="px-5 py-2.5 rounded-xl border border-hairline bg-silk text-xs text-stone">← Back</button>
+                <button type="submit" class="px-7 py-3 rounded-xl bg-teal hover:bg-tealDark text-silk text-xs font-medium shadow-sm transition">
+                  Generate Official LOI Draft
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-alabaster border-t border-hairline">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3.5">
+        <div class="w-10 h-10 rounded-xl border border-champagne/60 bg-silk flex items-center justify-center overflow-hidden">
+          <img src="arvan.jpg" alt="Arvan Energy Parseh" class="w-full h-full object-contain p-1"
+               onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
+          <div class="hidden font-editorial font-bold text-xs text-champagne">AEP</div>
+        </div>
+        <div>
+          <div class="font-editorial text-xl font-semibold tracking-wider text-ink">ARVAN ENERGY PARSEH</div>
+          <div class="text-xs text-champagne font-persian">شرکت آروان انرژی پارسه · جمهوری اسلامی ایران</div>
+        </div>
+      </div>
+      <div class="text-xs text-muted text-center md:text-right">
+        <div>© 2026 Arvan Energy Parseh. All Rights Reserved.</div>
+        <div class="text-[10px] uppercase tracking-widest text-champagne mt-1">Tehran · Amol · Bandar Abbas · Assaluyeh</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING COMPARE BAR ==================== -->
+  <div id="compareBar" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-40 hidden bg-ink text-silk px-5 py-3 rounded-2xl shadow-xl items-center gap-4 border border-champagne/40">
+    <span class="text-xs"><strong id="compareCount">0</strong> commodities selected for comparison</span>
+    <button onclick="openCompareModal()" class="px-4 py-1.5 rounded-xl bg-champagne text-silk text-xs font-medium hover:opacity-90 transition">Compare Side-by-Side</button>
+    <button onclick="clearCompare()" class="text-xs text-muted hover:text-silk">Clear</button>
+  </div>
+
+  <!-- ==================== FLOATING SMART DESK CONCIERGE ==================== -->
+  <div id="conciergeRoot" class="fixed bottom-6 right-6 z-40">
+    <div id="conciergeCard" class="hidden mb-3 w-80 bg-silk rounded-2xl border border-hairline shadow-2xl p-5">
+      <div class="flex items-center justify-between mb-3">
+        <div>
+          <div class="text-[10px] font-semibold uppercase tracking-widest text-champagne">SMART DESK CONCIERGE</div>
+          <div class="font-editorial text-xl font-medium text-ink">Direct Export Routing</div>
+        </div>
+        <button onclick="toggleConcierge()" class="w-7 h-7 rounded-full bg-alabaster text-stone hover:text-ink flex items-center justify-center"><i class="fa-solid fa-xmark text-xs"></i></button>
+      </div>
+      <label class="block text-[10px] font-semibold uppercase tracking-wider text-muted mb-1.5">Select Commercial Desk</label>
+      <select id="conciergeDesk" class="w-full px-3 py-2 rounded-xl bg-alabaster border border-hairline text-xs text-ink mb-4 focus:outline-none">
+        <option value="Polymers Desk (PP, PE, PET)">Polymers Desk (PP, PE, PET)</option>
+        <option value="Fertilizers Desk (Sulfur, Urea N46)">Fertilizers Desk (Sulfur, Urea N46)</option>
+        <option value="Bitumen & Fuels Desk (Bitumen, LPG, LNG)">Bitumen &amp; Fuels Desk (Bitumen, LPG, LNG)</option>
+      </select>
+      <div class="grid grid-cols-3 gap-2">
+        <button onclick="launchConcierge('whatsapp')" class="py-2.5 rounded-xl bg-teal text-silk text-[11px] font-medium hover:bg-tealDark transition"><i class="fa-brands fa-whatsapp mr-1"></i>WhatsApp</button>
+        <button onclick="launchConcierge('telegram')" class="py-2.5 rounded-xl bg-alabaster border border-hairline text-ink text-[11px] font-medium hover:border-champagne transition"><i class="fa-brands fa-telegram mr-1 text-teal"></i>Telegram</button>
+        <button onclick="launchConcierge('email')" class="py-2.5 rounded-xl bg-alabaster border border-hairline text-ink text-[11px] font-medium hover:border-champagne transition"><i class="fa-regular fa-envelope mr-1 text-champagne"></i>Email</button>
+      </div>
+    </div>
+    <button onclick="toggleConcierge()" class="w-12 h-12 rounded-full bg-silk border border-champagne text-teal shadow-lg hover:bg-alabaster transition flex items-center justify-center ml-auto" title="Smart Desk Concierge">
+      <i class="fa-regular fa-comments text-lg"></i>
+    </button>
+  </div>
+
+  <!-- ==================== "BUILD YOUR CARGO" SLIDE-OUT DRAWER ==================== -->
+  <div id="cargoDrawer" class="fixed inset-0 z-50 hidden justify-end bg-ink/30 backdrop-blur-sm">
+    <div class="w-full max-w-md bg-silk h-full shadow-2xl border-l border-hairline p-6 flex flex-col justify-between overflow-y-auto">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-hairline mb-5">
+          <div>
+            <div class="text-[10px] font-semibold uppercase tracking-widest text-champagne">CONSOLIDATED RFQ</div>
+            <h3 class="font-editorial text-2xl font-medium text-ink">Your Cargo Brief</h3>
+          </div>
+          <button onclick="toggleCargoDrawer()" class="w-8 h-8 rounded-full bg-alabaster text-stone hover:text-ink flex items-center justify-center"><i class="fa-solid fa-xmark text-xs"></i></button>
+        </div>
+        <div id="cargoItemsList" class="space-y-3"></div>
+      </div>
+
+      <div class="pt-5 border-t border-hairline space-y-3">
+        <button onclick="transferBriefToLoi()" class="w-full py-3 rounded-xl bg-teal hover:bg-tealDark text-silk text-xs font-medium transition">
+          Proceed to Consolidated LOI Draft
+        </button>
+        <button onclick="clearCargoBrief()" class="w-full py-2 rounded-xl border border-hairline text-xs text-stone hover:text-ink">
+          Clear Cargo Brief
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TECHNICAL DOSSIER MODAL ==================== -->
+  <div id="dossierModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-ink/35 backdrop-blur-sm">
+    <div class="bg-silk rounded-2xl border border-hairline shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-9 relative">
+      <button onclick="closeModal('dossierModal')" class="absolute top-5 right-5 w-9 h-9 rounded-full border border-hairline bg-alabaster text-stone hover:text-ink flex items-center justify-center"><i class="fa-solid fa-xmark text-sm"></i></button>
+      <div class="text-[11px] font-semibold uppercase tracking-[0.18em] text-champagne mb-1" id="dModalCat"></div>
+      <h3 class="font-editorial text-3xl font-medium text-ink mb-2" id="dModalTitle"></h3>
+      <p class="text-sm text-stone font-light mb-6" id="dModalDesc"></p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-6">
+        <div class="p-4 rounded-xl bg-alabaster border border-hairline">
+          <div class="text-[10px] font-semibold uppercase tracking-widest text-muted">Specifications</div>
+          <div id="dModalSpec" class="text-xs font-medium text-ink mt-1"></div>
+        </div>
+        <div class="p-4 rounded-xl bg-alabaster border border-hairline">
+          <div class="text-[10px] font-semibold uppercase tracking-widest text-muted">HS Code &amp; Thermal Point</div>
+          <div id="dModalHs" class="text-xs font-medium text-teal mt-1"></div>
+        </div>
+        <div class="p-4 rounded-xl bg-alabaster border border-hairline">
+          <div class="text-[10px] font-semibold uppercase tracking-widest text-muted">Packaging</div>
+          <div id="dModalPkg" class="text-xs font-medium text-ink mt-1"></div>
+        </div>
+        <div class="p-4 rounded-xl bg-alabaster border border-hairline">
+          <div class="text-[10px] font-semibold uppercase tracking-widest text-muted">Loading Ports</div>
+          <div id="dModalPorts" class="text-xs font-medium text-ink mt-1"></div>
+        </div>
+      </div>
+
+      <div class="border-t border-hairline pt-5 mb-6">
+        <div class="text-[10px] font-semibold uppercase tracking-widest text-muted mb-3">4-STAGE INDUSTRIAL WORKFLOW</div>
+        <div id="dModalSteps" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"></div>
+      </div>
+
+      <div class="flex flex-wrap justify-end gap-3 pt-4 border-t border-hairline">
+        <button onclick="printBrandedSpecSheet()" class="px-5 py-2.5 rounded-xl border border-champagne text-champagne hover:bg-champagne hover:text-silk text-xs font-medium transition">
+          <i class="fa-solid fa-print mr-1.5"></i>Download Branded Spec Sheet (PDF)
+        </button>
+        <button onclick="addDossierToBrief()" class="px-5 py-2.5 rounded-xl bg-teal hover:bg-tealDark text-silk text-xs font-medium transition">
+          + Add to Cargo Brief
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== SIDE-BY-SIDE SPEC COMPARATOR MODAL ==================== -->
+  <div id="compareModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-ink/35 backdrop-blur-sm">
+    <div class="bg-silk rounded-2xl border border-hairline shadow-2xl max-w-4xl w-full max-h-[88vh] overflow-y-auto p-6 sm:p-8 relative">
+      <button onclick="closeModal('compareModal')" class="absolute top-5 right-5 w-9 h-9 rounded-full border border-hairline bg-alabaster text-stone hover:text-ink flex items-center justify-center"><i class="fa-solid fa-xmark text-sm"></i></button>
+      <div class="text-[10px] font-semibold uppercase tracking-widest text-champagne mb-1">TECHNICAL BENCHMARKING</div>
+      <h3 class="font-editorial text-3xl font-medium text-ink mb-6">Side-by-Side Spec Comparator</h3>
+      <div id="compareTableWrap" class="overflow-x-auto"></div>
+    </div>
+  </div>
+
+  <!-- ==================== LOI OUTPUT MODAL ==================== -->
+  <div id="loiModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-ink/35 backdrop-blur-sm">
+    <div class="bg-silk rounded-2xl border border-hairline shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 relative">
+      <button onclick="closeModal('loiModal')" class="absolute top-5 right-5 w-9 h-9 rounded-full border border-hairline bg-alabaster text-stone hover:text-ink flex items-center justify-center"><i class="fa-solid fa-xmark text-sm"></i></button>
+      <div class="text-[10px] font-semibold uppercase tracking-widest text-teal mb-1">LETTER OF INTENT READY</div>
+      <h3 class="font-editorial text-3xl font-medium text-ink mb-4">Corporate LOI Draft</h3>
+      <pre id="loiOutputText" class="bg-alabaster border border-hairline rounded-xl p-5 text-xs text-ink font-mono whitespace-pre-wrap leading-relaxed mb-5 overflow-x-auto"></pre>
+      <div class="flex flex-wrap justify-end gap-3">
+        <button onclick="copyLoiDraft()" class="px-5 py-2.5 rounded-xl border border-champagne text-champagne hover:bg-champagne hover:text-silk text-xs font-medium transition"><i class="fa-regular fa-copy mr-1.5"></i>Copy LOI</button>
+        <button onclick="printLoiDraft()" class="px-5 py-2.5 rounded-xl bg-teal hover:bg-tealDark text-silk text-xs font-medium transition"><i class="fa-solid fa-print mr-1.5"></i>Print on Letterhead</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TOAST NOTIFICATION ==================== -->
+  <div id="toast" class="fixed bottom-6 left-6 z-50 hidden px-5 py-3 rounded-xl bg-ink text-silk text-xs font-medium shadow-lg">
+    <span id="toastText"></span>
+  </div>
+
+  <!-- ==================== COMPLETE JAVASCRIPT APPLICATION ==================== -->
+  <script>
+    /* =========================================================================
+       1. READING PROGRESS BAR, FOCUS MODE & GLOBAL DESK CLOCKS
+       ========================================================================= */
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+      document.getElementById('readingProgress').style.width = `${Math.min(100, Math.max(0, pct))}%`;
+    });
+
+    function toggleFocusMode() {
+      document.body.classList.toggle('focus-mode');
+      const active = document.body.classList.contains('focus-mode');
+      showToast(active ? 'Focus Mode enabled — Distraction-free reading.' : 'Standard executive layout restored.');
+    }
+
+    function updateGlobalClocks() {
+      const desks = [
+        { city: 'Tehran', tz: 'Asia/Tehran' },
+        { city: 'Dubai', tz: 'Asia/Dubai' },
+        { city: 'Mumbai', tz: 'Asia/Kolkata' },
+        { city: 'Shanghai', tz: 'Asia/Shanghai' },
+        { city: 'Moscow', tz: 'Europe/Moscow' }
+      ];
+      const now = new Date();
+      document.getElementById('globalClocks').innerHTML = desks.map(d => {
+        const timeStr = new Intl.DateTimeFormat('en-GB', { timeZone: d.tz, hour: '2-digit', minute: '2-digit', hour12: false }).format(now);
+        const hour = parseInt(timeStr.split(':')[0], 10);
+        const isOpen = hour >= 8 && hour < 18;
+        return `
+          <span class="inline-flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full ${isOpen ? 'bg-teal' : 'bg-muted/50'}"></span>
+            <strong class="text-ink font-medium">${d.city}</strong> ${timeStr}
+            <span class="text-[9px] uppercase tracking-wider ${isOpen ? 'text-teal' : 'text-muted'}">${isOpen ? 'Open' : 'After Hrs'}</span>
+          </span>
+        `;
+      }).join('');
+    }
+
+    /* =========================================================================
+       2. 5-LANGUAGE INTERNATIONALIZATION (EN, FA, AR, ZH, RU)
+       ========================================================================= */
+    const translations = {
+      en: {
+        dir: 'ltr', brandName: 'ARVAN ENERGY PARSEH', brandSub: 'آروان انرژی پارسه',
+        navCommodities: 'Commodities', navRoutes: '3D Hormuz Routes', navTools: 'Trade Tools',
+        navCompliance: 'COA & Compliance', navInsights: 'Market Insights', navLoi: 'LOI Builder',
+        btnFocus: 'Focus', btnProfile: 'Profile PDF', btnBrief: 'Brief',
+        heroEyebrow: 'ISLAMIC REPUBLIC OF IRAN • GLOBAL ENERGY EXPORT',
+        heroHeadline: 'Refined Persian Energy & Petrochemical Commerce.',
+        heroDesc: 'Arvan Energy Parseh bridges Iran’s premier petrochemical complexes and natural gas reserves with international industrial buyers—delivering prime polymers, granular sulfur, urea N46, bitumen, LPG, and LNG with institutional precision.',
+        heroCtaPrimary: 'Draft Instant LOI', heroCtaSecondary: 'Explore 3D Export Routes',
+        metric1: 'Core Commodities', metric2: 'Persian Gulf Hubs', metric3: 'Global Maritime Reach',
+        sec3dEyebrow: 'LIVE SATELLITE MARITIME CORRIDORS', sec3dTitle: 'Strait of Hormuz & Global Export Lanes',
+        sec3dSub: 'Interactive 3D satellite visualization of vessels departing Bandar Abbas, Assaluyeh, and Bandar Imam through the Strait of Hormuz toward global industrial hubs.',
+        secCommEyebrow: 'EXPORT PORTFOLIO', secCommTitle: 'Core Commodities Portfolio',
+        secCommSub: 'Inspect full technical dossiers, bundle multiple products into your Cargo Brief, or tick 2–3 commodities to compare specifications side by side.',
+        catAll: 'All', catPetro: 'Petrochemicals', catFert: 'Fertilizers & Minerals', catHydro: 'Hydrocarbons & Gas',
+        secToolsEyebrow: 'PROCUREMENT UTILITIES', secToolsTitle: 'Grade Finder, Load Calculator & Unit Converter',
+        secMarketEyebrow: 'NOVEMBER 2026 EXECUTIVE BRIEFING', secMarketTitle: 'Market Intelligence & Global Energy News'
+      },
+      fa: {
+        dir: 'rtl', brandName: 'آروان انرژی پارسه', brandSub: 'ARVAN ENERGY PARSEH',
+        navCommodities: 'محصولات', navRoutes: 'مسیرهای سه‌بعدی هرمز', navTools: 'ابزارهای بازرگانی',
+        navCompliance: 'گواهی آنالیز و گمرک', navInsights: 'تحلیل بازار', navLoi: 'صدور LOI',
+        btnFocus: 'حالت مطالعه', btnProfile: 'پروفایل PDF', btnBrief: 'سبد استعلام',
+        heroEyebrow: 'جمهوری اسلامی ایران • صادرات بین‌المللی انرژی',
+        heroHeadline: 'تجارت ممتاز انرژی و پتروشیمی ایران.',
+        heroDesc: 'شرکت آروان انرژی پارسه پل ارتباطی مجتمع‌های برتر پتروشیمی و ذخایر گاز طبیعی ایران با خریداران صنعتی جهان است؛ تأمین پلیمرها، گوگرد گرانول، اوره N46، قیر، LPG و LNG با دقت سازمانی.',
+        heroCtaPrimary: 'تنظیم فوری LOI', heroCtaSecondary: 'مشاهده مسیرهای سه‌بعدی',
+        metric1: 'محصول کلیدی', metric2: 'بندر راهبردی خلیج فارس', metric3: 'دسترسی دریایی جهانی',
+        sec3dEyebrow: 'کریدورهای دریایی ماهواره‌ای', sec3dTitle: 'تنگه هرمز و مسیرهای صادرات جهانی',
+        sec3dSub: 'شبیه‌سازی ماهواره‌ای سه‌بعدی حرکت کشتی‌ها از بندرعباس، عسلویه و بندر امام از تنگه هرمز به بنادر صنعتی جهان.',
+        secCommEyebrow: 'سبد صادراتی', secCommTitle: 'مجموعه محصولات اصلی',
+        secCommSub: 'پرونده فنی هر محصول را بررسی کنید، به سبد استعلام اضافه نمایید یا ۲ تا ۳ محصول را کنار هم مقایسه کنید.',
+        catAll: 'همه', catPetro: 'پتروشیمی', catFert: 'کود و مواد معدنی', catHydro: 'هیدروکربن و گاز',
+        secToolsEyebrow: 'ابزارهای تدارکات', secToolsTitle: 'یابنده گرید، محاسبه‌گر بارگیری و مبدل واحدها',
+        secMarketEyebrow: 'گزارش اجرایی نوامبر ۲۰۲۶', secMarketTitle: 'هوش بازار و اخبار جهانی انرژی'
+      },
+      ar: {
+        dir: 'rtl', brandName: 'آروان للطاقة بارسه', brandSub: 'ARVAN ENERGY PARSEH',
+        navCommodities: 'المنتجات', navRoutes: 'مسارات هرمز ثلاثية الأبعاد', navTools: 'أدوات التجارة',
+        navCompliance: 'شهادات التحليل والجمارك', navInsights: 'رؤى السوق', navLoi: 'منشئ LOI',
+        btnFocus: 'تركيز', btnProfile: 'ملف PDF', btnBrief: 'السلة',
+        heroEyebrow: 'إيران • تصدير الطاقة والبتروكيماويات عالمياً',
+        heroHeadline: 'تجارة الطاقة والبتروكيماويات الفارسية الراقية.',
+        heroDesc: 'تربط آروان للطاقة بارسه أبرز مجمعات البتروكيماويات الإيرانية بالمشترين الصناعيين عالمياً لتوريد البوليمرات والكبريت واليوريا والبيتومين وLPG وLNG.',
+        heroCtaPrimary: 'إنشاء خطاب نوايا LOI', heroCtaSecondary: 'استكشف المسارات البحرية',
+        metric1: 'سلع أساسية', metric2: 'موانئ الخليج الفارسي', metric3: 'تغطية بحرية عالمية',
+        sec3dEyebrow: 'الممرات البحرية عبر الأقمار الصناعية', sec3dTitle: 'مضيق هرمز ومسارات التصدير العالمية',
+        sec3dSub: 'تصور ثلاثي الأبعاد للسفن المغادرة من بندر عباس وعسلوية وبندر إمام عبر مضيق هرمز نحو الموانئ العالمية.',
+        secCommEyebrow: 'محفظة التصدير', secCommTitle: 'محفظة السلع الأساسية',
+        secCommSub: 'استعرض الملفات الفنية أو أضف المنتجات إلى سلة الاستفسار أو قارن المواصفات جنباً إلى جنب.',
+        catAll: 'الكل', catPetro: 'البتروكيماويات', catFert: 'الأسمدة والمعادن', catHydro: 'الهيدروكربونات والغاز',
+        secToolsEyebrow: 'أدوات المشتريات', secToolsTitle: 'محدد الدرجات وحاسبة الحاويات ومحول الوحدات',
+        secMarketEyebrow: 'موجز نوفمبر 2026', secMarketTitle: 'ذكاء السوق وأخبار الطاقة العالمية'
+      },
+      zh: {
+        dir: 'ltr', brandName: '阿尔万能源帕尔塞', brandSub: 'ARVAN ENERGY PARSEH',
+        navCommodities: '核心产品', navRoutes: '3D霍尔木兹航线', navTools: '贸易工具',
+        navCompliance: 'COA与合规', navInsights: '市场洞察', navLoi: 'LOI生成器',
+        btnFocus: '专注模式', btnProfile: '公司简介PDF', btnBrief: '询价单',
+        heroEyebrow: '伊朗 • 全球能源与石化出口',
+        heroHeadline: '精粹波斯能源与石化国际贸易。',
+        heroDesc: 'Arvan Energy Parseh 连接伊朗世界级石化基地与全球工业买家，精准供应聚合物、颗粒硫磺、N46尿素、沥青、LPG及LNG。',
+        heroCtaPrimary: '快速生成LOI', heroCtaSecondary: '探索3D出口航线',
+        metric1: '核心大宗商品', metric2: '波斯湾枢纽港', metric3: '全球海运覆盖',
+        sec3dEyebrow: '实景卫星海运走廊', sec3dTitle: '霍尔木兹海峡与全球出口航线',
+        sec3dSub: '交互式3D卫星视图，展示货轮从阿巴斯港、阿萨卢耶和伊玛目港经霍尔木兹海峡驶向全球枢纽。',
+        secCommEyebrow: '出口产品组合', secCommTitle: '核心大宗商品目录',
+        secCommSub: '查看技术档案、批量加入询价单或勾选2-3种商品进行规格对比。',
+        catAll: '全部', catPetro: '石化聚合物', catFert: '化肥与矿产', catHydro: '烃类与气体',
+        secToolsEyebrow: '采购实用工具', secToolsTitle: '牌号匹配器、装箱计算器与单位换算',
+        secMarketEyebrow: '2026年11月简报', secMarketTitle: '市场情报与全球能源资讯'
+      },
+      ru: {
+        dir: 'ltr', brandName: 'ARVAN ENERGY PARSEH', brandSub: 'آروان انرژی پارسه',
+        navCommodities: 'Продукция', navRoutes: '3D Маршруты', navTools: 'Инструменты',
+        navCompliance: 'COA и ТН ВЭД', navInsights: 'Аналитика', navLoi: 'Генератор LOI',
+        btnFocus: 'Фокус', btnProfile: 'Профиль PDF', btnBrief: 'Бриф',
+        heroEyebrow: 'ИРАН • МЕЖДУНАРОДНЫЙ ЭКСПОРТ ЭНЕРГИИ',
+        heroHeadline: 'Высокая культура персидской нефтехимии и энергетики.',
+        heroDesc: 'Arvan Energy Parseh связывает ведущие нефтехимические комплексы Ирана с мировыми покупателями, поставляя полимеры, серу, карбамид N46, битум, СУГ и СПГ.',
+        heroCtaPrimary: 'Создать проект LOI', heroCtaSecondary: '3D Карта экспорта',
+        metric1: 'Ключевых товаров', metric2: 'Порта Персидского залива', metric3: 'Глобальная логистика',
+        sec3dEyebrow: 'СПУТНИКОВЫЕ МОРСКИЕ КОРИДОРЫ', sec3dTitle: 'Ормузский пролив и маршруты экспорта',
+        sec3dSub: 'Интерактивная 3D-визуализация судов, выходящих из Бандар-Аббаса, Асалуйе и Бандар-Имама через Ормузский пролив.',
+        secCommEyebrow: 'ЭКСПОРТНЫЙ ПОРТФЕЛЬ', secCommTitle: 'Портфель базовых товаров',
+        secCommSub: 'Изучайте технические досье, добавляйте позиции в бриф или сравнивайте 2–3 товара.',
+        catAll: 'Все', catPetro: 'Нефтехимия', catFert: 'Удобрения и минералы', catHydro: 'Углеводороды и газ',
+        secToolsEyebrow: 'ИНСТРУМЕНТЫ ЗАКУПОК', secToolsTitle: 'Подбор марок, калькулятор загрузки и конвертер',
+        secMarketEyebrow: 'ОБЗОР НОЯБРЯ 2026', secMarketTitle: 'Рыночная аналитика и мировые новости'
+      }
+    };
+
+    let currentLang = 'en';
+    function setLanguage(lang) {
+      if (!translations[lang]) return;
+      currentLang = lang;
+      const t = translations[lang];
+      document.documentElement.lang = lang;
+      document.documentElement.dir = t.dir;
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        const active = btn.getAttribute('data-lang') === lang;
+        btn.className = active
+          ? 'lang-btn px-2 py-1 rounded-lg text-[10px] font-medium transition bg-teal text-silk'
+          : 'lang-btn px-2 py-1 rounded-lg text-[10px] font-medium transition text-stone hover:text-ink';
+      });
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key]) el.textContent = t[key];
+      });
+    }
+
+    function toggleMobileNav() {
+      document.getElementById('mobileNav').classList.toggle('hidden');
+    }
+
+    /* =========================================================================
+       3. REAL-LIFE 3D SATELLITE GLOBE (STRAIT OF HORMUZ & EXPORT ROUTES)
+       ========================================================================= */
+    const originPorts = [
+      { name: 'Bandar Abbas (IRBND)', lat: 27.18, lng: 56.28, color: '#0F6E6E' },
+      { name: 'Assaluyeh (IRPGU)', lat: 27.47, lng: 52.61, color: '#0F6E6E' },
+      { name: 'Bandar Imam (IRBKM)', lat: 30.43, lng: 49.07, color: '#0F6E6E' }
+    ];
+
+    const destPorts = [
+      { id: 'jebel-ali', name: 'Jebel Ali, UAE', code: 'AEJEA', lat: 25.01, lng: 55.06, days: '1 – 2 Days', dist: '~145 NM', vessel: 'Regional Feeder FCL & Coastal Tanker', origin: 'Bandar Abbas (IRBND) → Strait of Hormuz' },
+      { id: 'mundra', name: 'Mundra, India', code: 'INMUN', lat: 22.74, lng: 69.70, days: '4 – 6 Days', dist: '~890 NM', vessel: 'Feeder FCL, Handymax Bulk & Bitumen Tankers', origin: 'Bandar Abbas (IRBND) → Strait of Hormuz' },
+      { id: 'shanghai', name: 'Shanghai, China', code: 'CNSHA', lat: 31.23, lng: 121.47, days: '16 – 20 Days', dist: '~5,820 NM', vessel: '40ft HC Polymer FCL, VLGC & Supramax Bulk', origin: 'Assaluyeh (IRPGU) → Strait of Hormuz' },
+      { id: 'mersin', name: 'Mersin, Turkey', code: 'TRMER', lat: 36.80, lng: 34.63, days: '14 – 18 Days', dist: '~3,650 NM', vessel: 'Mediterranean Container FCL & Chemical Tanker', origin: 'Bandar Imam (IRBKM) → Strait of Hormuz' },
+      { id: 'mombasa', name: 'Mombasa, Kenya', code: 'KEMBA', lat: -4.04, lng: 39.67, days: '9 – 12 Days', dist: '~2,480 NM', vessel: 'Bitumen Drum FCL, Jumbo Bags & Bulk Carrier', origin: 'Bandar Abbas (IRBND) → Strait of Hormuz' },
+      { id: 'novorossiysk', name: 'Novorossiysk, Russia', code: 'RUNVS', lat: 44.72, lng: 37.77, days: '17 – 22 Days', dist: '~4,410 NM', vessel: 'Black Sea FCL & Specialized Chemical Tanker', origin: 'Bandar Abbas (IRBND) → Strait of Hormuz' }
+    ];
+
+    let globeInstance = null;
+
+    function initGlobe3D() {
+      const container = document.getElementById('globeViz');
+      if (!container || typeof Globe === 'undefined') return;
+
+      const arcsData = [
+        { startLat: 27.18, startLng: 56.28, endLat: 25.01, endLng: 55.06, color: ['#0F6E6E', '#B08D57'] },
+        { startLat: 27.18, startLng: 56.28, endLat: 22.74, endLng: 69.70, color: ['#0F6E6E', '#B08D57'] },
+        { startLat: 27.47, startLng: 52.61, endLat: 31.23, endLng: 121.47, color: ['#0F6E6E', '#B08D57'] },
+        { startLat: 30.43, startLng: 49.07, endLat: 36.80, endLng: 34.63, color: ['#0F6E6E', '#B08D57'] },
+        { startLat: 27.18, startLng: 56.28, endLat: -4.04, endLng: 39.67, color: ['#0F6E6E', '#B08D57'] },
+        { startLat: 27.18, startLng: 56.28, endLat: 44.72, endLng: 37.77, color: ['#0F6E6E', '#B08D57'] }
+      ];
+
+      const pointsData = [
+        ...originPorts.map(p => ({ ...p, size: 0.45 })),
+        ...destPorts.map(p => ({ name: p.name, lat: p.lat, lng: p.lng, color: '#B08D57', size: 0.35, destId: p.id }))
+      ];
+
+      const ringsData = originPorts.map(p => ({ lat: p.lat, lng: p.lng, maxR: 2.2, propagationSpeed: 1.5, repeatPeriod: 1200 }));
+
+      globeInstance = Globe()(container)
+        .backgroundColor('#FAF8F5')
+        .globeImageUrl('//cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg')
+        .bumpImageUrl('//cdn.jsdelivr.net/npm/three-globe/example/img/earth-topology.png')
+        .atmosphereColor('#DFD2BD')
+        .atmosphereAltitude(0.14)
+        .arcsData(arcsData)
+        .arcColor('color')
+        .arcDashLength(0.38)
+        .arcDashGap(0.22)
+        .arcDashAnimateTime(2600)
+        .arcStroke(0.85)
+        .pointsData(pointsData)
+        .pointColor('color')
+        .pointAltitude(0.015)
+        .pointRadius('size')
+        .pointLabel(d => `<div style="background:#FFFFFF;color:#1A1D20;padding:4px 8px;border-radius:6px;border:1px solid #B08D57;font-size:11px;font-family:Plus Jakarta Sans,sans-serif;">${d.name}</div>`)
+        .onPointClick(p => { if (p.destId) selectDestPort(p.destId); })
+        .ringsData(ringsData)
+        .ringColor(() => t => `rgba(15, 110, 110, ${1 - t})`)
+        .ringMaxRadius('maxR')
+        .ringPropagationSpeed('propagationSpeed')
+        .ringRepeatPeriod('repeatPeriod')
+        .width(container.clientWidth)
+        .height(container.clientHeight);
+
+      globeInstance.pointOfView({ lat: 26.5, lng: 56.2, altitude: 0.55 }, 1000);
+      globeInstance.controls().enableDamping = true;
+      globeInstance.controls().autoRotate = false;
+
+      window.addEventListener('resize', () => {
+        if (globeInstance && container) {
+          globeInstance.width(container.clientWidth).height(container.clientHeight);
+        }
+      });
+
+      // Render Destination Buttons
+      document.getElementById('destPortButtons').innerHTML = destPorts.map(p => `
+        <button onclick="selectDestPort('${p.id}')" data-dp="${p.id}" class="dp-btn px-3 py-2 rounded-xl text-left text-xs font-medium border transition bg-silk text-stone border-hairline hover:border-champagne">
+          <div class="truncate text-ink">${p.name.split(',')[0]}</div>
+          <div class="text-[10px] text-muted">${p.code}</div>
+        </button>
+      `).join('');
+      selectDestPort('mundra', false);
+    }
+
+    function focusGlobe(mode) {
+      if (!globeInstance) return;
+      if (mode === 'hormuz' || mode === 'reset') {
+        globeInstance.pointOfView({ lat: 26.5, lng: 56.2, altitude: 0.55 }, 1000);
+      } else if (mode === 'global') {
+        globeInstance.pointOfView({ lat: 24.0, lng: 65.0, altitude: 1.85 }, 1100);
+      }
+    }
+
+    function selectDestPort(id, pan = true) {
+      const p = destPorts.find(d => d.id === id);
+      if (!p) return;
+      document.querySelectorAll('.dp-btn').forEach(btn => {
+        const active = btn.getAttribute('data-dp') === id;
+        btn.className = active
+          ? 'dp-btn px-3 py-2 rounded-xl text-left text-xs font-medium border transition bg-[#F2F9F9] border-teal text-teal'
+          : 'dp-btn px-3 py-2 rounded-xl text-left text-xs font-medium border transition bg-silk text-stone border-hairline hover:border-champagne';
+      });
+      document.getElementById('rtName').textContent = p.name;
+      document.getElementById('rtCode').textContent = p.code;
+      document.getElementById('rtDays').textContent = p.days;
+      document.getElementById('rtDist').textContent = p.dist;
+      document.getElementById('rtVessel').textContent = p.vessel;
+      document.getElementById('rtOrigin').textContent = p.origin;
+
+      if (pan && globeInstance) {
+        globeInstance.pointOfView({ lat: (p.lat + 26.5) / 2, lng: (p.lng + 56.2) / 2, altitude: 1.25 }, 1000);
+      }
+    }
+
+    /* =========================================================================
+       4. 10 CORE COMMODITIES (2.jpg – 11.jpg), BRIEF DRAWER & COMPARATOR
+       ========================================================================= */
+    const commodities = [
+      { id: 'pp', img: '2.jpg', category: 'petrochemicals', catLabel: 'Petrochemicals', name: 'Polypropylene (PP)', highlight: 'Raffia, Injection & BOPP Film grades · MFI 3.0–25.0 g/10min.', spec: 'Homopolymer & Copolymer · Density 0.905 g/cm³ · MFI 3–25', thermal: 'Melting Pt: 160–166°C', hs: '3902.10', imo: 'Non-Hazardous', shelf: '24 Months (Dry Covered)', docs: 'COO, BL, COA, Packing List', pkg: '25 kg PP Bags / 1,250 kg Jumbo Bags', ports: 'Bandar Abbas (IRBND), Bandar Imam SEZ', steps: ['Propylene Feedstock', 'Gas-Phase Polymerization', 'ISO MFI & Tensile QC', '40ft HC Container Loading'] },
+      { id: 'ldpe', img: '3.jpg', category: 'petrochemicals', catLabel: 'Petrochemicals', name: 'LDPE', highlight: 'High-clarity heavy-duty film & extrusion coating · Density 0.918–0.925 g/cm³.', spec: 'Film & Coating Grades · MFI 0.3–4.0 g/10min · Low Gel', thermal: 'Melting Pt: 105–115°C', hs: '3901.10', imo: 'Non-Hazardous', shelf: '24 Months (UV Protected)', docs: 'COO, BL, COA, Packing List', pkg: '25 kg Moisture-Proof Bags (24.75 MT / 40ft HC)', ports: 'Bandar Abbas (IRBND), Bandar Imam SEZ', steps: ['Ethane Cracking', 'High-Pressure Tubular Reactor', 'Optical Haze & Dart QC', 'Palletized FCL Dispatch'] },
+      { id: 'hdpe', img: '4.jpg', category: 'petrochemicals', catLabel: 'Petrochemicals', name: 'HDPE', highlight: 'Bimodal PE100 Pipe, Blow Molding & Film · Density 0.941–0.965 g/cm³.', spec: 'PE100 Pipe, Blow & Film · ESCR > 1,000 hrs', thermal: 'Melting Pt: 128–135°C', hs: '3901.20', imo: 'Non-Hazardous', shelf: '24 Months (Dry Storage)', docs: 'COO, BL, COA, Packing List', pkg: '25 kg Export Bags / 1 MT Jumbo Bags', ports: 'Bandar Abbas (IRBND), Assaluyeh', steps: ['Purified Ethylene Feed', 'Slurry Loop Catalysis', 'Hydrostatic & ESCR Audit', 'Direct Rail-to-Port FCL'] },
+      { id: 'lldpe', img: '5.jpg', category: 'petrochemicals', catLabel: 'Petrochemicals', name: 'LLDPE', highlight: 'C4/C6 stretch film, agro-film & geomembrane resin · High puncture resistance.', spec: 'Butene (C4) & Hexene (C6) · MFI 0.9–2.0 g/10min', thermal: 'Melting Pt: 120–125°C', hs: '3901.10', imo: 'Non-Hazardous', shelf: '24 Months (Dry Storage)', docs: 'COO, BL, COA, Packing List', pkg: '25 kg Heavy-Duty Bags / FCL', ports: 'Bandar Abbas (IRBND), Bandar Imam SEZ', steps: ['Ethylene + Comonomer', 'Fluidized-Bed Reactor', 'Tear & Slip Certification', 'Moisture-Protected FCL'] },
+      { id: 'pet', img: '6.jpg', category: 'petrochemicals', catLabel: 'Petrochemicals', name: 'PET (Bottle & Textile)', highlight: 'Crystal-clear Bottle Grade (IV 0.78–0.84 dL/g) & high-tenacity Textile Grade.', spec: 'IV 0.78–0.84 dL/g · Acetaldehyde < 1.0 ppm · Food Safe', thermal: 'Melting Pt: 248–255°C', hs: '3907.61', imo: 'Non-Hazardous', shelf: '18 Months (Sealed Foil)', docs: 'COO, BL, COA, Food-Grade Cert', pkg: '1,100 kg Foil-Lined Jumbo Bags (22 MT / 20ft)', ports: 'Bandar Abbas (IRBND)', steps: ['PTA + MEG Feedstock', 'Polycondensation & SSP', 'IV & CIE Color b* QC', 'Foil Jumbo Bag Stuffing'] },
+      { id: 'sulfur', img: '7.jpg', category: 'fertilizers', catLabel: 'Fertilizers & Minerals', name: 'Granular Sulfur', highlight: 'Bright yellow 99.5% min purity · Low dust 2–6 mm granules · Moisture < 0.5%.', spec: 'Purity 99.5% Min · Ash < 0.05% · Carbon < 0.08%', thermal: 'Melting Pt: 115–119°C', hs: '2503.00', imo: 'IMO Class 4.1 / UN 1350', shelf: 'Indefinite (Dry Open/Covered)', docs: 'COO, BL, SGS COA, MSDS', pkg: 'Bulk Vessel (25k–50k MT) / 1 MT Jumbo Bags', ports: 'Bandar Abbas (IRBND), Assaluyeh', steps: ['Sour Gas H₂S Recovery', 'Claus & Drum Granulation', 'SGS Dry-Basis Purity QC', 'Bulk Ship-Loader / Jumbo'] },
+      { id: 'urea', img: '8.jpg', category: 'fertilizers', catLabel: 'Fertilizers & Minerals', name: 'Urea N46', highlight: '46.0% min nitrogen · Biuret < 1.0% · Anti-caking conditioned agricultural grade.', spec: 'Nitrogen 46.0% Min · Biuret < 1.0% · Moisture < 0.5%', thermal: 'Melting Pt: 132–135°C', hs: '3102.10', imo: 'Non-Hazardous', shelf: '12 Months (Moisture-Controlled)', docs: 'COO, BL, SGS COA, Phytosanitary', pkg: '50 kg PP Bags / 1 MT Jumbo / Bulk Handymax', ports: 'Assaluyeh (IRPGU), Bandar Abbas', steps: ['Natural Gas Reforming', 'Ammonia-CO₂ Synthesis', 'Nitrogen & Biuret Assay', 'Dedicated Fertilizer Berth'] },
+      { id: 'bitumen', img: '9.jpg', category: 'hydrocarbons', catLabel: 'Hydrocarbons & Gas', name: 'Bitumen (60/70 & VG-30)', highlight: 'Penetration 60/70, 80/100 & Viscosity VG-30, VG-40 for highways and runways.', spec: 'ASTM D5 Pen 60–70 dmm · Flash Pt > 250°C', thermal: 'Softening Pt: 49–56°C', hs: '2713.20', imo: 'Non-Hazardous (Ambient)', shelf: '36 Months (Sealed Drum/Bag)', docs: 'COO, BL, SGS ASTM COA, MSDS', pkg: '180 kg Steel Drums / 1 MT Bitubags / Bulk', ports: 'Bandar Abbas (IRBND)', steps: ['Vacuum Bottom Residue', 'Controlled Air-Blowing', 'ASTM Pen & Ductility QC', 'Hot-Filled Drums / Bitutainer'] },
+      { id: 'lpg', img: '10.jpg', category: 'hydrocarbons', catLabel: 'Hydrocarbons & Gas', name: 'LPG (Propane/Butane)', highlight: 'Sweetened commercial Propane (C3), Butane (C4) & custom petrochemical blends.', spec: 'ASTM D1835 · Sulfur < 50 ppm · 50/50 or 30/70 Mix', thermal: 'Boiling Pt: -42°C to -0.5°C', hs: '2711.12', imo: 'IMO Class 2.1 / UN 1075', shelf: 'Pressurized Vessel Storage', docs: 'COO, BL, Quality Cert, MSDS', pkg: 'VLGC Carrier / Pressurized Tanker / ISO Tank', ports: 'Assaluyeh (IRPGU), Bandar Imam', steps: ['NGL Extraction', 'Depropanizer Fractionation', 'Vapor Pressure & Sulfur QC', 'Marine Loading Arm Dispatch'] },
+      { id: 'lng', img: '11.jpg', category: 'hydrocarbons', catLabel: 'Hydrocarbons & Gas', name: 'LNG', highlight: 'Cryogenic -162°C high-calorific clean natural gas · 92–96% molar methane.', spec: 'GHV ~1,050–1,120 BTU/scf · 600:1 Volume Ratio', thermal: 'Liquefaction: -162°C', hs: '2711.11', imo: 'IMO Class 2.1 / UN 1972', shelf: 'Cryogenic Tank Storage', docs: 'COO, BL, Chromatography COA, MSDS', pkg: 'Membrane LNG Carrier / Cryogenic ISO Tank', ports: 'Assaluyeh / Persian Gulf Deep-Water', steps: ['Acid-Gas Purification', 'Cryogenic Liquefaction', 'Wobbe Index & GC Audit', 'Insulated Cryogenic Loading'] }
+    ];
+
+    let activeCat = 'all';
+    let cargoBrief = [];
+    let compareList = [];
+    let activeDossier = null;
+
+    function filterCommodities(cat) {
+      activeCat = cat;
+      document.querySelectorAll('.comm-filter').forEach(btn => {
+        const active = btn.getAttribute('data-cat') === cat;
+        btn.className = active
+          ? 'comm-filter px-4 py-2 rounded-full text-xs font-medium border transition bg-teal text-silk border-teal'
+          : 'comm-filter px-4 py-2 rounded-full text-xs font-medium border transition bg-silk text-stone border-hairline hover:border-champagne';
+      });
+      renderCommodities();
+    }
+
+    function renderCommodities() {
+      const grid = document.getElementById('commodityGrid');
+      const items = activeCat === 'all' ? commodities : commodities.filter(c => c.category === activeCat);
+      grid.innerHTML = items.map(c => {
+        const isChecked = compareList.includes(c.id);
+        return `
+          <article class="luxury-card rounded-2xl overflow-hidden flex flex-col justify-between p-4">
+            <div>
+              <!-- Image Frame (2.jpg – 11.jpg with Architectural Reserved Fallback) -->
+              <div class="rounded-xl aspect-[16/10] bg-reserved overflow-hidden relative mb-4 cursor-pointer" onclick="openDossier('${c.id}')">
+                <img src="${c.img}" alt="${c.name}" class="w-full h-full object-cover"
+                     onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');" />
+                <div class="hidden reserved-frame w-full h-full flex flex-col items-center justify-center p-4 text-center">
+                  <i class="fa-regular fa-image text-champagne/80 text-base mb-1.5"></i>
+                  <span class="text-[10px] font-semibold uppercase tracking-[0.15em] text-ink/75">RESERVED FRAME · ${c.img}</span>
+                  <span class="text-[10px] text-muted mt-0.5">${c.name}</span>
+                </div>
+              </div>
+
+              <div class="px-1">
+                <div class="flex items-center justify-between gap-2 mb-1.5">
+                  <span class="text-[10px] font-semibold uppercase tracking-[0.15em] text-champagne">${c.catLabel}</span>
+                  <label class="inline-flex items-center gap-1.5 text-[11px] text-stone cursor-pointer select-none">
+                    <input type="checkbox" ${isChecked ? 'checked' : ''} onchange="toggleCompare('${c.id}')" class="accent-teal rounded" />
+                    Compare
+                  </label>
+                </div>
+                <h3 onclick="openDossier('${c.id}')" class="font-editorial text-2xl font-medium text-ink leading-snug cursor-pointer hover:text-teal transition">${c.name}</h3>
+                <p class="text-xs text-stone font-light leading-relaxed mt-1.5">${c.highlight}</p>
+              </div>
+            </div>
+
+            <div class="px-1 pt-4 mt-4 border-t border-hairline flex items-center justify-between gap-2">
+              <button onclick="openDossier('${c.id}')" class="text-xs font-medium text-teal hover:underline">Inspect Dossier</button>
+              <button onclick="addToCargoBrief('${c.id}')" class="px-3 py-1.5 rounded-lg bg-alabaster border border-hairline hover:border-champagne text-[11px] font-medium text-ink transition">
+                + Add to Brief
+              </button>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    function openDossier(id) {
+      const c = commodities.find(x => x.id === id);
+      if (!c) return;
+      activeDossier = c;
+      document.getElementById('dModalCat').textContent = c.catLabel;
+      document.getElementById('dModalTitle').textContent = c.name;
+      document.getElementById('dModalDesc').textContent = c.highlight;
+      document.getElementById('dModalSpec').textContent = c.spec;
+      document.getElementById('dModalHs').textContent = `HS ${c.hs} · ${c.thermal}`;
+      document.getElementById('dModalPkg').textContent = c.pkg;
+      document.getElementById('dModalPorts').textContent = c.ports;
+      document.getElementById('dModalSteps').innerHTML = c.steps.map((s, i) => `
+        <div class="p-3 rounded-xl bg-alabaster border border-hairline">
+          <div class="text-[10px] font-semibold text-teal mb-0.5">STAGE 0${i + 1}</div>
+          <div class="text-xs text-ink font-medium">${s}</div>
+        </div>
+      `).join('');
+      openModal('dossierModal');
+    }
+
+    function addDossierToBrief() {
+      if (activeDossier) {
+        addToCargoBrief(activeDossier.id);
+        closeModal('dossierModal');
+      }
+    }
+
+    function addToCargoBrief(id) {
+      const c = commodities.find(x => x.id === id);
+      if (!c) return;
+      if (!cargoBrief.find(x => x.id === id)) {
+        cargoBrief.push({ id: c.id, name: c.name, hs: c.hs, qty: 1000 });
+        updateCargoUI();
+        showToast(`Added ${c.name} to Cargo Brief.`);
+      } else {
+        showToast(`${c.name} is already in your Cargo Brief.`);
+      }
+    }
+
+    function updateCargoUI() {
+      document.getElementById('cargoCountBadge').textContent = cargoBrief.length;
+      const list = document.getElementById('cargoItemsList');
+      if (cargoBrief.length === 0) {
+        list.innerHTML = `<div class="p-6 text-center rounded-xl bg-alabaster border border-hairline text-xs text-muted">Your Cargo Brief is empty. Click "+ Add to Brief" on any commodity to bundle a consolidated RFQ.</div>`;
+        return;
+      }
+      list.innerHTML = cargoBrief.map((item, idx) => `
+        <div class="p-4 rounded-xl bg-alabaster border border-hairline flex items-center justify-between gap-3">
+          <div>
+            <div class="text-sm font-medium text-ink">${item.name}</div>
+            <div class="text-[10px] text-muted">HS ${item.hs}</div>
+          </div>
+          <div class="flex items-center gap-2">
+            <input type="number" min="100" value="${item.qty}" onchange="cargoBrief[${idx}].qty = this.value" class="w-20 px-2 py-1 rounded-lg bg-silk border border-hairline text-xs text-right" />
+            <span class="text-[10px] text-stone">MT</span>
+            <button onclick="cargoBrief.splice(${idx},1); updateCargoUI();" class="text-muted hover:text-ink ml-1"><i class="fa-solid fa-trash-can text-xs"></i></button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function toggleCargoDrawer() {
+      const d = document.getElementById('cargoDrawer');
+      d.classList.toggle('hidden');
+      d.classList.toggle('flex');
+      updateCargoUI();
+    }
+
+    function clearCargoBrief() {
+      cargoBrief = [];
+      updateCargoUI();
+    }
+
+    function transferBriefToLoi() {
+      if (cargoBrief.length > 0) {
+        const sel = document.getElementById('loiCommodity');
+        const first = cargoBrief[0];
+        for (let i = 0; i < sel.options.length; i++) {
+          if (sel.options[i].value.includes(first.name.split(' ')[0])) { sel.selectedIndex = i; break; }
+        }
+        document.getElementById('loiQty').value = first.qty;
+      }
+      toggleCargoDrawer();
+      document.getElementById('loi-builder').scrollIntoView({ behavior: 'smooth' });
+      showToast('Cargo Brief synced to LOI Draft Generator.');
+    }
+
+    function toggleCompare(id) {
+      if (compareList.includes(id)) {
+        compareList = compareList.filter(x => x !== id);
+      } else {
+        if (compareList.length >= 3) {
+          showToast('Select up to 3 commodities for side-by-side comparison.');
+          renderCommodities();
+          return;
+        }
+        compareList.push(id);
+      }
+      const bar = document.getElementById('compareBar');
+      document.getElementById('compareCount').textContent = compareList.length;
+      if (compareList.length >= 2) {
+        bar.classList.remove('hidden');
+        bar.classList.add('flex');
+      } else {
+        bar.classList.add('hidden');
+        bar.classList.remove('flex');
+      }
+    }
+
+    function clearCompare() {
+      compareList = [];
+      document.getElementById('compareBar').classList.add('hidden');
+      renderCommodities();
+    }
+
+    function openCompareModal() {
+      const selected = commodities.filter(c => compareList.includes(c.id));
+      const rows = [
+        { label: 'Category', key: 'catLabel' },
+        { label: 'HS Code', key: 'hs' },
+        { label: 'Thermal / Melting Pt', key: 'thermal' },
+        { label: 'Specifications', key: 'spec' },
+        { label: 'Standard Packaging', key: 'pkg' },
+        { label: 'Loading Ports', key: 'ports' }
+      ];
+      document.getElementById('compareTableWrap').innerHTML = `
+        <table class="w-full text-left border-collapse text-xs">
+          <thead>
+            <tr class="border-b border-hairline">
+              <th class="py-3 pr-4 text-[10px] uppercase tracking-widest text-muted">Parameter</th>
+              ${selected.map(c => `<th class="py-3 px-4 font-editorial text-xl font-medium text-ink">${c.name}</th>`).join('')}
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-hairline">
+            ${rows.map(r => `
+              <tr>
+                <td class="py-3 pr-4 font-semibold text-stone">${r.label}</td>
+                ${selected.map(c => `<td class="py-3 px-4 text-ink font-light">${c[r.key]}</td>`).join('')}
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      `;
+      openModal('compareModal');
+    }
+
+    /* =========================================================================
+       5. GRADE FINDER, LOAD CALCULATOR & MICRO-CONVERTER
+       ========================================================================= */
+    let gfPriority = 'strength';
+    let gfRecommendedId = 'lldpe';
+
+    function setGfPriority(p) {
+      gfPriority = p;
+      document.querySelectorAll('.gfp-btn').forEach(btn => {
+        const active = btn.getAttribute('data-gfp') === p;
+        btn.className = active
+          ? 'gfp-btn py-2 rounded-xl text-xs font-medium border bg-teal text-silk border-teal'
+          : 'gfp-btn py-2 rounded-xl text-xs font-medium border bg-silk text-stone border-hairline';
+      });
+      runGradeFinder();
+    }
+
+    function runGradeFinder() {
+      const endUse = document.getElementById('gfEndUse').value;
+      const map = {
+        film: { id: gfPriority === 'cost' ? 'ldpe' : 'lldpe', title: gfPriority === 'cost' ? 'LDPE 2420H Film Grade' : 'LLDPE 0209AA C4/C6 Stretch Film', hs: 'HS 3901.10', specs: 'MFI 0.9–2.0 g/10min · Density 0.920 g/cm³ · High puncture resistance & optical clarity.' },
+        injection: { id: 'pp', title: 'Polypropylene (PP) Z30S / V30S Injection', hs: 'HS 3902.10', specs: 'MFI 12–25 g/10min · Density 0.905 g/cm³ · High stiffness and rapid molding cycle.' },
+        pipes: { id: 'hdpe', title: 'HDPE CRP100N Bimodal PE100 Pipe', hs: 'HS 3901.20', specs: 'Density 0.959 g/cm³ · ESCR > 1,000 hrs · Hydrostatic pressure certified for municipal networks.' },
+        paving: { id: 'bitumen', title: gfPriority === 'thermal' ? 'Bitumen VG-30 / 60/70 Paving Grade' : 'Bitumen 60/70 Export Grade', hs: 'HS 2713.20', specs: 'ASTM D5 Pen 60–70 dmm · Softening Pt 49–56°C · Flash Pt > 250°C for high-ambient highways.' },
+        agri: { id: 'urea', title: 'Urea N46 Granular (Anti-Caking)', hs: 'HS 3102.10', specs: 'Nitrogen 46.0% Min · Biuret < 1.0% · Free-flowing 2–4 mm prills/granules.' },
+        acid: { id: 'sulfur', title: 'Granular Sulfur (99.5% Bright Yellow)', hs: 'HS 2503.00', specs: 'Purity 99.5% Min · Ash < 0.05% · Low dust 2–6 mm for sulfuric acid plants.' },
+        energy: { id: gfPriority === 'thermal' ? 'lng' : 'lpg', title: gfPriority === 'thermal' ? 'Cryogenic LNG (-162°C)' : 'Commercial LPG (Propane/Butane)', hs: 'HS 2711.12', specs: 'ASTM D1835 Compliant · Sulfur < 50 ppm · High calorific industrial fuel.' }
+      };
+      const rec = map[endUse];
+      gfRecommendedId = rec.id;
+      document.getElementById('gfTitle').textContent = rec.title;
+      document.getElementById('gfHs').textContent = rec.hs;
+      document.getElementById('gfSpecs').textContent = rec.specs;
+    }
+
+    function addGradeFinderToBrief() {
+      addToCargoBrief(gfRecommendedId);
+    }
+
+    function runLoadCalc() {
+      const mt = Math.max(20, parseFloat(document.getElementById('lcTonnage').value || '500'));
+      const pkg = document.getElementById('lcPkg').value;
+      let units = '', cont = '', pallets = '';
+      if (pkg === 'pp50') {
+        units = `${Math.ceil(mt * 20).toLocaleString()} Bags`;
+        cont = `${Math.ceil(mt / 24)} × 20ft FCL`;
+        pallets = `${Math.ceil(mt / 1.25).toLocaleString()} Pallets`;
+      } else if (pkg === 'jumbo') {
+        units = `${Math.ceil(mt).toLocaleString()} Jumbo Bags`;
+        cont = `${Math.ceil(mt / 22)} × 20ft FCL`;
+        pallets = 'Direct Crane Lift';
+      } else if (pkg === 'drums') {
+        units = `${Math.ceil((mt * 1000) / 180).toLocaleString()} Drums`;
+        cont = `${Math.ceil(((mt * 1000) / 180) / 110)} × 20ft FCL`;
+        pallets = 'Vertical Floor Load';
+      } else if (pkg === 'bitubag') {
+        units = `${Math.ceil(mt).toLocaleString()} Bitubags`;
+        cont = `${Math.ceil(mt / 20)} × 20ft FCL`;
+        pallets = 'No Pallets Req.';
+      } else if (pkg === 'iso') {
+        units = `${Math.ceil(mt / 20)} ISO Tanks`;
+        cont = `${Math.ceil(mt / 20)} × 20ft ISO`;
+        pallets = 'Tank Frame';
+      } else {
+        units = `${mt.toLocaleString()} MT Bulk`;
+        cont = `${Math.max(1, Math.ceil(mt / 25000))} Handymax`;
+        pallets = 'Bulk Hold';
+      }
+      document.getElementById('lcUnits').textContent = units;
+      document.getElementById('lcContainers').textContent = cont;
+      document.getElementById('lcPallets').textContent = pallets;
+    }
+
+    function runMicroConverter() {
+      const mt = parseFloat(document.getElementById('mcMt').value || '0');
+      const fac = parseFloat(document.getElementById('mcFactor').value || '6.15');
+      document.getElementById('mcBblOut').textContent = `= ${(mt * fac).toLocaleString(undefined, { maximumFractionDigits: 1 })} bbl`;
+
+      const c = parseFloat(document.getElementById('mcCelsius').value || '0');
+      document.getElementById('mcFahrOut').textContent = `= ${((c * 9 / 5) + 32).toFixed(1)} °F`;
+
+      const usd = parseFloat(document.getElementById('mcUsd').value || '0');
+      document.getElementById('mcFxOut').innerHTML = `EUR ${(usd * 0.92).toLocaleString(undefined, { maximumFractionDigits: 0 })} · AED ${(usd * 3.6725).toLocaleString(undefined, { maximumFractionDigits: 0 })}<br/>CNY ${(usd * 7.24).toLocaleString(undefined, { maximumFractionDigits: 0 })}`;
+    }
+
+    /* =========================================================================
+       6. 7-STAGE TRADE PROCEDURE STEPPER & INCOTERMS 2020 VISUALIZER
+       ========================================================================= */
+    const tradeStages = [
+      { short: '01 LOI', title: 'Letter of Intent (LOI)', time: 'Same Day', desc: 'Buyer submits formal Letter of Intent stating target commodity, specification, volume, Incoterms, and destination port.', docs: 'Corporate LOI on Buyer Letterhead · CIS / KYC Profile' },
+      { short: '02 FCO', title: 'Full Corporate Offer (FCO)', time: '24 Hours', desc: 'Arvan Energy Parseh issues binding commercial offer detailing pricing, origin port, loading laycan, and inspection protocol.', docs: 'Signed FCO · Preliminary Specification Sheet' },
+      { short: '03 ICPO', title: 'Irrevocable Purchase Order', time: '24–48 Hours', desc: 'Buyer accepts FCO terms and issues official ICPO alongside banking coordinates for instrument verification.', docs: 'Signed & Stamped ICPO · Bank Comfort Details' },
+      { short: '04 SPA', title: 'Sales & Purchase Agreement', time: '48 Hours', desc: 'Both parties execute the governing Sales & Purchase Agreement defining force majeure, demurrage, and SGS tolerances.', docs: 'Countersigned SPA · Commercial Proforma Invoice' },
+      { short: '05 Instrument', title: 'Payment Instrument', time: '3–5 Banking Days', desc: 'Buyer opens operative Irrevocable DLC / SBLC or executes agreed TT advance settlement per SPA schedule.', docs: 'SWIFT MT700 / MT760 or Verified TT Receipt' },
+      { short: '06 Inspection', title: 'SGS / Intertek Inspection', time: 'At Loading Port', desc: 'Independent international surveyors verify cargo weight, purity, moisture, and packaging prior to vessel sealing.', docs: 'SGS Certificate of Quality & Weight (COA / COW)' },
+      { short: '07 Loading & BL', title: 'Vessel Loading & Bill of Lading', time: 'Dispatch & Settlement', desc: 'Cargo is loaded at Bandar Abbas or Assaluyeh; full shipping dossier is presented for final settlement and release.', docs: 'Original 3/3 BL · Certificate of Origin · Commercial Invoice · MSDS' }
+    ];
+
+    function initTradeStepper() {
+      document.getElementById('stepperButtons').innerHTML = tradeStages.map((s, i) => `
+        <button onclick="selectStage(${i})" data-st="${i}" class="st-btn px-3 py-2.5 rounded-xl text-xs font-medium border transition ${i === 0 ? 'bg-teal text-silk border-teal' : 'bg-silk text-stone border-hairline hover:border-champagne'}">
+          ${s.short}
+        </button>
+      `).join('');
+      selectStage(0);
+    }
+
+    function selectStage(idx) {
+      const s = tradeStages[idx];
+      document.querySelectorAll('.st-btn').forEach((b, i) => {
+        b.className = i === idx
+          ? 'st-btn px-3 py-2.5 rounded-xl text-xs font-medium border transition bg-teal text-silk border-teal'
+          : 'st-btn px-3 py-2.5 rounded-xl text-xs font-medium border transition bg-silk text-stone border-hairline hover:border-champagne';
+      });
+      document.getElementById('stNum').textContent = `STAGE 0${idx + 1}`;
+      document.getElementById('stTime').textContent = `Turnaround: ${s.time}`;
+      document.getElementById('stTitle').textContent = s.title;
+      document.getElementById('stDesc').textContent = s.desc;
+      document.getElementById('stDocs').textContent = s.docs;
+    }
+
+    const incoConfig = {
+      EXW: { sellerCount: 0, summary: 'Buyer arranges export customs, inland transport, loading, freight, insurance, and discharge.' },
+      FOB: { sellerCount: 2, summary: 'Arvan clears Iranian export customs and loads cargo on board vessel at Bandar Abbas / Assaluyeh.' },
+      CFR: { sellerCount: 3, summary: 'Arvan covers export customs, vessel loading, and main ocean freight to destination port.' },
+      CIF: { sellerCount: 4, summary: 'Arvan covers export customs, loading, ocean freight, and marine cargo insurance to destination port.' }
+    };
+    const incoSteps = ['Export Customs', 'Vessel Loading', 'Ocean Freight', 'Marine Insurance', 'Port Discharge'];
+
+    function setIncoterm(term) {
+      document.querySelectorAll('.inco-btn').forEach(b => {
+        const active = b.getAttribute('data-inco') === term;
+        b.className = active
+          ? 'inco-btn px-4 py-2 rounded-xl text-xs font-medium border bg-teal text-silk border-teal'
+          : 'inco-btn px-4 py-2 rounded-xl text-xs font-medium border bg-alabaster text-stone border-hairline';
+      });
+      const cfg = incoConfig[term];
+      document.getElementById('incoBar').innerHTML = incoSteps.map((step, i) => {
+        const isSeller = i < cfg.sellerCount;
+        return `
+          <div class="p-3.5 rounded-xl border text-center transition ${isSeller ? 'bg-teal text-silk border-teal' : 'bg-champagneLight/45 text-ink border-champagne/60'}">
+            <div class="text-[10px] uppercase tracking-wider opacity-80">${isSeller ? 'Arvan' : 'Buyer'}</div>
+            <div class="text-xs font-semibold mt-0.5">${step}</div>
+          </div>
+        `;
+      }).join('');
+      document.getElementById('incoSummary').textContent = cfg.summary;
+    }
+
+    /* =========================================================================
+       7. COA VAULT, HS COMPLIANCE, SEASONAL CALENDAR & PACKAGING GUIDE
+       ========================================================================= */
+    const coaData = {
+      sulfur: [
+        { param: 'Sulfur Purity (Dry Basis)', val: '99.50% Min', note: 'Bright yellow Claus-recovered purity suitable for sulfuric acid & phosphate fertilizers.' },
+        { param: 'Moisture Content', val: '0.50% Max', note: 'Controlled below 0.5% to prevent caking and acid formation during maritime transit.' },
+        { param: 'Ash Content', val: '0.05% Max', note: 'Ultra-low ash ensures clean burning in industrial acid converters.' },
+        { param: 'Granule Size (2–6 mm)', val: '90% Min', note: 'Low-dust friability compliant with international port environmental standards.' }
+      ],
+      urea: [
+        { param: 'Total Nitrogen (N)', val: '46.0% Min', note: 'Guaranteed dry-basis nitrogen concentration per international fertilizer standards.' },
+        { param: 'Biuret Content', val: '1.0% Max', note: 'Strict biuret ceiling protects sensitive foliar crops and agricultural yields.' },
+        { param: 'Moisture', val: '0.50% Max', note: 'Anti-caking conditioned for humid South Asian and African maritime routes.' },
+        { param: 'Free Ammonia', val: '160 ppm Max', note: 'Ensures safe enclosed container and bulk hold handling.' }
+      ],
+      bitumen: [
+        { param: 'Penetration @ 25°C (ASTM D5)', val: '60 – 70 dmm', note: 'Balanced hardness for heavy-traffic highways and hot-climate paving.' },
+        { param: 'Softening Point (ASTM D36)', val: '49 – 56 °C', note: 'High thermal stability prevents rutting under extreme summer road temperatures.' },
+        { param: 'Flash Point (COC)', val: '250 °C Min', note: 'Exceeds international hot-mix asphalt plant safety thresholds.' },
+        { param: 'Solubility in TCE', val: '99.0% Min', note: 'Confirms pure refinery vacuum-bottom origin with minimal mineral impurities.' }
+      ],
+      pp: [
+        { param: 'Melt Flow Index (230°C/2.16kg)', val: '3.0 – 25.0 g/10min', note: 'Tailored by grade for raffia tape, BOPP film, or high-speed injection molding.' },
+        { param: 'Density', val: '0.905 g/cm³', note: 'Lightweight structural polymer offering optimal yield per metric ton.' },
+        { param: 'Flexural Modulus', val: '1,450 MPa', note: 'High rigidity for woven sacks and industrial packaging.' }
+      ],
+      hdpe: [
+        { param: 'Density (ASTM D1505)', val: '0.941 – 0.965 g/cm³', note: 'High crystallinity for superior chemical and moisture barrier.' },
+        { param: 'ESCR (F50)', val: '> 1,000 hrs', note: 'Environmental Stress Crack Resistance essential for PE100 pressure pipes.' },
+        { param: 'Carbon Black (Pipe Grade)', val: '2.0 – 2.5%', note: 'UV stabilization for 50-year outdoor service life.' }
+      ],
+      pet: [
+        { param: 'Intrinsic Viscosity (IV)', val: '0.80 ± 0.02 dL/g', note: 'Ideal molecular weight for carbonated beverage and water preforms.' },
+        { param: 'Acetaldehyde (AA)', val: '< 1.0 ppm', note: 'Food-grade purity preserving neutral beverage taste.' },
+        { param: 'Moisture Content', val: '< 0.20%', note: 'Packed in aluminum foil-lined jumbo bags to prevent hydrolysis.' }
+      ]
+    };
+
+    function renderCoa() {
+      const key = document.getElementById('coaSelect').value;
+      const rows = coaData[key] || [];
+      document.getElementById('coaRows').innerHTML = rows.map(r => `
+        <div onmouseover="showCoaNote('${r.note.replace(/'/g, "\\'")}')" onclick="showCoaNote('${r.note.replace(/'/g, "\\'")}')"
+             class="px-5 py-3.5 flex items-center justify-between text-xs hover:bg-alabaster cursor-pointer transition">
+          <span class="font-medium text-ink">${r.param}</span>
+          <span class="font-semibold text-teal">${r.val}</span>
+        </div>
+      `).join('');
+      if (rows[0]) showCoaNote(rows[0].note);
+    }
+
+    function showCoaNote(note) {
+      document.getElementById('coaNoteText').textContent = note;
+    }
+
+    function renderHsLookup() {
+      const q = (document.getElementById('hsSearch').value || '').toLowerCase();
+      const filtered = commodities.filter(c => c.name.toLowerCase().includes(q) || c.hs.includes(q) || c.catLabel.toLowerCase().includes(q));
+      document.getElementById('hsResults').innerHTML = filtered.map(c => `
+        <div class="p-3.5 rounded-xl bg-silk border border-hairline text-xs">
+          <div class="flex items-center justify-between mb-1">
+            <strong class="text-ink">${c.name}</strong>
+            <span class="px-2 py-0.5 rounded-md bg-alabaster border border-champagne/40 text-[10px] font-semibold text-teal">HS ${c.hs}</span>
+          </div>
+          <div class="text-[11px] text-stone">Class: <span class="text-ink">${c.imo}</span> · Shelf: ${c.shelf}</div>
+          <div class="text-[10px] text-muted mt-1">Docs: ${c.docs}</div>
+        </div>
+      `).join('');
+    }
+
+    function initCalendar() {
+      const rows = [
+        { name: 'Urea N46', peaks: [2, 3, 4, 8, 9, 10] },
+        { name: 'Bitumen 60/70', peaks: [1, 2, 3, 4, 5, 10, 11, 12] },
+        { name: 'Polymers (PP/PE)', peaks: [1, 3, 4, 5, 8, 9, 10, 11] },
+        { name: 'LPG / LNG', peaks: [1, 2, 10, 11, 12] }
+      ];
+      document.getElementById('calendarRows').innerHTML = rows.map(r => `
+        <div class="grid gap-1 items-center" style="grid-template-columns: 140px repeat(12, 1fr);">
+          <div class="font-medium text-ink">${r.name}</div>
+          ${Array.from({ length: 12 }, (_, i) => {
+            const isPeak = r.peaks.includes(i + 1);
+            return `<div class="h-6 rounded-md ${isPeak ? 'bg-teal/85' : 'bg-silk border border-hairline'}" title="${isPeak ? 'Peak Buying Window' : 'Standard Allocation'}"></div>`;
+          }).join('')}
+        </div>
+      `).join('');
+    }
+
+    const pkgGuide = [
+      { id: 'bulk', label: 'Bulk Vessel', icon: 'fa-ship', stack: '25,000–50,000 MT Hold', rules: 'Dry covered hold; moisture < 0.5% verified pre-loading.', ports: 'Deep-water bulk berths (Bandar Abbas, Assaluyeh, Mundra).' },
+      { id: 'iso', label: 'ISO Tank', icon: 'fa-drum-steelpan', stack: 'Up to 6 High (Frame)', rules: 'Pressurized / cryogenic relief valves; UN T50/T75 certified.', ports: 'Container & specialized chemical terminals worldwide.' },
+      { id: 'jumbo', label: '1 MT Jumbo Bag', icon: 'fa-box-open', stack: 'Max 2 High', rules: 'UV-stabilized woven PP with inner moisture/foil liner.', ports: 'Ideal for FCL stuffing & crane-equipped regional ports.' },
+      { id: 'drums', label: '180 kg Steel Drum', icon: 'fa-oil-can', stack: 'Max 2 High (Vertical)', rules: 'New 0.6mm cold-rolled steel; store away from open flame.', ports: 'High-demand for Africa, South Asia & island infrastructure.' },
+      { id: 'bitubag', label: '1 MT Bitubag', icon: 'fa-layer-group', stack: 'Max 2 High (Shaded)', rules: 'Meltable inner polymer liner; zero steel drum waste.', ports: 'Modern asphalt plants with direct bag-melting units.' }
+    ];
+
+    function initPkgGuide() {
+      document.getElementById('pkgTabs').innerHTML = pkgGuide.map((p, i) => `
+        <button onclick="selectPkg(${i})" data-pkg="${i}" class="pkg-btn p-3.5 rounded-xl border text-center transition ${i === 0 ? 'bg-teal text-silk border-teal' : 'bg-alabaster text-stone border-hairline hover:border-champagne'}">
+          <i class="fa-solid ${p.icon} text-base mb-1.5 block"></i>
+          <span class="text-xs font-medium">${p.label}</span>
+        </button>
+      `).join('');
+      selectPkg(0);
+    }
+
+    function selectPkg(idx) {
+      const p = pkgGuide[idx];
+      document.querySelectorAll('.pkg-btn').forEach((b, i) => {
+        b.className = i === idx
+          ? 'pkg-btn p-3.5 rounded-xl border text-center transition bg-teal text-silk border-teal'
+          : 'pkg-btn p-3.5 rounded-xl border text-center transition bg-alabaster text-stone border-hairline hover:border-champagne';
+      });
+      document.getElementById('pkgDetailCard').innerHTML = `
+        <div><div class="text-[10px] uppercase tracking-widest text-muted">Stacking / Capacity Limit</div><div class="text-sm font-semibold text-ink mt-1">${p.stack}</div></div>
+        <div><div class="text-[10px] uppercase tracking-widest text-muted">Moisture &amp; Thermal Storage Rules</div><div class="text-xs text-stone mt-1 leading-relaxed">${p.rules}</div></div>
+        <div><div class="text-[10px] uppercase tracking-widest text-muted">Ideal Destination Port Profile</div><div class="text-xs text-teal font-medium mt-1 leading-relaxed">${p.ports}</div></div>
+      `;
+    }
+
+    /* =========================================================================
+       8. MARKET INTELLIGENCE (CHART.JS) & NOV 2026 NEWS
+       ========================================================================= */
+    let marketChart = null;
+    function renderMarketChart(mode) {
+      document.querySelectorAll('.chart-btn').forEach(b => {
+        const active = b.getAttribute('data-chart') === mode;
+        b.className = active
+          ? 'chart-btn px-4 py-1.5 rounded-full text-xs font-medium border bg-teal text-silk border-teal'
+          : 'chart-btn px-4 py-1.5 rounded-full text-xs font-medium border bg-alabaster text-stone border-hairline';
+      });
+      const ctx = document.getElementById('marketChartCanvas').getContext('2d');
+      if (marketChart) marketChart.destroy();
+
+      const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov 2026'];
+      const datasets = mode === 'crude' ? [
+        { label: 'Brent Crude ($/bbl)', data: [81.4, 83.2, 85.0, 84.1, 86.5, 88.2, 87.9, 89.4, 90.1, 91.3, 92.18], borderColor: '#0F6E6E', backgroundColor: 'rgba(15,110,110,0.07)' },
+        { label: 'WTI Crude ($/bbl)', data: [74.1, 75.8, 77.4, 76.5, 78.2, 79.9, 79.4, 80.6, 81.5, 82.4, 83.22], borderColor: '#B08D57', backgroundColor: 'rgba(176,141,87,0.07)' }
+      ] : [
+        { label: 'Polypropylene PP ($/MT)', data: [940, 955, 960, 950, 975, 985, 980, 995, 1005, 1010, 1025], borderColor: '#0F6E6E', backgroundColor: 'transparent' },
+        { label: 'Bitumen 60/70 ($/MT)', data: [370, 380, 385, 390, 400, 405, 410, 415, 420, 425, 435], borderColor: '#B08D57', backgroundColor: 'transparent' },
+        { label: 'Urea N46 FOB ($/MT)', data: [315, 325, 330, 320, 335, 345, 340, 350, 355, 360, 368], borderColor: '#1A1D20', backgroundColor: 'transparent' },
+        { label: 'Granular Sulfur ($/MT)', data: [125, 132, 138, 145, 150, 155, 160, 164, 168, 172, 178], borderColor: '#848B94', backgroundColor: 'transparent' }
+      ];
+
+      marketChart = new Chart(ctx, {
+        type: 'line',
+        data: { labels: months, datasets: datasets.map(d => ({ ...d, borderWidth: 2, tension: 0.35, fill: mode === 'crude', pointRadius: 3, pointBackgroundColor: '#FFFFFF' })) },
+        options: {
+          responsive: true, maintainAspectRatio: false,
+          plugins: { legend: { position: 'top', align: 'start', labels: { color: '#525860', usePointStyle: true, font: { family: 'Plus Jakarta Sans', size: 11 } } } },
+          scales: { x: { grid: { display: false }, ticks: { color: '#848B94', font: { size: 11 } } }, y: { grid: { color: '#EFECE6' }, border: { display: false }, ticks: { color: '#848B94', font: { size: 11 } } } }
+        }
+      });
+    }
+
+    function initNews() {
+      const items = [
+        { source: 'Forbes', date: 'Nov 2026', title: 'Gas-Advantaged Petrochemical Exporters Outperform as Brent Holds Near $92/bbl', summary: 'Integrated Middle Eastern producers with direct ethane and methane access continue to capture resilient polymer and fertilizer margins in Q4 2026.' },
+        { source: 'The Economic Times', date: 'Nov 2026', title: 'Short-Haul Persian Gulf Corridors Cut Freight Exposure for South Asian Buyers', summary: '4-to-6 day sailing windows from Bandar Abbas to Mundra and Nhava Sheva accelerate direct FOB allocations for bitumen, sulfur, and prime PE.' },
+        { source: 'The Business Times', date: 'Nov 2026', title: 'Asia-Pacific LNG & LPG Infrastructure Expansion Locks In Multi-Year Gas Demand', summary: 'New regasification berths and propane dehydrogenation (PDH) capacity sustain steady forward contracting across East and Southeast Asia.' }
+      ];
+      document.getElementById('newsGrid').innerHTML = items.map(n => `
+        <article class="luxury-card rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-champagne">${n.source}</span>
+              <span class="text-[11px] text-muted">${n.date}</span>
+            </div>
+            <h4 class="font-editorial text-xl font-semibold text-ink leading-snug mb-2.5">${n.title}</h4>
+            <p class="text-xs text-stone font-light leading-relaxed">${n.summary}</p>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    /* =========================================================================
+       9. 3-STEP LOI GENERATOR, PRINTABLE PROFILE & SMART DESK CONCIERGE
+       ========================================================================= */
+    function goLoiStep(step) {
+      [1, 2, 3].forEach(s => {
+        document.getElementById(`loiStep${s}`).classList.toggle('hidden', s !== step);
+        const tab = document.getElementById(`loiTab${s}`);
+        tab.className = s === step
+          ? 'flex-1 py-2 rounded-xl text-xs font-medium bg-teal text-silk transition'
+          : 'flex-1 py-2 rounded-xl text-xs font-medium bg-silk border border-hairline text-stone transition';
+      });
+    }
+
+    function generateLoiDraft(e) {
+      e.preventDefault();
+      const ref = `AEP-LOI-2026-${Math.floor(1000 + Math.random() * 9000)}`;
+      const company = document.getElementById('loiCompany').value.trim();
+      const sig = document.getElementById('loiSignatory').value.trim();
+      const email = document.getElementById('loiEmail').value.trim();
+      const comm = document.getElementById('loiCommodity').value;
+      const qty = Number(document.getElementById('loiQty').value).toLocaleString();
+      const inco = document.getElementById('loiInco').value;
+      const port = document.getElementById('loiPort').value.trim();
+      const pay = document.getElementById('loiPayment').value;
+      const insp = document.getElementById('loiInspection').value;
+
+      const text = [
+        `ARVAN ENERGY PARSEH (آروان انرژی پارسه)`,
+        `OFFICIAL LETTER OF INTENT (LOI) — DRAFT`,
+        `===================================================`,
+        `Reference No.    : ${ref}`,
+        `Date (UTC)       : ${new Date().toUTCString()}`,
+        `To               : Export Allocation Desk, Arvan Energy Parseh`,
+        `From (Buyer)     : ${company}`,
+        `Signatory        : ${sig} (${email})`,
+        `---------------------------------------------------`,
+        `We, ${company}, hereby confirm with full corporate responsibility`,
+        `our readiness and willingness to purchase the following cargo:`,
+        ``,
+        `Commodity        : ${comm}`,
+        `Quantity         : ${qty} Metric Tons (+/- 5%)`,
+        `Delivery Terms   : ${inco}`,
+        `Destination Port : ${port}`,
+        `Payment Term     : ${pay}`,
+        `Inspection       : ${insp}`,
+        `---------------------------------------------------`,
+        `Authorized Signature & Corporate Seal:`,
+        `${sig} — ${company}`,
+        `===================================================`
+      ].join('\n');
+
+      document.getElementById('loiOutputText').textContent = text;
+      openModal('loiModal');
+    }
+
+    function copyLoiDraft() {
+      const text = document.getElementById('loiOutputText').textContent;
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('Official LOI draft copied to clipboard.');
+      } catch (err) {
+        showToast('Select and copy the LOI text manually.');
+      }
+      document.body.removeChild(ta);
+    }
+
+    function printLoiDraft() {
+      const content = document.getElementById('loiOutputText').textContent;
+      const w = window.open('', '_blank', 'width=820,height=900');
+      w.document.write(`<html><head><title>Arvan Energy Parseh — LOI</title><style>body{font-family:Georgia,serif;padding:48px;color:#1A1D20;background:#fff;}pre{font-family:monospace;white-space:pre-wrap;font-size:13px;line-height:1.7;border:1px solid #E6E0D6;padding:28px;border-radius:10px;}</style></head><body><div style="display:flex;align-items:center;gap:14px;border-bottom:2px solid #B08D57;padding-bottom:16px;margin-bottom:24px;"><img src="arvan.jpg" style="height:48px;" onerror="this.style.display='none'"/><div><div style="font-size:20px;font-weight:bold;letter-spacing:2px;">ARVAN ENERGY PARSEH</div><div style="font-size:12px;color:#B08D57;">آروان انرژی پارسه · Islamic Republic of Iran</div></div></div><pre>${content}</pre></body></html>`);
+      w.document.close();
+      w.print();
+    }
+
+    function printBrandedSpecSheet() {
+      if (!activeDossier) return;
+      const c = activeDossier;
+      const w = window.open('', '_blank', 'width=820,height=900');
+      w.document.write(`<html><head><title>${c.name} — Technical Spec Sheet</title><style>body{font-family:sans-serif;padding:44px;color:#1A1D20;}table{width:100%;border-collapse:collapse;margin-top:20px;}td{padding:12px;border:1px solid #E6E0D6;font-size:13px;}td:first-child{font-weight:600;background:#FAF8F5;width:32%;}</style></head><body><div style="display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #B08D57;padding-bottom:14px;"><div style="display:flex;align-items:center;gap:12px;"><img src="arvan.jpg" style="height:44px;" onerror="this.style.display='none'"/><div><div style="font-family:Georgia,serif;font-size:20px;font-weight:bold;">ARVAN ENERGY PARSEH</div><div style="font-size:11px;color:#B08D57;">TECHNICAL SPECIFICATION DOSSIER</div></div></div><div style="font-size:11px;color:#525860;">HS Code: ${c.hs}</div></div><h1 style="font-family:Georgia,serif;margin-top:26px;">${c.name}</h1><p style="color:#525860;font-size:14px;">${c.highlight}</p><table><tr><td>Specifications</td><td>${c.spec}</td></tr><tr><td>Thermal Point</td><td>${c.thermal}</td></tr><tr><td>IMO / Compliance</td><td>${c.imo}</td></tr><tr><td>Packaging Options</td><td>${c.pkg}</td></tr><tr><td>Loading Terminals</td><td>${c.ports}</td></tr><tr><td>Required Documents</td><td>${c.docs}</td></tr></table></body></html>`);
+      w.document.close();
+      w.print();
+    }
+
+    function openPrintableProfile() {
+      const t = translations[currentLang];
+      const w = window.open('', '_blank', 'width=900,height=950');
+      const rows = commodities.map(c => `<tr><td style="padding:8px;border:1px solid #E6E0D6;font-weight:600;">${c.name}</td><td style="padding:8px;border:1px solid #E6E0D6;">${c.hs}</td><td style="padding:8px;border:1px solid #E6E0D6;">${c.pkg}</td><td style="padding:8px;border:1px solid #E6E0D6;">${c.ports}</td></tr>`).join('');
+      w.document.write(`<html dir="${t.dir}"><head><title>${t.brandName} — Company Profile</title><style>body{font-family:sans-serif;padding:44px;color:#1A1D20;}table{width:100%;border-collapse:collapse;font-size:12px;margin-top:16px;}th{background:#FAF8F5;padding:9px;border:1px solid #E6E0D6;text-align:left;}</style></head><body><div style="display:flex;align-items:center;gap:14px;border-bottom:2px solid #B08D57;padding-bottom:16px;"><img src="arvan.jpg" style="height:50px;" onerror="this.style.display='none'"/><div><div style="font-family:Georgia,serif;font-size:24px;font-weight:bold;">${t.brandName}</div><div style="font-size:12px;color:#B08D57;">${t.brandSub} · Islamic Republic of Iran</div></div></div><h2 style="font-family:Georgia,serif;margin-top:24px;">${t.heroHeadline}</h2><p style="font-size:13px;color:#525860;line-height:1.6;">${t.heroDesc}</p><h3 style="font-family:Georgia,serif;margin-top:24px;">Export Product Matrix</h3><table><thead><tr><th>Commodity</th><th>HS Code</th><th>Packaging</th><th>Loading Ports</th></tr></thead><tbody>${rows}</tbody></table><p style="margin-top:28px;font-size:11px;color:#848B94;">Export Desk: exports@arvanenergyparseh.ir · Terminals: Bandar Abbas (IRBND), Assaluyeh (IRPGU), Bandar Imam (IRBKM)</p></body></html>`);
+      w.document.close();
+      w.print();
+    }
+
+    function toggleConcierge() {
+      document.getElementById('conciergeCard').classList.toggle('hidden');
+    }
+
+    function launchConcierge(channel) {
+      const desk = document.getElementById('conciergeDesk').value;
+      const msg = encodeURIComponent(`Hello Arvan Energy Parseh (${desk}) — Language: ${currentLang.toUpperCase()}. I would like to request an allocation / SCO.`);
+      if (channel === 'whatsapp') {
+        window.open(`https://wa.me/?text=${msg}`, '_blank');
+      } else if (channel === 'telegram') {
+        window.open(`https://t.me/share/url?url=arvanenergyparseh.ir&text=${msg}`, '_blank');
+      } else {
+        window.location.href = `mailto:exports@arvanenergyparseh.ir?subject=${encodeURIComponent('Allocation Inquiry — ' + desk)}&body=${msg}`;
+      }
+    }
+
+    /* =========================================================================
+       MODAL & TOAST UTILITIES
+       ========================================================================= */
+    function openModal(id) {
+      const m = document.getElementById(id);
+      m.classList.remove('hidden');
+      m.classList.add('flex');
+    }
+    function closeModal(id) {
+      const m = document.getElementById(id);
+      m.classList.add('hidden');
+      m.classList.remove('flex');
+    }
+    let toastTimer = null;
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      document.getElementById('toastText').textContent = msg;
+      t.classList.remove('hidden');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => t.classList.add('hidden'), 3000);
+    }
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        closeModal('dossierModal');
+        closeModal('compareModal');
+        closeModal('loiModal');
+      }
+    });
+
+    /* =========================================================================
+       INITIALIZATION ON LOAD
+       ========================================================================= */
+    window.addEventListener('load', () => {
+      updateGlobalClocks();
+      setInterval(updateGlobalClocks, 30000);
+      setLanguage('en');
+      initGlobe3D();
+      renderCommodities();
+      runGradeFinder();
+      runLoadCalc();
+      runMicroConverter();
+      initTradeStepper();
+      setIncoterm('FOB');
+      renderCoa();
+      renderHsLookup();
+      initCalendar();
+      initPkgGuide();
+      renderMarketChart('crude');
+      initNews();
+      updateCargoUI();
+    });
+  </script>
+</body>
+</html>
